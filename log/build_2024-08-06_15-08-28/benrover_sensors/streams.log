@@ -1,0 +1,33 @@
+[1.297s] Invoking command in '/home/celeste/workspace/benrover/rosws/src/benrover_sensors': PYTHONPATH=/home/celeste/workspace/benrover/rosws/build/benrover_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/celeste/workspace/benrover/rosws/install/benrover_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_sensors build --build-base /home/celeste/workspace/benrover/rosws/build/benrover_sensors/build install --record /home/celeste/workspace/benrover/rosws/build/benrover_sensors/install.log --single-version-externally-managed install_data
+[1.625s] running egg_info
+[1.626s] creating ../../build/benrover_sensors/benrover_sensors.egg-info
+[1.626s] writing ../../build/benrover_sensors/benrover_sensors.egg-info/PKG-INFO
+[1.627s] writing dependency_links to ../../build/benrover_sensors/benrover_sensors.egg-info/dependency_links.txt
+[1.627s] writing entry points to ../../build/benrover_sensors/benrover_sensors.egg-info/entry_points.txt
+[1.627s] writing requirements to ../../build/benrover_sensors/benrover_sensors.egg-info/requires.txt
+[1.627s] writing top-level names to ../../build/benrover_sensors/benrover_sensors.egg-info/top_level.txt
+[1.628s] writing manifest file '../../build/benrover_sensors/benrover_sensors.egg-info/SOURCES.txt'
+[1.631s] reading manifest file '../../build/benrover_sensors/benrover_sensors.egg-info/SOURCES.txt'
+[1.633s] writing manifest file '../../build/benrover_sensors/benrover_sensors.egg-info/SOURCES.txt'
+[1.633s] running build
+[1.634s] running build_py
+[1.634s] creating /home/celeste/workspace/benrover/rosws/build/benrover_sensors/build
+[1.634s] creating /home/celeste/workspace/benrover/rosws/build/benrover_sensors/build/lib
+[1.634s] creating /home/celeste/workspace/benrover/rosws/build/benrover_sensors/build/lib/benrover_sensors
+[1.634s] copying benrover_sensors/__init__.py -> /home/celeste/workspace/benrover/rosws/build/benrover_sensors/build/lib/benrover_sensors
+[1.635s] running install
+[1.635s] running install_lib
+[1.637s] creating /home/celeste/workspace/benrover/rosws/install/benrover_sensors/lib/python3.10/site-packages/benrover_sensors
+[1.637s] copying /home/celeste/workspace/benrover/rosws/build/benrover_sensors/build/lib/benrover_sensors/__init__.py -> /home/celeste/workspace/benrover/rosws/install/benrover_sensors/lib/python3.10/site-packages/benrover_sensors
+[1.638s] byte-compiling /home/celeste/workspace/benrover/rosws/install/benrover_sensors/lib/python3.10/site-packages/benrover_sensors/__init__.py to __init__.cpython-310.pyc
+[1.638s] running install_data
+[1.638s] creating /home/celeste/workspace/benrover/rosws/install/benrover_sensors/share/ament_index
+[1.639s] creating /home/celeste/workspace/benrover/rosws/install/benrover_sensors/share/ament_index/resource_index
+[1.639s] creating /home/celeste/workspace/benrover/rosws/install/benrover_sensors/share/ament_index/resource_index/packages
+[1.639s] copying resource/benrover_sensors -> /home/celeste/workspace/benrover/rosws/install/benrover_sensors/share/ament_index/resource_index/packages
+[1.639s] copying package.xml -> /home/celeste/workspace/benrover/rosws/install/benrover_sensors/share/benrover_sensors
+[1.639s] running install_egg_info
+[1.642s] Copying ../../build/benrover_sensors/benrover_sensors.egg-info to /home/celeste/workspace/benrover/rosws/install/benrover_sensors/lib/python3.10/site-packages/benrover_sensors-0.0.0-py3.10.egg-info
+[1.644s] running install_scripts
+[1.674s] writing list of installed files to '/home/celeste/workspace/benrover/rosws/build/benrover_sensors/install.log'
+[1.704s] Invoked command in '/home/celeste/workspace/benrover/rosws/src/benrover_sensors' returned '0': PYTHONPATH=/home/celeste/workspace/benrover/rosws/build/benrover_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/celeste/workspace/benrover/rosws/install/benrover_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_sensors build --build-base /home/celeste/workspace/benrover/rosws/build/benrover_sensors/build install --record /home/celeste/workspace/benrover/rosws/build/benrover_sensors/install.log --single-version-externally-managed install_data

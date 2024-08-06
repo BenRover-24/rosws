@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../../build/benrover_sensors/benrover_sensors.egg-info/PKG-INFO
+../../build/benrover_sensors/benrover_sensors.egg-info/SOURCES.txt
+../../build/benrover_sensors/benrover_sensors.egg-info/dependency_links.txt
+../../build/benrover_sensors/benrover_sensors.egg-info/entry_points.txt
+../../build/benrover_sensors/benrover_sensors.egg-info/requires.txt
+../../build/benrover_sensors/benrover_sensors.egg-info/top_level.txt
+../../build/benrover_sensors/benrover_sensors.egg-info/zip-safe
+benrover_sensors/__init__.py
+resource/benrover_sensors
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
