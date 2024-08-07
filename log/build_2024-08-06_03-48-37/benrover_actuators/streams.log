@@ -1,0 +1,38 @@
+[7.233s] Invoking command in '/home/elfriedkinzoun/rosws/src/benrover_actuators': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_actuators/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_actuators build --build-base /home/elfriedkinzoun/rosws/build/benrover_actuators/build install --record /home/elfriedkinzoun/rosws/build/benrover_actuators/install.log --single-version-externally-managed install_data
+[9.574s] running egg_info
+[9.577s] creating ../../build/benrover_actuators/benrover_actuators.egg-info
+[9.578s] writing ../../build/benrover_actuators/benrover_actuators.egg-info/PKG-INFO
+[9.579s] writing dependency_links to ../../build/benrover_actuators/benrover_actuators.egg-info/dependency_links.txt
+[9.580s] writing entry points to ../../build/benrover_actuators/benrover_actuators.egg-info/entry_points.txt
+[9.580s] writing requirements to ../../build/benrover_actuators/benrover_actuators.egg-info/requires.txt
+[9.580s] writing top-level names to ../../build/benrover_actuators/benrover_actuators.egg-info/top_level.txt
+[9.581s] writing manifest file '../../build/benrover_actuators/benrover_actuators.egg-info/SOURCES.txt'
+[9.605s] reading manifest file '../../build/benrover_actuators/benrover_actuators.egg-info/SOURCES.txt'
+[9.605s] adding license file 'LICENSE'
+[9.606s] writing manifest file '../../build/benrover_actuators/benrover_actuators.egg-info/SOURCES.txt'
+[9.607s] running build
+[9.607s] running build_py
+[9.607s] creating /home/elfriedkinzoun/rosws/build/benrover_actuators/build
+[9.608s] creating /home/elfriedkinzoun/rosws/build/benrover_actuators/build/lib
+[9.608s] creating /home/elfriedkinzoun/rosws/build/benrover_actuators/build/lib/benrover_actuators
+[9.608s] copying benrover_actuators/__init__.py -> /home/elfriedkinzoun/rosws/build/benrover_actuators/build/lib/benrover_actuators
+[9.608s] copying benrover_actuators/my_node.py -> /home/elfriedkinzoun/rosws/build/benrover_actuators/build/lib/benrover_actuators
+[9.610s] running install
+[9.613s] running install_lib
+[9.621s] creating /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages/benrover_actuators
+[9.622s] copying /home/elfriedkinzoun/rosws/build/benrover_actuators/build/lib/benrover_actuators/__init__.py -> /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages/benrover_actuators
+[9.622s] copying /home/elfriedkinzoun/rosws/build/benrover_actuators/build/lib/benrover_actuators/my_node.py -> /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages/benrover_actuators
+[9.624s] byte-compiling /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages/benrover_actuators/__init__.py to __init__.cpython-310.pyc
+[9.627s] byte-compiling /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages/benrover_actuators/my_node.py to my_node.cpython-310.pyc
+[9.628s] running install_data
+[9.629s] creating /home/elfriedkinzoun/rosws/install/benrover_actuators/share/ament_index
+[9.631s] creating /home/elfriedkinzoun/rosws/install/benrover_actuators/share/ament_index/resource_index
+[9.637s] creating /home/elfriedkinzoun/rosws/install/benrover_actuators/share/ament_index/resource_index/packages
+[9.637s] copying resource/benrover_actuators -> /home/elfriedkinzoun/rosws/install/benrover_actuators/share/ament_index/resource_index/packages
+[9.638s] copying package.xml -> /home/elfriedkinzoun/rosws/install/benrover_actuators/share/benrover_actuators
+[9.638s] running install_egg_info
+[9.652s] Copying ../../build/benrover_actuators/benrover_actuators.egg-info to /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages/benrover_actuators-0.0.0-py3.10.egg-info
+[9.658s] running install_scripts
+[9.767s] Installing my_node script to /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/benrover_actuators
+[9.770s] writing list of installed files to '/home/elfriedkinzoun/rosws/build/benrover_actuators/install.log'
+[9.968s] Invoked command in '/home/elfriedkinzoun/rosws/src/benrover_actuators' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_actuators/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_actuators build --build-base /home/elfriedkinzoun/rosws/build/benrover_actuators/build install --record /home/elfriedkinzoun/rosws/build/benrover_actuators/install.log --single-version-externally-managed install_data

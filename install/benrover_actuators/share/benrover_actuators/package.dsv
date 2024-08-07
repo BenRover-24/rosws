@@ -1,0 +1,3 @@
+source;share/benrover_actuators/hook/pythonpath.ps1
+source;share/benrover_actuators/hook/pythonpath.dsv
+source;share/benrover_actuators/hook/pythonpath.sh

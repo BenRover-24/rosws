@@ -1,0 +1,3 @@
+[console_scripts]
+my_node = benrover_actuators.my_node:main
+

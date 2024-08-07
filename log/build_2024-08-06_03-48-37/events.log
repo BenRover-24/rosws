@@ -1,0 +1,143 @@
+[0.000000] (-) TimerEvent: {}
+[0.000303] (benrover_actuators) JobQueued: {'identifier': 'benrover_actuators', 'dependencies': OrderedDict()}
+[0.000385] (benrover_actuators) JobStarted: {'identifier': 'benrover_actuators'}
+[0.096580] (-) TimerEvent: {}
+[0.198102] (-) TimerEvent: {}
+[0.300123] (-) TimerEvent: {}
+[0.402990] (-) TimerEvent: {}
+[0.503677] (-) TimerEvent: {}
+[0.604533] (-) TimerEvent: {}
+[0.707141] (-) TimerEvent: {}
+[0.808938] (-) TimerEvent: {}
+[0.911133] (-) TimerEvent: {}
+[1.012499] (-) TimerEvent: {}
+[1.114304] (-) TimerEvent: {}
+[1.215821] (-) TimerEvent: {}
+[1.318229] (-) TimerEvent: {}
+[1.419712] (-) TimerEvent: {}
+[1.520966] (-) TimerEvent: {}
+[1.621901] (-) TimerEvent: {}
+[1.722491] (-) TimerEvent: {}
+[1.825535] (-) TimerEvent: {}
+[1.926102] (-) TimerEvent: {}
+[2.027373] (-) TimerEvent: {}
+[2.128981] (-) TimerEvent: {}
+[2.230018] (-) TimerEvent: {}
+[2.331247] (-) TimerEvent: {}
+[2.431673] (-) TimerEvent: {}
+[2.532620] (-) TimerEvent: {}
+[2.635075] (-) TimerEvent: {}
+[2.737951] (-) TimerEvent: {}
+[2.840220] (-) TimerEvent: {}
+[2.946557] (-) TimerEvent: {}
+[3.048580] (-) TimerEvent: {}
+[3.149246] (-) TimerEvent: {}
+[3.252456] (-) TimerEvent: {}
+[3.355160] (-) TimerEvent: {}
+[3.457949] (-) TimerEvent: {}
+[3.561444] (-) TimerEvent: {}
+[3.662720] (-) TimerEvent: {}
+[3.763622] (-) TimerEvent: {}
+[3.865308] (-) TimerEvent: {}
+[3.969105] (-) TimerEvent: {}
+[4.070694] (-) TimerEvent: {}
+[4.172103] (-) TimerEvent: {}
+[4.272624] (-) TimerEvent: {}
+[4.376807] (-) TimerEvent: {}
+[4.478474] (-) TimerEvent: {}
+[4.579463] (-) TimerEvent: {}
+[4.680936] (-) TimerEvent: {}
+[4.785783] (-) TimerEvent: {}
+[4.888388] (-) TimerEvent: {}
+[4.989954] (-) TimerEvent: {}
+[5.094023] (-) TimerEvent: {}
+[5.196641] (-) TimerEvent: {}
+[5.300511] (-) TimerEvent: {}
+[5.403203] (-) TimerEvent: {}
+[5.506383] (-) TimerEvent: {}
+[5.607613] (-) TimerEvent: {}
+[5.712394] (-) TimerEvent: {}
+[5.828019] (-) TimerEvent: {}
+[5.929088] (-) TimerEvent: {}
+[6.030883] (-) TimerEvent: {}
+[6.132578] (-) TimerEvent: {}
+[6.236796] (-) TimerEvent: {}
+[6.338500] (-) TimerEvent: {}
+[6.440185] (-) TimerEvent: {}
+[6.542181] (-) TimerEvent: {}
+[6.643227] (-) TimerEvent: {}
+[6.747110] (-) TimerEvent: {}
+[6.848216] (-) TimerEvent: {}
+[6.949877] (-) TimerEvent: {}
+[7.050454] (-) TimerEvent: {}
+[7.159641] (-) TimerEvent: {}
+[7.231748] (benrover_actuators) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/benrover_actuators', 'build', '--build-base', '/home/elfriedkinzoun/rosws/build/benrover_actuators/build', 'install', '--record', '/home/elfriedkinzoun/rosws/build/benrover_actuators/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/elfriedkinzoun/rosws/src/benrover_actuators', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'elfriedkinzoun', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/lib', 'HOME': '/home/elfriedkinzoun', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/elfriedkinzoun/rosws/src', 'DESKTOP_SESSION': 'zorin', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'zorin', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1470', 'MAVEN_HOME': '/usr/local/apache-maven-3.9.7', 'SYSTEMD_EXEC_PID': '1764', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '103240', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/elfriedkinzoun/rosws/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'elfriedkinzoun', 'JOURNAL_STREAM': '8:32836', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'elfriedkinzoun', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'PATH': '/usr/local/apache-maven-3.9.7/bin:/home/elfriedkinzoun/anaconda3/bin:/home/elfriedkinzoun/anaconda3/condabin:/opt/ros/rolling/bin:/home/elfriedkinzoun/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/elfriedkinzoun/.bash_profile:/home/elfriedkinzoun/.local/bin', 'SESSION_MANAGER': 'local/elfriedkinzoun-HP-ENVY-15-Notebook-PC:@/tmp/.ICE-unix/1560,unix/elfriedkinzoun-HP-ENVY-15-Notebook-PC:/tmp/.ICE-unix/1560', 'INVOCATION_ID': '94880eec06924add8ff6606c3740ef64', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'zorin:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'zorin', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.PWORR2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/elfriedkinzoun/anaconda3/share/glib-2.0/schemas', 'ROS_DOMAIN_ID': '15', 'AMENT_PREFIX_PATH': '/opt/ros/rolling', 'CONDA_PYTHON_EXE': '/home/elfriedkinzoun/anaconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:9ef843df-7c1a-4224-9929-53e4da036fab', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'zorin', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/elfriedkinzoun/rosws/build/benrover_actuators', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-zorin:/etc/xdg', 'CONDA_EXE': '/home/elfriedkinzoun/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/zorin:/home/elfriedkinzoun/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'M2_HOME': '/usr/local/apache-maven-3.9.7', 'PYTHONPATH': '/home/elfriedkinzoun/rosws/build/benrover_actuators/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages:/opt/ros/rolling/lib/python3.10/site-packages', 'CONDA_PREFIX': '/home/elfriedkinzoun/anaconda3', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[7.260090] (-) TimerEvent: {}
+[7.360989] (-) TimerEvent: {}
+[7.462778] (-) TimerEvent: {}
+[7.564354] (-) TimerEvent: {}
+[7.666553] (-) TimerEvent: {}
+[7.768833] (-) TimerEvent: {}
+[7.870697] (-) TimerEvent: {}
+[7.971834] (-) TimerEvent: {}
+[8.072670] (-) TimerEvent: {}
+[8.173366] (-) TimerEvent: {}
+[8.274263] (-) TimerEvent: {}
+[8.375257] (-) TimerEvent: {}
+[8.477080] (-) TimerEvent: {}
+[8.578505] (-) TimerEvent: {}
+[8.680682] (-) TimerEvent: {}
+[8.784393] (-) TimerEvent: {}
+[8.886122] (-) TimerEvent: {}
+[8.987073] (-) TimerEvent: {}
+[9.088266] (-) TimerEvent: {}
+[9.189574] (-) TimerEvent: {}
+[9.291676] (-) TimerEvent: {}
+[9.393304] (-) TimerEvent: {}
+[9.494593] (-) TimerEvent: {}
+[9.574280] (benrover_actuators) StdoutLine: {'line': b'running egg_info\n'}
+[9.577031] (benrover_actuators) StdoutLine: {'line': b'creating ../../build/benrover_actuators/benrover_actuators.egg-info\n'}
+[9.578257] (benrover_actuators) StdoutLine: {'line': b'writing ../../build/benrover_actuators/benrover_actuators.egg-info/PKG-INFO\n'}
+[9.579036] (benrover_actuators) StdoutLine: {'line': b'writing dependency_links to ../../build/benrover_actuators/benrover_actuators.egg-info/dependency_links.txt\n'}
+[9.579979] (benrover_actuators) StdoutLine: {'line': b'writing entry points to ../../build/benrover_actuators/benrover_actuators.egg-info/entry_points.txt\n'}
+[9.580282] (benrover_actuators) StdoutLine: {'line': b'writing requirements to ../../build/benrover_actuators/benrover_actuators.egg-info/requires.txt\n'}
+[9.580557] (benrover_actuators) StdoutLine: {'line': b'writing top-level names to ../../build/benrover_actuators/benrover_actuators.egg-info/top_level.txt\n'}
+[9.580895] (benrover_actuators) StdoutLine: {'line': b"writing manifest file '../../build/benrover_actuators/benrover_actuators.egg-info/SOURCES.txt'\n"}
+[9.598255] (-) TimerEvent: {}
+[9.604689] (benrover_actuators) StdoutLine: {'line': b"reading manifest file '../../build/benrover_actuators/benrover_actuators.egg-info/SOURCES.txt'\n"}
+[9.605030] (benrover_actuators) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[9.606473] (benrover_actuators) StdoutLine: {'line': b"writing manifest file '../../build/benrover_actuators/benrover_actuators.egg-info/SOURCES.txt'\n"}
+[9.606935] (benrover_actuators) StdoutLine: {'line': b'running build\n'}
+[9.607151] (benrover_actuators) StdoutLine: {'line': b'running build_py\n'}
+[9.607485] (benrover_actuators) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/build/benrover_actuators/build\n'}
+[9.607782] (benrover_actuators) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/build/benrover_actuators/build/lib\n'}
+[9.608074] (benrover_actuators) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/build/benrover_actuators/build/lib/benrover_actuators\n'}
+[9.608276] (benrover_actuators) StdoutLine: {'line': b'copying benrover_actuators/__init__.py -> /home/elfriedkinzoun/rosws/build/benrover_actuators/build/lib/benrover_actuators\n'}
+[9.608477] (benrover_actuators) StdoutLine: {'line': b'copying benrover_actuators/my_node.py -> /home/elfriedkinzoun/rosws/build/benrover_actuators/build/lib/benrover_actuators\n'}
+[9.608751] (benrover_actuators) StdoutLine: {'line': b'running install\n'}
+[9.612306] (benrover_actuators) StdoutLine: {'line': b'running install_lib\n'}
+[9.621304] (benrover_actuators) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages/benrover_actuators\n'}
+[9.621942] (benrover_actuators) StdoutLine: {'line': b'copying /home/elfriedkinzoun/rosws/build/benrover_actuators/build/lib/benrover_actuators/__init__.py -> /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages/benrover_actuators\n'}
+[9.622160] (benrover_actuators) StdoutLine: {'line': b'copying /home/elfriedkinzoun/rosws/build/benrover_actuators/build/lib/benrover_actuators/my_node.py -> /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages/benrover_actuators\n'}
+[9.624124] (benrover_actuators) StdoutLine: {'line': b'byte-compiling /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages/benrover_actuators/__init__.py to __init__.cpython-310.pyc\n'}
+[9.625102] (benrover_actuators) StdoutLine: {'line': b'byte-compiling /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages/benrover_actuators/my_node.py to my_node.cpython-310.pyc\n'}
+[9.627737] (benrover_actuators) StdoutLine: {'line': b'running install_data\n'}
+[9.628728] (benrover_actuators) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_actuators/share/ament_index\n'}
+[9.629402] (benrover_actuators) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_actuators/share/ament_index/resource_index\n'}
+[9.636978] (benrover_actuators) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_actuators/share/ament_index/resource_index/packages\n'}
+[9.637420] (benrover_actuators) StdoutLine: {'line': b'copying resource/benrover_actuators -> /home/elfriedkinzoun/rosws/install/benrover_actuators/share/ament_index/resource_index/packages\n'}
+[9.638111] (benrover_actuators) StdoutLine: {'line': b'copying package.xml -> /home/elfriedkinzoun/rosws/install/benrover_actuators/share/benrover_actuators\n'}
+[9.638318] (benrover_actuators) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.652424] (benrover_actuators) StdoutLine: {'line': b'Copying ../../build/benrover_actuators/benrover_actuators.egg-info to /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages/benrover_actuators-0.0.0-py3.10.egg-info\n'}
+[9.657519] (benrover_actuators) StdoutLine: {'line': b'running install_scripts\n'}
+[9.698282] (-) TimerEvent: {}
+[9.767535] (benrover_actuators) StdoutLine: {'line': b'Installing my_node script to /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/benrover_actuators\n'}
+[9.769451] (benrover_actuators) StdoutLine: {'line': b"writing list of installed files to '/home/elfriedkinzoun/rosws/build/benrover_actuators/install.log'\n"}
+[9.798759] (-) TimerEvent: {}
+[9.900811] (-) TimerEvent: {}
+[9.967383] (benrover_actuators) CommandEnded: {'returncode': 0}
+[10.001031] (-) TimerEvent: {}
+[10.105075] (-) TimerEvent: {}
+[10.206368] (-) TimerEvent: {}
+[10.265110] (benrover_actuators) JobEnded: {'identifier': 'benrover_actuators', 'rc': 0}
+[10.279425] (-) EventReactorShutdown: {}
