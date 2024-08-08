@@ -1,3 +1,6 @@
 source;share/benrover_actuators/hook/pythonpath.ps1
 source;share/benrover_actuators/hook/pythonpath.dsv
 source;share/benrover_actuators/hook/pythonpath.sh
+source;../../build/benrover_actuators/share/benrover_actuators/hook/pythonpath_develop.ps1
+source;../../build/benrover_actuators/share/benrover_actuators/hook/pythonpath_develop.dsv
+source;../../build/benrover_actuators/share/benrover_actuators/hook/pythonpath_develop.sh

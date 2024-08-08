@@ -1,14 +1,14 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
-from Adafruit_PCA9685 import PCA9685
+#from Adafruit_PCA9685 import PCA9685
 
 class ActuatorNode(Node):
     def __init__(self):
         super().__init__('actuator_node')
 
         # Configuration I2C et PCA9685
-        self.pwm = PCA9685(0x40)  # Adresse I2C par défaut, à modifier si nécessaire
+        #self.pwm = PCA9685(0x40)  # Adresse I2C par défaut, à modifier si nécessaire
         self.pwm.set_pwm_freq(60)  # Fréquence PWM pour servos (60Hz)
 
         # Canaux PCA9685 pour les servos (à adapter)

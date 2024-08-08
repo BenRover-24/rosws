@@ -1,0 +1,107 @@
+[0.000000] (-) TimerEvent: {}
+[0.000407] (benrover_actuators) JobQueued: {'identifier': 'benrover_actuators', 'dependencies': OrderedDict()}
+[0.000503] (benrover_actuators) JobStarted: {'identifier': 'benrover_actuators'}
+[0.093805] (-) TimerEvent: {}
+[0.195484] (-) TimerEvent: {}
+[0.303957] (-) TimerEvent: {}
+[0.406606] (-) TimerEvent: {}
+[0.507861] (-) TimerEvent: {}
+[0.610278] (-) TimerEvent: {}
+[0.712189] (-) TimerEvent: {}
+[0.814435] (-) TimerEvent: {}
+[0.915327] (-) TimerEvent: {}
+[1.017630] (-) TimerEvent: {}
+[1.119724] (-) TimerEvent: {}
+[1.221031] (-) TimerEvent: {}
+[1.323521] (-) TimerEvent: {}
+[1.424893] (-) TimerEvent: {}
+[1.526995] (-) TimerEvent: {}
+[1.628228] (-) TimerEvent: {}
+[1.732046] (-) TimerEvent: {}
+[1.832957] (-) TimerEvent: {}
+[1.935275] (-) TimerEvent: {}
+[2.036754] (-) TimerEvent: {}
+[2.139253] (-) TimerEvent: {}
+[2.240838] (-) TimerEvent: {}
+[2.342430] (-) TimerEvent: {}
+[2.444010] (-) TimerEvent: {}
+[2.545297] (-) TimerEvent: {}
+[2.647604] (-) TimerEvent: {}
+[2.749710] (-) TimerEvent: {}
+[2.850682] (-) TimerEvent: {}
+[2.952271] (-) TimerEvent: {}
+[3.053551] (-) TimerEvent: {}
+[3.154184] (-) TimerEvent: {}
+[3.255005] (-) TimerEvent: {}
+[3.356631] (-) TimerEvent: {}
+[3.457472] (-) TimerEvent: {}
+[3.561995] (-) TimerEvent: {}
+[3.664403] (-) TimerEvent: {}
+[3.765430] (-) TimerEvent: {}
+[3.867582] (-) TimerEvent: {}
+[3.968430] (-) TimerEvent: {}
+[4.072581] (-) TimerEvent: {}
+[4.173608] (-) TimerEvent: {}
+[4.274411] (-) TimerEvent: {}
+[4.375513] (-) TimerEvent: {}
+[4.476230] (-) TimerEvent: {}
+[4.571450] (benrover_actuators) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/elfriedkinzoun/rosws/build/benrover_actuators/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/home/elfriedkinzoun/rosws/build/benrover_actuators', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'elfriedkinzoun', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/rolling/opt/rviz_ogre_vendor/lib:/opt/ros/rolling/lib/x86_64-linux-gnu:/opt/ros/rolling/lib', 'HOME': '/home/elfriedkinzoun', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/elfriedkinzoun', 'DESKTOP_SESSION': 'zorin', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'zorin', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1503', 'MAVEN_HOME': '/usr/local/apache-maven-3.9.7', 'SYSTEMD_EXEC_PID': '1806', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '47825', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/elfriedkinzoun/rosws/install', 'ROS_DISTRO': 'rolling', 'LOGNAME': 'elfriedkinzoun', 'JOURNAL_STREAM': '8:32002', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'elfriedkinzoun', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'PATH': '/usr/local/apache-maven-3.9.7/bin:/home/elfriedkinzoun/anaconda3/bin:/home/elfriedkinzoun/anaconda3/condabin:/opt/ros/rolling/bin:/home/elfriedkinzoun/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/elfriedkinzoun/.bash_profile:/home/elfriedkinzoun/.local/bin', 'SESSION_MANAGER': 'local/elfriedkinzoun-HP-ENVY-15-Notebook-PC:@/tmp/.ICE-unix/1597,unix/elfriedkinzoun-HP-ENVY-15-Notebook-PC:/tmp/.ICE-unix/1597', 'INVOCATION_ID': '1b5c171dedc64adba19b576de1f957f2', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'zorin:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'zorin', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.KT16R2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/elfriedkinzoun/anaconda3/share/glib-2.0/schemas', 'ROS_DOMAIN_ID': '15', 'AMENT_PREFIX_PATH': '/home/elfriedkinzoun/rosws/install/benrover_actuators:/opt/ros/rolling', 'CONDA_PYTHON_EXE': '/home/elfriedkinzoun/anaconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:e9c54fa5-9c9d-4d62-9c34-316aa52ad54e', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'zorin', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/elfriedkinzoun/rosws/build/benrover_actuators', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-zorin:/etc/xdg', 'CONDA_EXE': '/home/elfriedkinzoun/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/zorin:/home/elfriedkinzoun/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'M2_HOME': '/usr/local/apache-maven-3.9.7', 'PYTHONPATH': '/home/elfriedkinzoun/rosws/build/benrover_actuators/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages:/home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages:/opt/ros/rolling/lib/python3.10/site-packages', 'CONDA_PREFIX': '/home/elfriedkinzoun/anaconda3', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[4.576887] (-) TimerEvent: {}
+[4.678887] (-) TimerEvent: {}
+[4.780076] (-) TimerEvent: {}
+[4.880910] (-) TimerEvent: {}
+[4.982839] (-) TimerEvent: {}
+[5.083896] (-) TimerEvent: {}
+[5.186361] (-) TimerEvent: {}
+[5.287236] (-) TimerEvent: {}
+[5.388132] (-) TimerEvent: {}
+[5.489896] (-) TimerEvent: {}
+[5.590633] (-) TimerEvent: {}
+[5.692054] (-) TimerEvent: {}
+[5.795213] (-) TimerEvent: {}
+[5.897631] (-) TimerEvent: {}
+[5.999103] (-) TimerEvent: {}
+[6.099934] (-) TimerEvent: {}
+[6.201296] (-) TimerEvent: {}
+[6.302414] (-) TimerEvent: {}
+[6.403012] (-) TimerEvent: {}
+[6.403608] (benrover_actuators) StdoutLine: {'line': b'running develop\n'}
+[6.417186] (benrover_actuators) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[6.419487] (benrover_actuators) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.503498] (-) TimerEvent: {}
+[6.605240] (-) TimerEvent: {}
+[6.707857] (-) TimerEvent: {}
+[6.808922] (-) TimerEvent: {}
+[6.832692] (benrover_actuators) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.4.0-ubuntu3-zorin1 is an invalid version and will not be supported in a future release\n'}
+[6.834570] (benrover_actuators) StderrLine: {'line': b'  warnings.warn(\n'}
+[6.908933] (-) TimerEvent: {}
+[7.010254] (-) TimerEvent: {}
+[7.112492] (-) TimerEvent: {}
+[7.214400] (-) TimerEvent: {}
+[7.315478] (-) TimerEvent: {}
+[7.418155] (-) TimerEvent: {}
+[7.519203] (-) TimerEvent: {}
+[7.620925] (-) TimerEvent: {}
+[7.686557] (benrover_actuators) StdoutLine: {'line': b'running egg_info\n'}
+[7.688913] (benrover_actuators) StdoutLine: {'line': b'writing benrover_actuators.egg-info/PKG-INFO\n'}
+[7.690345] (benrover_actuators) StdoutLine: {'line': b'writing dependency_links to benrover_actuators.egg-info/dependency_links.txt\n'}
+[7.693018] (benrover_actuators) StdoutLine: {'line': b'writing entry points to benrover_actuators.egg-info/entry_points.txt\n'}
+[7.696835] (benrover_actuators) StdoutLine: {'line': b'writing requirements to benrover_actuators.egg-info/requires.txt\n'}
+[7.698581] (benrover_actuators) StdoutLine: {'line': b'writing top-level names to benrover_actuators.egg-info/top_level.txt\n'}
+[7.705786] (benrover_actuators) StdoutLine: {'line': b"reading manifest file 'benrover_actuators.egg-info/SOURCES.txt'\n"}
+[7.711283] (benrover_actuators) StdoutLine: {'line': b"writing manifest file 'benrover_actuators.egg-info/SOURCES.txt'\n"}
+[7.720042] (benrover_actuators) StdoutLine: {'line': b'running build_ext\n'}
+[7.722629] (-) TimerEvent: {}
+[7.725263] (benrover_actuators) StdoutLine: {'line': b'Creating /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages/benrover-actuators.egg-link (link to .)\n'}
+[7.731111] (benrover_actuators) StdoutLine: {'line': b'Installing my_node script to /home/elfriedkinzoun/rosws/install/benrover_actuators/lib/benrover_actuators\n'}
+[7.732997] (benrover_actuators) StdoutLine: {'line': b'\n'}
+[7.736927] (benrover_actuators) StdoutLine: {'line': b'Installed /home/elfriedkinzoun/rosws/build/benrover_actuators\n'}
+[7.738577] (benrover_actuators) StdoutLine: {'line': b'running symlink_data\n'}
+[7.740460] (benrover_actuators) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_actuators/resource/benrover_actuators -> /home/elfriedkinzoun/rosws/install/benrover_actuators/share/ament_index/resource_index/packages\n'}
+[7.743422] (benrover_actuators) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_actuators/package.xml -> /home/elfriedkinzoun/rosws/install/benrover_actuators/share/benrover_actuators\n'}
+[7.823244] (-) TimerEvent: {}
+[7.929451] (-) TimerEvent: {}
+[8.014009] (benrover_actuators) CommandEnded: {'returncode': 0}
+[8.029415] (-) TimerEvent: {}
+[8.097939] (benrover_actuators) JobEnded: {'identifier': 'benrover_actuators', 'rc': 0}
+[8.099991] (-) EventReactorShutdown: {}

@@ -1,0 +1,10 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages",
+        "/opt/ros/rolling/lib/python3.10/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages",
+        "/opt/ros/rolling/lib/python3.10/site-packages"
+    ]
+}

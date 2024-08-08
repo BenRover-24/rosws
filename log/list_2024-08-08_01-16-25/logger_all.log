@@ -1,0 +1,66 @@
+[0.863s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/elfriedkinzoun/rosws']
+[0.863s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/elfriedkinzoun/rosws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x722b7f345b10>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x722b7f344d60>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x722b7f344d60>>)
+[2.988s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.989s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.989s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.989s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.989s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.989s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/elfriedkinzoun/rosws'
+[2.989s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws) by extensions ['ignore', 'ignore_ament_install']
+[2.990s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws) by extension 'ignore'
+[2.990s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws) by extension 'ignore_ament_install'
+[2.990s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws) by extensions ['colcon_pkg']
+[2.990s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws) by extension 'colcon_pkg'
+[2.990s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws) by extensions ['colcon_meta']
+[2.990s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws) by extension 'colcon_meta'
+[2.991s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws) by extensions ['ros']
+[2.991s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws) by extension 'ros'
+[3.036s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws) by extensions ['cmake', 'python']
+[3.037s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws) by extension 'cmake'
+[3.037s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws) by extension 'python'
+[3.037s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws) by extensions ['python_setup_py']
+[3.037s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws) by extension 'python_setup_py'
+[3.038s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/build) by extensions ['ignore', 'ignore_ament_install']
+[3.038s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/build) by extension 'ignore'
+[3.038s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/build) ignored
+[3.039s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/install) by extensions ['ignore', 'ignore_ament_install']
+[3.039s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/install) by extension 'ignore'
+[3.039s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/install) ignored
+[3.039s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/log) by extensions ['ignore', 'ignore_ament_install']
+[3.040s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/log) by extension 'ignore'
+[3.040s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/log) ignored
+[3.042s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src) by extensions ['ignore', 'ignore_ament_install']
+[3.043s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src) by extension 'ignore'
+[3.044s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src) by extension 'ignore_ament_install'
+[3.045s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src) by extensions ['colcon_pkg']
+[3.046s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src) by extension 'colcon_pkg'
+[3.046s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src) by extensions ['colcon_meta']
+[3.047s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src) by extension 'colcon_meta'
+[3.048s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src) by extensions ['ros']
+[3.048s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src) by extension 'ros'
+[3.049s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src) by extensions ['cmake', 'python']
+[3.050s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src) by extension 'cmake'
+[3.050s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src) by extension 'python'
+[3.050s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src) by extensions ['python_setup_py']
+[3.050s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src) by extension 'python_setup_py'
+[3.051s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src/benrover_actuators) by extensions ['ignore', 'ignore_ament_install']
+[3.052s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src/benrover_actuators) by extension 'ignore'
+[3.053s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src/benrover_actuators) by extension 'ignore_ament_install'
+[3.053s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src/benrover_actuators) by extensions ['colcon_pkg']
+[3.054s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src/benrover_actuators) by extension 'colcon_pkg'
+[3.054s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src/benrover_actuators) by extensions ['colcon_meta']
+[3.054s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src/benrover_actuators) by extension 'colcon_meta'
+[3.055s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src/benrover_actuators) by extensions ['ros']
+[3.055s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src/benrover_actuators) by extension 'ros'
+[3.063s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'/home/elfriedkinzoun/rosws/src/benrover_actuators': Error(s) in package '/home/elfriedkinzoun/rosws/src/benrover_actuators/package.xml':
+Error(s):
+- The manifest of package "benrover_actuators" (with format version 1) must not contain the following tags: exec_depend
+- Either update to a newer format or replace <exec_depend> tags with <run_depend> tags.
+[3.063s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src/benrover_actuators) by extensions ['cmake', 'python']
+[3.064s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src/benrover_actuators) by extension 'cmake'
+[3.064s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src/benrover_actuators) by extension 'python'
+[3.064s] DEBUG:colcon.colcon_core.package_identification:Python package in '/home/elfriedkinzoun/rosws/src/benrover_actuators' passes arguments to the setup() function which requires a different identification extension than 'python'
+[3.064s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src/benrover_actuators) by extensions ['python_setup_py']
+[3.065s] Level 1:colcon.colcon_core.package_identification:_identify(/home/elfriedkinzoun/rosws/src/benrover_actuators) by extension 'python_setup_py'
+[5.063s] DEBUG:colcon.colcon_core.package_identification:Package '/home/elfriedkinzoun/rosws/src/benrover_actuators' with type 'python' and name 'benrover_actuators'
+[5.063s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
