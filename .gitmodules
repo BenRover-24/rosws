@@ -1,0 +1,15 @@
+[submodule "src/remote_microcontroller"]
+	path = src/remote_microcontroller
+	url = https://github.com/openvmp/microcontroller.git
+[submodule "src/remote_actuator"]
+	path = src/remote_actuator
+	url = https://github.com/openvmp/microcontroller.git
+[submodule "src/remote_encoder"]
+	path = src/remote_encoder
+	url = https://github.com/openvmp/microcontroller.git
+[submodule "src/remote_serial"]
+	path = src/remote_serial
+	url = https://github.com/openvmp/microcontroller.git
+[submodule "src/remote_switch"]
+	path = src/remote_switch
+	url = https://github.com/openvmp/microcontroller.git
