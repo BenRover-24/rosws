@@ -1,0 +1,21 @@
+[0.903s] Invoking command in '/home/sergino/rosws/src/benrover_launch': PYTHONPATH=/home/sergino/rosws/build/benrover_launch/prefix_override:/home/sergino/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sergino/rosws/install/benrover_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_launch build --build-base /home/sergino/rosws/build/benrover_launch/build install --record /home/sergino/rosws/build/benrover_launch/install.log --single-version-externally-managed install_data
+[1.220s] running egg_info
+[1.221s] writing ../../build/benrover_launch/benrover_launch.egg-info/PKG-INFO
+[1.222s] writing dependency_links to ../../build/benrover_launch/benrover_launch.egg-info/dependency_links.txt
+[1.222s] writing entry points to ../../build/benrover_launch/benrover_launch.egg-info/entry_points.txt
+[1.223s] writing requirements to ../../build/benrover_launch/benrover_launch.egg-info/requires.txt
+[1.223s] writing top-level names to ../../build/benrover_launch/benrover_launch.egg-info/top_level.txt
+[1.226s] reading manifest file '../../build/benrover_launch/benrover_launch.egg-info/SOURCES.txt'
+[1.226s] adding license file 'LICENSE'
+[1.227s] writing manifest file '../../build/benrover_launch/benrover_launch.egg-info/SOURCES.txt'
+[1.228s] running build
+[1.228s] running build_py
+[1.228s] running install
+[1.229s] running install_lib
+[1.232s] running install_data
+[1.234s] running install_egg_info
+[1.237s] removing '/home/sergino/rosws/install/benrover_launch/lib/python3.10/site-packages/benrover_launch-0.0.0-py3.10.egg-info' (and everything under it)
+[1.245s] Copying ../../build/benrover_launch/benrover_launch.egg-info to /home/sergino/rosws/install/benrover_launch/lib/python3.10/site-packages/benrover_launch-0.0.0-py3.10.egg-info
+[1.245s] running install_scripts
+[1.274s] writing list of installed files to '/home/sergino/rosws/build/benrover_launch/install.log'
+[1.306s] Invoked command in '/home/sergino/rosws/src/benrover_launch' returned '0': PYTHONPATH=/home/sergino/rosws/build/benrover_launch/prefix_override:/home/sergino/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sergino/rosws/install/benrover_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_launch build --build-base /home/sergino/rosws/build/benrover_launch/build install --record /home/sergino/rosws/build/benrover_launch/install.log --single-version-externally-managed install_data

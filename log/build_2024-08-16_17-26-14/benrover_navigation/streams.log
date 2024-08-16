@@ -1,0 +1,21 @@
+[0.875s] Invoking command in '/home/sergino/rosws/src/benrover_navigation': PYTHONPATH=/home/sergino/rosws/build/benrover_navigation/prefix_override:/home/sergino/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sergino/rosws/install/benrover_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_navigation build --build-base /home/sergino/rosws/build/benrover_navigation/build install --record /home/sergino/rosws/build/benrover_navigation/install.log --single-version-externally-managed install_data
+[1.194s] running egg_info
+[1.195s] writing ../../build/benrover_navigation/benrover_navigation.egg-info/PKG-INFO
+[1.195s] writing dependency_links to ../../build/benrover_navigation/benrover_navigation.egg-info/dependency_links.txt
+[1.195s] writing entry points to ../../build/benrover_navigation/benrover_navigation.egg-info/entry_points.txt
+[1.196s] writing requirements to ../../build/benrover_navigation/benrover_navigation.egg-info/requires.txt
+[1.196s] writing top-level names to ../../build/benrover_navigation/benrover_navigation.egg-info/top_level.txt
+[1.199s] reading manifest file '../../build/benrover_navigation/benrover_navigation.egg-info/SOURCES.txt'
+[1.200s] writing manifest file '../../build/benrover_navigation/benrover_navigation.egg-info/SOURCES.txt'
+[1.200s] running build
+[1.200s] running build_py
+[1.201s] running install
+[1.202s] running install_lib
+[1.204s] running install_data
+[1.204s] running install_egg_info
+[1.206s] removing '/home/sergino/rosws/install/benrover_navigation/lib/python3.10/site-packages/benrover_navigation-0.0.0-py3.10.egg-info' (and everything under it)
+[1.206s] Copying ../../build/benrover_navigation/benrover_navigation.egg-info to /home/sergino/rosws/install/benrover_navigation/lib/python3.10/site-packages/benrover_navigation-0.0.0-py3.10.egg-info
+[1.210s] running install_scripts
+[1.242s] Installing benrover_navigation script to /home/sergino/rosws/install/benrover_navigation/lib/benrover_navigation
+[1.242s] writing list of installed files to '/home/sergino/rosws/build/benrover_navigation/install.log'
+[1.275s] Invoked command in '/home/sergino/rosws/src/benrover_navigation' returned '0': PYTHONPATH=/home/sergino/rosws/build/benrover_navigation/prefix_override:/home/sergino/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sergino/rosws/install/benrover_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_navigation build --build-base /home/sergino/rosws/build/benrover_navigation/build install --record /home/sergino/rosws/build/benrover_navigation/install.log --single-version-externally-managed install_data

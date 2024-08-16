@@ -1,0 +1,48 @@
+[0.000000] (-) TimerEvent: {}
+[0.001055] (-) JobUnselected: {'identifier': 'benrover_launch'}
+[0.001200] (-) JobUnselected: {'identifier': 'benrover_sensors'}
+[0.001258] (-) JobUnselected: {'identifier': 'remote_actuator'}
+[0.001313] (-) JobUnselected: {'identifier': 'remote_encoder'}
+[0.001419] (-) JobUnselected: {'identifier': 'remote_microcontroller'}
+[0.001538] (-) JobUnselected: {'identifier': 'remote_serial'}
+[0.001564] (-) JobUnselected: {'identifier': 'remote_switch'}
+[0.001670] (benrover_navigation) JobQueued: {'identifier': 'benrover_navigation', 'dependencies': OrderedDict()}
+[0.001696] (benrover_navigation) JobStarted: {'identifier': 'benrover_navigation'}
+[0.097930] (-) TimerEvent: {}
+[0.198393] (-) TimerEvent: {}
+[0.298822] (-) TimerEvent: {}
+[0.399243] (-) TimerEvent: {}
+[0.499839] (-) TimerEvent: {}
+[0.600170] (-) TimerEvent: {}
+[0.700647] (-) TimerEvent: {}
+[0.801075] (-) TimerEvent: {}
+[0.865290] (benrover_navigation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/benrover_navigation', 'build', '--build-base', '/home/sergino/rosws/build/benrover_navigation/build', 'install', '--record', '/home/sergino/rosws/build/benrover_navigation/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sergino/rosws/src/benrover_navigation', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sergino', 'GIT_ASKPASS': '/home/sergino/.vscode-server/bin/f1e16e1e6214d7c44d078b1f0607b2388f29d729/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/sergino', 'TERM_PROGRAM_VERSION': '1.91.1', 'NVM_BIN': '/home/sergino/.nvm/versions/node/v18.17.0/bin', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5db0a54c-097d-473c-ac73-6da0d6f64ae8.sock', 'NVM_INC': '/home/sergino/.nvm/versions/node/v18.17.0/include/node', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/sergino/.vscode-server/bin/f1e16e1e6214d7c44d078b1f0607b2388f29d729/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/sergino/.vscode-server/bin/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu', 'NVM_DIR': '/home/sergino/.nvm', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'sergino', 'NAME': 'DESKTOP-FIVQKQV', 'WSL_INTEROP': '/run/WSL/591_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/home/sergino/.local/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/sergino/.vscode-server/bin/f1e16e1e6214d7c44d078b1f0607b2388f29d729/bin/remote-cli:/home/sergino/.local/bin:/home/sergino/.cargo/bin:/home/sergino/.nvm/versions/node/v18.17.0/bin:/home/sergino/.cabal/bin:/home/sergino/.ghcup/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/user/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/user/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/user/AppData/Local/Keybase/:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-df5a76f65a.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/sergino/rosws/build/benrover_navigation', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sergino/rosws/build/benrover_navigation/prefix_override:/home/sergino/.local/lib/python3.10/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/sergino/rosws/install/benrover_navigation/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}, 'shell': False}
+[0.901224] (-) TimerEvent: {}
+[1.001798] (-) TimerEvent: {}
+[1.102222] (-) TimerEvent: {}
+[1.185990] (benrover_navigation) StdoutLine: {'line': b'running egg_info\n'}
+[1.187070] (benrover_navigation) StdoutLine: {'line': b'writing ../../build/benrover_navigation/benrover_navigation.egg-info/PKG-INFO\n'}
+[1.187475] (benrover_navigation) StdoutLine: {'line': b'writing dependency_links to ../../build/benrover_navigation/benrover_navigation.egg-info/dependency_links.txt\n'}
+[1.187785] (benrover_navigation) StdoutLine: {'line': b'writing entry points to ../../build/benrover_navigation/benrover_navigation.egg-info/entry_points.txt\n'}
+[1.188140] (benrover_navigation) StdoutLine: {'line': b'writing requirements to ../../build/benrover_navigation/benrover_navigation.egg-info/requires.txt\n'}
+[1.188243] (benrover_navigation) StdoutLine: {'line': b'writing top-level names to ../../build/benrover_navigation/benrover_navigation.egg-info/top_level.txt\n'}
+[1.192376] (benrover_navigation) StdoutLine: {'line': b"reading manifest file '../../build/benrover_navigation/benrover_navigation.egg-info/SOURCES.txt'\n"}
+[1.193902] (benrover_navigation) StdoutLine: {'line': b"writing manifest file '../../build/benrover_navigation/benrover_navigation.egg-info/SOURCES.txt'\n"}
+[1.194372] (benrover_navigation) StdoutLine: {'line': b'running build\n'}
+[1.194489] (benrover_navigation) StdoutLine: {'line': b'running build_py\n'}
+[1.195163] (benrover_navigation) StdoutLine: {'line': b'copying benrover_navigation/navigation.py -> /home/sergino/rosws/build/benrover_navigation/build/lib/benrover_navigation\n'}
+[1.195637] (benrover_navigation) StdoutLine: {'line': b'running install\n'}
+[1.196549] (benrover_navigation) StdoutLine: {'line': b'running install_lib\n'}
+[1.198197] (benrover_navigation) StdoutLine: {'line': b'copying /home/sergino/rosws/build/benrover_navigation/build/lib/benrover_navigation/navigation.py -> /home/sergino/rosws/install/benrover_navigation/lib/python3.10/site-packages/benrover_navigation\n'}
+[1.199067] (benrover_navigation) StdoutLine: {'line': b'byte-compiling /home/sergino/rosws/install/benrover_navigation/lib/python3.10/site-packages/benrover_navigation/navigation.py to navigation.cpython-310.pyc\n'}
+[1.201036] (benrover_navigation) StdoutLine: {'line': b'running install_data\n'}
+[1.201446] (benrover_navigation) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.202414] (-) TimerEvent: {}
+[1.203957] (benrover_navigation) StdoutLine: {'line': b"removing '/home/sergino/rosws/install/benrover_navigation/lib/python3.10/site-packages/benrover_navigation-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.204676] (benrover_navigation) StdoutLine: {'line': b'Copying ../../build/benrover_navigation/benrover_navigation.egg-info to /home/sergino/rosws/install/benrover_navigation/lib/python3.10/site-packages/benrover_navigation-0.0.0-py3.10.egg-info\n'}
+[1.205959] (benrover_navigation) StdoutLine: {'line': b'running install_scripts\n'}
+[1.239231] (benrover_navigation) StdoutLine: {'line': b'Installing navigation script to /home/sergino/rosws/install/benrover_navigation/lib/benrover_navigation\n'}
+[1.240389] (benrover_navigation) StdoutLine: {'line': b"writing list of installed files to '/home/sergino/rosws/build/benrover_navigation/install.log'\n"}
+[1.273754] (benrover_navigation) CommandEnded: {'returncode': 0}
+[1.287811] (benrover_navigation) JobEnded: {'identifier': 'benrover_navigation', 'rc': 0}
+[1.289880] (-) EventReactorShutdown: {}
