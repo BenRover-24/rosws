@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "sensor_node = benrover_sensors.sensor_node:main"
         ],
     },
 )
