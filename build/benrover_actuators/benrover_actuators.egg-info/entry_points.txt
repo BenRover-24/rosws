@@ -1,0 +1,4 @@
+[console_scripts]
+my_node = benrover_actuators.benrover_actuators:main
+servo_control_node = benrover_actuators.servo_control_node:main
+

@@ -1,0 +1,20 @@
+[3.829s] Invoking command in '/home/elfriedkinzoun/rosws/src/benrover_sensors': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_sensors build --build-base /home/elfriedkinzoun/rosws/build/benrover_sensors/build install --record /home/elfriedkinzoun/rosws/build/benrover_sensors/install.log --single-version-externally-managed install_data
+[4.671s] running egg_info
+[4.673s] writing ../../build/benrover_sensors/benrover_sensors.egg-info/PKG-INFO
+[4.692s] writing dependency_links to ../../build/benrover_sensors/benrover_sensors.egg-info/dependency_links.txt
+[4.692s] writing entry points to ../../build/benrover_sensors/benrover_sensors.egg-info/entry_points.txt
+[4.692s] writing requirements to ../../build/benrover_sensors/benrover_sensors.egg-info/requires.txt
+[4.692s] writing top-level names to ../../build/benrover_sensors/benrover_sensors.egg-info/top_level.txt
+[4.699s] reading manifest file '../../build/benrover_sensors/benrover_sensors.egg-info/SOURCES.txt'
+[4.714s] writing manifest file '../../build/benrover_sensors/benrover_sensors.egg-info/SOURCES.txt'
+[4.714s] running build
+[4.715s] running build_py
+[4.715s] running install
+[4.716s] running install_lib
+[4.730s] running install_data
+[4.749s] running install_egg_info
+[4.753s] removing '/home/elfriedkinzoun/rosws/install/benrover_sensors/lib/python3.10/site-packages/benrover_sensors-0.0.0-py3.10.egg-info' (and everything under it)
+[4.762s] Copying ../../build/benrover_sensors/benrover_sensors.egg-info to /home/elfriedkinzoun/rosws/install/benrover_sensors/lib/python3.10/site-packages/benrover_sensors-0.0.0-py3.10.egg-info
+[4.775s] running install_scripts
+[4.846s] writing list of installed files to '/home/elfriedkinzoun/rosws/build/benrover_sensors/install.log'
+[4.935s] Invoked command in '/home/elfriedkinzoun/rosws/src/benrover_sensors' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_sensors build --build-base /home/elfriedkinzoun/rosws/build/benrover_sensors/build install --record /home/elfriedkinzoun/rosws/build/benrover_sensors/install.log --single-version-externally-managed install_data

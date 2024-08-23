@@ -1,0 +1,22 @@
+[0.924s] Invoking command in '/home/elfriedkinzoun/rosws/build/benrover_actuator': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_actuator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/elfriedkinzoun/rosws/build/benrover_actuator/build --no-deps symlink_data
+[1.337s] running develop
+[1.337s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.337s]   warnings.warn(
+[1.430s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.4.0-ubuntu3-zorin1 is an invalid version and will not be supported in a future release
+[1.430s]   warnings.warn(
+[1.603s] running egg_info
+[1.603s] writing benrover_actuator.egg-info/PKG-INFO
+[1.604s] writing dependency_links to benrover_actuator.egg-info/dependency_links.txt
+[1.604s] writing entry points to benrover_actuator.egg-info/entry_points.txt
+[1.604s] writing requirements to benrover_actuator.egg-info/requires.txt
+[1.604s] writing top-level names to benrover_actuator.egg-info/top_level.txt
+[1.608s] reading manifest file 'benrover_actuator.egg-info/SOURCES.txt'
+[1.610s] writing manifest file 'benrover_actuator.egg-info/SOURCES.txt'
+[1.612s] running build_ext
+[1.612s] Creating /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover-actuator.egg-link (link to .)
+[1.614s] Installing my_node script to /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/${PROJECT_NAME}
+[1.614s] Installing servo_control_node script to /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/${PROJECT_NAME}
+[1.614s] 
+[1.614s] Installed /home/elfriedkinzoun/rosws/build/benrover_actuator
+[1.615s] running symlink_data
+[1.673s] Invoked command in '/home/elfriedkinzoun/rosws/build/benrover_actuator' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_actuator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/elfriedkinzoun/rosws/build/benrover_actuator/build --no-deps symlink_data

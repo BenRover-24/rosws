@@ -1,0 +1,279 @@
+[0.151s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.151s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x794807e38970>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x794807e38460>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x794807e38460>>)
+[0.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.386s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.387s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.387s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/elfriedkinzoun/rosws'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.387s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.388s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_actuator) by extensions ['ignore', 'ignore_ament_install']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_actuator) by extension 'ignore'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_actuator) by extension 'ignore_ament_install'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_actuator) by extensions ['colcon_pkg']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_actuator) by extension 'colcon_pkg'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_actuator) by extensions ['colcon_meta']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_actuator) by extension 'colcon_meta'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_actuator) by extensions ['ros']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_actuator) by extension 'ros'
+[0.407s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'src/benrover_actuator': Error(s) in package 'src/benrover_actuator/package.xml':
+The manifest contains invalid XML:
+not well-formed (invalid token): line 22, column 47
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_actuator) by extensions ['cmake', 'python']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_actuator) by extension 'cmake'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_actuator) by extension 'python'
+[0.408s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/benrover_actuator' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_actuator) by extensions ['python_setup_py']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_actuator) by extension 'python_setup_py'
+[0.808s] DEBUG:colcon.colcon_core.package_identification:Package 'src/benrover_actuator' with type 'python' and name 'benrover_actuator'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_assembly) by extensions ['ignore', 'ignore_ament_install']
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_assembly) by extension 'ignore'
+[0.808s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_assembly) by extension 'ignore_ament_install'
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_assembly) by extensions ['colcon_pkg']
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_assembly) by extension 'colcon_pkg'
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_assembly) by extensions ['colcon_meta']
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_assembly) by extension 'colcon_meta'
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_assembly) by extensions ['ros']
+[0.809s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_assembly) by extension 'ros'
+[0.812s] DEBUG:colcon.colcon_core.package_identification:Package 'src/benrover_assembly' with type 'ros.ament_python' and name 'benrover_assembly'
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_navigation) by extension 'ignore'
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_navigation) by extension 'ignore_ament_install'
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_navigation) by extensions ['colcon_pkg']
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_navigation) by extension 'colcon_pkg'
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_navigation) by extensions ['colcon_meta']
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_navigation) by extension 'colcon_meta'
+[0.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_navigation) by extensions ['ros']
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_navigation) by extension 'ros'
+[0.813s] DEBUG:colcon.colcon_core.package_identification:Package 'src/benrover_navigation' with type 'ros.ament_python' and name 'benrover_navigation'
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_sensors) by extensions ['ignore', 'ignore_ament_install']
+[0.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_sensors) by extension 'ignore'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_sensors) by extension 'ignore_ament_install'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_sensors) by extensions ['colcon_pkg']
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_sensors) by extension 'colcon_pkg'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_sensors) by extensions ['colcon_meta']
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_sensors) by extension 'colcon_meta'
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_sensors) by extensions ['ros']
+[0.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/benrover_sensors) by extension 'ros'
+[0.815s] DEBUG:colcon.colcon_core.package_identification:Package 'src/benrover_sensors' with type 'ros.ament_python' and name 'benrover_sensors'
+[0.815s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.815s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.815s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.815s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.815s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.842s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.842s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.846s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/elfriedkinzoun/rosws/install
+[0.848s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 278 installed packages in /opt/ros/humble
+[0.864s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'benrover_actuator' build argument 'cmake_args' from command line to 'None'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'benrover_actuator' build argument 'cmake_target' from command line to 'None'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'benrover_actuator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'benrover_actuator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'benrover_actuator' build argument 'cmake_clean_first' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'benrover_actuator' build argument 'cmake_force_configure' from command line to 'False'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'benrover_actuator' build argument 'ament_cmake_args' from command line to 'None'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'benrover_actuator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.918s] Level 5:colcon.colcon_core.verb:set package 'benrover_actuator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.919s] DEBUG:colcon.colcon_core.verb:Building package 'benrover_actuator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/elfriedkinzoun/rosws/build/benrover_actuator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/elfriedkinzoun/rosws/install/benrover_actuator', 'merge_install': False, 'path': '/home/elfriedkinzoun/rosws/src/benrover_actuator', 'symlink_install': False, 'test_result_base': None}
+[0.919s] Level 5:colcon.colcon_core.verb:set package 'benrover_assembly' build argument 'cmake_args' from command line to 'None'
+[0.919s] Level 5:colcon.colcon_core.verb:set package 'benrover_assembly' build argument 'cmake_target' from command line to 'None'
+[0.919s] Level 5:colcon.colcon_core.verb:set package 'benrover_assembly' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.919s] Level 5:colcon.colcon_core.verb:set package 'benrover_assembly' build argument 'cmake_clean_cache' from command line to 'False'
+[0.919s] Level 5:colcon.colcon_core.verb:set package 'benrover_assembly' build argument 'cmake_clean_first' from command line to 'False'
+[0.919s] Level 5:colcon.colcon_core.verb:set package 'benrover_assembly' build argument 'cmake_force_configure' from command line to 'False'
+[0.919s] Level 5:colcon.colcon_core.verb:set package 'benrover_assembly' build argument 'ament_cmake_args' from command line to 'None'
+[0.919s] Level 5:colcon.colcon_core.verb:set package 'benrover_assembly' build argument 'catkin_cmake_args' from command line to 'None'
+[0.919s] Level 5:colcon.colcon_core.verb:set package 'benrover_assembly' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.919s] DEBUG:colcon.colcon_core.verb:Building package 'benrover_assembly' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/elfriedkinzoun/rosws/build/benrover_assembly', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/elfriedkinzoun/rosws/install/benrover_assembly', 'merge_install': False, 'path': '/home/elfriedkinzoun/rosws/src/benrover_assembly', 'symlink_install': False, 'test_result_base': None}
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'benrover_navigation' build argument 'cmake_args' from command line to 'None'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'benrover_navigation' build argument 'cmake_target' from command line to 'None'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'benrover_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'benrover_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'benrover_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'benrover_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'benrover_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'benrover_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.920s] Level 5:colcon.colcon_core.verb:set package 'benrover_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.920s] DEBUG:colcon.colcon_core.verb:Building package 'benrover_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/elfriedkinzoun/rosws/build/benrover_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/elfriedkinzoun/rosws/install/benrover_navigation', 'merge_install': False, 'path': '/home/elfriedkinzoun/rosws/src/benrover_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.921s] Level 5:colcon.colcon_core.verb:set package 'benrover_sensors' build argument 'cmake_args' from command line to 'None'
+[0.921s] Level 5:colcon.colcon_core.verb:set package 'benrover_sensors' build argument 'cmake_target' from command line to 'None'
+[0.921s] Level 5:colcon.colcon_core.verb:set package 'benrover_sensors' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.921s] Level 5:colcon.colcon_core.verb:set package 'benrover_sensors' build argument 'cmake_clean_cache' from command line to 'False'
+[0.921s] Level 5:colcon.colcon_core.verb:set package 'benrover_sensors' build argument 'cmake_clean_first' from command line to 'False'
+[0.921s] Level 5:colcon.colcon_core.verb:set package 'benrover_sensors' build argument 'cmake_force_configure' from command line to 'False'
+[0.921s] Level 5:colcon.colcon_core.verb:set package 'benrover_sensors' build argument 'ament_cmake_args' from command line to 'None'
+[0.921s] Level 5:colcon.colcon_core.verb:set package 'benrover_sensors' build argument 'catkin_cmake_args' from command line to 'None'
+[0.921s] Level 5:colcon.colcon_core.verb:set package 'benrover_sensors' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.921s] DEBUG:colcon.colcon_core.verb:Building package 'benrover_sensors' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/elfriedkinzoun/rosws/build/benrover_sensors', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/elfriedkinzoun/rosws/install/benrover_sensors', 'merge_install': False, 'path': '/home/elfriedkinzoun/rosws/src/benrover_sensors', 'symlink_install': False, 'test_result_base': None}
+[0.921s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.922s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.923s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/elfriedkinzoun/rosws/src/benrover_actuator'
+[0.926s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.926s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.926s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.931s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/elfriedkinzoun/rosws/src/benrover_assembly' with build type 'ament_python'
+[0.931s] Level 1:colcon.colcon_core.shell:create_environment_hook('benrover_assembly', 'ament_prefix_path')
+[0.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/hook/ament_prefix_path.ps1'
+[0.932s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/hook/ament_prefix_path.dsv'
+[0.933s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/hook/ament_prefix_path.sh'
+[0.934s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.934s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.942s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/elfriedkinzoun/rosws/src/benrover_navigation' with build type 'ament_python'
+[0.943s] Level 1:colcon.colcon_core.shell:create_environment_hook('benrover_navigation', 'ament_prefix_path')
+[0.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation/hook/ament_prefix_path.ps1'
+[0.945s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation/hook/ament_prefix_path.dsv'
+[0.946s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation/hook/ament_prefix_path.sh'
+[0.947s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.947s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.953s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/elfriedkinzoun/rosws/src/benrover_sensors' with build type 'ament_python'
+[0.953s] Level 1:colcon.colcon_core.shell:create_environment_hook('benrover_sensors', 'ament_prefix_path')
+[0.954s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/elfriedkinzoun/rosws/install/benrover_sensors/share/benrover_sensors/hook/ament_prefix_path.ps1'
+[0.955s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/elfriedkinzoun/rosws/install/benrover_sensors/share/benrover_sensors/hook/ament_prefix_path.dsv'
+[0.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/elfriedkinzoun/rosws/install/benrover_sensors/share/benrover_sensors/hook/ament_prefix_path.sh'
+[0.957s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.958s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.824s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/elfriedkinzoun/rosws/src/benrover_assembly'
+[1.825s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.825s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.250s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/elfriedkinzoun/rosws/src/benrover_navigation'
+[2.251s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.251s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.655s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/elfriedkinzoun/rosws/src/benrover_sensors'
+[2.656s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.657s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/elfriedkinzoun/rosws/src/benrover_actuator': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_actuator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_actuator build --build-base /home/elfriedkinzoun/rosws/build/benrover_actuator/build install --record /home/elfriedkinzoun/rosws/build/benrover_actuator/install.log --single-version-externally-managed install_data
+[3.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/elfriedkinzoun/rosws/src/benrover_navigation': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_navigation build --build-base /home/elfriedkinzoun/rosws/build/benrover_navigation/build install --record /home/elfriedkinzoun/rosws/build/benrover_navigation/install.log --single-version-externally-managed install_data
+[3.709s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/elfriedkinzoun/rosws/src/benrover_sensors': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_sensors build --build-base /home/elfriedkinzoun/rosws/build/benrover_sensors/build install --record /home/elfriedkinzoun/rosws/build/benrover_sensors/install.log --single-version-externally-managed install_data
+[3.752s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_actuator' for CMake module files
+[3.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/elfriedkinzoun/rosws/src/benrover_actuator' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_actuator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_actuator build --build-base /home/elfriedkinzoun/rosws/build/benrover_actuator/build install --record /home/elfriedkinzoun/rosws/build/benrover_actuator/install.log --single-version-externally-managed install_data
+[3.754s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_actuator' for CMake config files
+[3.755s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_actuator/lib'
+[3.756s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_actuator/bin'
+[3.756s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_actuator/lib/pkgconfig/benrover_actuator.pc'
+[3.757s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages'
+[3.757s] Level 1:colcon.colcon_core.shell:create_environment_hook('benrover_actuator', 'pythonpath')
+[3.757s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/elfriedkinzoun/rosws/install/benrover_actuator/share/benrover_actuator/hook/pythonpath.ps1'
+[3.758s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/elfriedkinzoun/rosws/install/benrover_actuator/share/benrover_actuator/hook/pythonpath.dsv'
+[3.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/elfriedkinzoun/rosws/install/benrover_actuator/share/benrover_actuator/hook/pythonpath.sh'
+[3.760s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_actuator/bin'
+[3.760s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(benrover_actuator)
+[3.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_actuator/share/benrover_actuator/package.ps1'
+[3.776s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/elfriedkinzoun/rosws/install/benrover_actuator/share/benrover_actuator/package.dsv'
+[3.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_actuator/share/benrover_actuator/package.sh'
+[3.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_actuator/share/benrover_actuator/package.bash'
+[3.784s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_actuator/share/benrover_actuator/package.zsh'
+[3.785s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/elfriedkinzoun/rosws/install/benrover_actuator/share/colcon-core/packages/benrover_actuator)
+[3.844s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/elfriedkinzoun/rosws/src/benrover_assembly': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_assembly/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_assembly build --build-base /home/elfriedkinzoun/rosws/build/benrover_assembly/build install --record /home/elfriedkinzoun/rosws/build/benrover_assembly/install.log --single-version-externally-managed install_data
+[4.374s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_navigation' for CMake module files
+[4.375s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/elfriedkinzoun/rosws/src/benrover_navigation' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_navigation build --build-base /home/elfriedkinzoun/rosws/build/benrover_navigation/build install --record /home/elfriedkinzoun/rosws/build/benrover_navigation/install.log --single-version-externally-managed install_data
+[4.376s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_navigation' for CMake config files
+[4.377s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_navigation/lib'
+[4.378s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_navigation/bin'
+[4.378s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_navigation/lib/pkgconfig/benrover_navigation.pc'
+[4.378s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages'
+[4.378s] Level 1:colcon.colcon_core.shell:create_environment_hook('benrover_navigation', 'pythonpath')
+[4.379s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation/hook/pythonpath.ps1'
+[4.380s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation/hook/pythonpath.dsv'
+[4.380s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation/hook/pythonpath.sh'
+[4.382s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_navigation/bin'
+[4.382s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(benrover_navigation)
+[4.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation/package.ps1'
+[4.385s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation/package.dsv'
+[4.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation/package.sh'
+[4.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation/package.bash'
+[4.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation/package.zsh'
+[4.392s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/elfriedkinzoun/rosws/install/benrover_navigation/share/colcon-core/packages/benrover_navigation)
+[4.452s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_sensors' for CMake module files
+[4.453s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/elfriedkinzoun/rosws/src/benrover_sensors' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_sensors/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_sensors build --build-base /home/elfriedkinzoun/rosws/build/benrover_sensors/build install --record /home/elfriedkinzoun/rosws/build/benrover_sensors/install.log --single-version-externally-managed install_data
+[4.456s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_sensors' for CMake config files
+[4.460s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_sensors/lib'
+[4.460s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_sensors/bin'
+[4.460s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_sensors/lib/pkgconfig/benrover_sensors.pc'
+[4.461s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_sensors/lib/python3.10/site-packages'
+[4.461s] Level 1:colcon.colcon_core.shell:create_environment_hook('benrover_sensors', 'pythonpath')
+[4.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/elfriedkinzoun/rosws/install/benrover_sensors/share/benrover_sensors/hook/pythonpath.ps1'
+[4.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/elfriedkinzoun/rosws/install/benrover_sensors/share/benrover_sensors/hook/pythonpath.dsv'
+[4.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/elfriedkinzoun/rosws/install/benrover_sensors/share/benrover_sensors/hook/pythonpath.sh'
+[4.465s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_sensors/bin'
+[4.466s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(benrover_sensors)
+[4.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_sensors/share/benrover_sensors/package.ps1'
+[4.469s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/elfriedkinzoun/rosws/install/benrover_sensors/share/benrover_sensors/package.dsv'
+[4.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_sensors/share/benrover_sensors/package.sh'
+[4.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_sensors/share/benrover_sensors/package.bash'
+[4.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_sensors/share/benrover_sensors/package.zsh'
+[4.475s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/elfriedkinzoun/rosws/install/benrover_sensors/share/colcon-core/packages/benrover_sensors)
+[4.585s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_assembly' for CMake module files
+[4.586s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/elfriedkinzoun/rosws/src/benrover_assembly' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_assembly/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_assembly build --build-base /home/elfriedkinzoun/rosws/build/benrover_assembly/build install --record /home/elfriedkinzoun/rosws/build/benrover_assembly/install.log --single-version-externally-managed install_data
+[4.587s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_assembly' for CMake config files
+[4.587s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_assembly/lib'
+[4.588s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_assembly/bin'
+[4.588s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_assembly/lib/pkgconfig/benrover_assembly.pc'
+[4.588s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages'
+[4.588s] Level 1:colcon.colcon_core.shell:create_environment_hook('benrover_assembly', 'pythonpath')
+[4.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/hook/pythonpath.ps1'
+[4.589s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/hook/pythonpath.dsv'
+[4.590s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/hook/pythonpath.sh'
+[4.591s] Level 1:colcon.colcon_core.environment:checking '/home/elfriedkinzoun/rosws/install/benrover_assembly/bin'
+[4.592s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(benrover_assembly)
+[4.592s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/package.ps1'
+[4.593s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/package.dsv'
+[4.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/package.sh'
+[4.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/package.bash'
+[4.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/package.zsh'
+[4.596s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/elfriedkinzoun/rosws/install/benrover_assembly/share/colcon-core/packages/benrover_assembly)
+[4.597s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.599s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.599s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.600s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.609s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.609s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.609s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.645s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.646s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/elfriedkinzoun/rosws/install/local_setup.ps1'
+[4.649s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/elfriedkinzoun/rosws/install/_local_setup_util_ps1.py'
+[4.653s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/elfriedkinzoun/rosws/install/setup.ps1'
+[4.658s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/elfriedkinzoun/rosws/install/local_setup.sh'
+[4.663s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/elfriedkinzoun/rosws/install/_local_setup_util_sh.py'
+[4.674s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/elfriedkinzoun/rosws/install/setup.sh'
+[4.680s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/elfriedkinzoun/rosws/install/local_setup.bash'
+[4.685s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/elfriedkinzoun/rosws/install/setup.bash'
+[4.688s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/elfriedkinzoun/rosws/install/local_setup.zsh'
+[4.689s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/elfriedkinzoun/rosws/install/setup.zsh'

@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/benrover_actuator/benrover_actuator.egg-info
+writing ../../build/benrover_actuator/benrover_actuator.egg-info/PKG-INFO
+writing dependency_links to ../../build/benrover_actuator/benrover_actuator.egg-info/dependency_links.txt
+writing entry points to ../../build/benrover_actuator/benrover_actuator.egg-info/entry_points.txt
+writing requirements to ../../build/benrover_actuator/benrover_actuator.egg-info/requires.txt
+writing top-level names to ../../build/benrover_actuator/benrover_actuator.egg-info/top_level.txt
+writing manifest file '../../build/benrover_actuator/benrover_actuator.egg-info/SOURCES.txt'
+reading manifest file '../../build/benrover_actuator/benrover_actuator.egg-info/SOURCES.txt'
+writing manifest file '../../build/benrover_actuator/benrover_actuator.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/elfriedkinzoun/rosws/build/benrover_actuator/build
+creating /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib
+creating /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib/benrover_actuator
+copying benrover_actuator/__init__.py -> /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib/benrover_actuator
+running install
+running install_lib
+creating /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator
+copying /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib/benrover_actuator/__init__.py -> /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator
+byte-compiling /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/elfriedkinzoun/rosws/install/benrover_actuator/share/ament_index
+creating /home/elfriedkinzoun/rosws/install/benrover_actuator/share/ament_index/resource_index
+creating /home/elfriedkinzoun/rosws/install/benrover_actuator/share/ament_index/resource_index/packages
+copying resource/benrover_actuator -> /home/elfriedkinzoun/rosws/install/benrover_actuator/share/ament_index/resource_index/packages
+copying package.xml -> /home/elfriedkinzoun/rosws/install/benrover_actuator/share/benrover_actuator
+running install_egg_info
+Copying ../../build/benrover_actuator/benrover_actuator.egg-info to /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/elfriedkinzoun/rosws/build/benrover_actuator/install.log'

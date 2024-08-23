@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot name="benrover_assembly">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.000724079989110685 -0.00147552228998236 0.134573181470297" rpy="0 0 0" />
+      <mass value="7.14396598530441" />
+      <inertia ixx="0.0292193039855911" ixy="5.39397843206637E-06" ixz="-1.14173620758502E-07" iyy="0.0198239346046229" iyz="4.05897534548459E-05" izz="0.0330653790278176" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/base_link.STL" /> 
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/base_link.STL" /> 
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="Stepper_Link">
+    <inertial>
+      <origin xyz="-0.012842 0.014002 0.10656" rpy="0 0 0" />
+      <mass value="0.3385" />
+      <inertia ixx="0.00030812" ixy="-1.2E-05" ixz="-3.9059E-06" iyy="0.00066559" iyz="4.3019E-05" izz="0.00076628" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Stepper_Link.STL" /> 
+      </geometry>
+      <material name="">
+        <color rgba="0.69804 0.69804 0.69804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Stepper_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Joint_1" type="revolute">
+    <origin xyz="0.10279 0.20251 0.30619" rpy="0 0 -0.10625" />
+    <parent link="base_link" />
+    <child link="Stepper_Link" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+
+  <link name="Cam_servo_link">
+    <inertial>
+      <origin xyz="-0.021387787812727 -0.0207061777371578 0.0655794588755857" rpy="0 0 0" />
+      <mass value="0.224653580168318" />
+      <inertia ixx="0.000251948786465161" ixy="2.59886309791416E-05" ixz="4.3370842068186E-06" iyy="0.000606830551802659" iyz="-4.34940840653467E-05" izz="0.000737679320841926" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Cam_servo_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Cam_servo_link.STL" />
+      </geometry>
+    </collision>
+
+    <gazebo reference="Cam_servo_link">
+      <sensor type="ray" name="distance_sensor">
+        <pose>0 0 0 0 0 0</pose> 
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>1</samples>
+              <resolution>1</resolution>
+              <min_angle>-0.1</min_angle>
+              <max_angle>0.1</max_angle>
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.01</min>
+            <max>5.0</max> 
+            <resolution>0.01</resolution>
+          </range>
+        </ray>
+        <plugin name="gazebo_ros_range" filename="libgazebo_ros_range.so">
+          <ros>
+            <namespace>/benrover</namespace>
+            <remapping>range:=distance_data</remapping>
+          </ros>
+          <frame_name>distance_sensor_link</frame_name> 
+        </plugin>
+      </sensor>
+    </gazebo>
+
+    <gazebo reference="Cam_servo_link">
+      <sensor type="thermal" name="temperature_sensor">
+        <pose>0 0 0 0 0 0</pose>
+        <plugin name="gazebo_ros_thermal" filename="libgazebo_ros_thermal.so">
+          <ros>
+            <namespace>/benrover</namespace>
+            <remapping>temperature:=temperature_data</remapping>
+          </ros>
+          <frame_name>temperature_sensor_link</frame_name>
+        </plugin>
+      </sensor>
+    </gazebo>
+
+  </link>
+
+  <joint name="Joint_2" type="revolute">
+    <origin xyz="-0.036761 -0.0016843 0.073553" rpy="0 0 -3.0353" />
+    <parent link="Stepper_Link" />
+    <child link="Cam_servo_link" />
+    <axis xyz="-0.99817 0.060426 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+
+  <link name="Rod_Mid">
+    <inertial>
+      <origin xyz="-7.91033905045424E-16 -1.11022302462516E-15 -1.0219891599661E-10" rpy="0 0 0" />
+      <mass value="0.247501924201797" />
+      <inertia ixx="2.91050694305294E-05" ixy="-3.20579628181268E-05" ixz="1.42355418685488E-17" iyy="0.000326322896307199" iyz="1.48943956632535E-18" izz="0.000338300233875836" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Rod_Mid.STL" /> 
+      </geometry>
+      <material name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Rod_Mid.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Joint_4" type="revolute">
+    <origin xyz="-0.0022109 -0.11249 0.24069" rpy="0 0 -0.10625" />
+    <parent link="base_link" />
+    <child link="Rod_Mid" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+
+  <link name="Rocker_L">
+    <inertial>
+      <origin xyz="-0.095714131227585 -0.00183140514102408 -0.273417134268779" rpy="0 0 0" />
+      <mass value="4.08510166192447" />
+      <inertia ixx="0.0108463620166921" ixy="4.59999760720765E-06" ixz="-0.00010357113908455" iyy="0.00710790917042915" iyz="0.000145923577450299" izz="0.00708602691856587" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Rocker_L.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Rocker_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Joint_5" type="revolute">
+    <origin xyz="-0.17137 -0.0024936 0.13069" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Rocker_L" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+
+  <link name="Support_L">
+    <inertial>
+      <origin xyz="0.00606558433148147 -0.0571741253508044 -1.48921708298388E-11" rpy="0 0 0" />
+      <mass value="0.0134356440443593" />
+      <inertia ixx="2.69181467377964E-06" ixy="2.27679189496625E-07" ixz="-2.83992863810058E-13" iyy="5.8760396450515E-07" iyz="-2.42524206150177E-14" izz="2.89402207404695E-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Support_L.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Support_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Joint_6" type="revolute">
+    <origin xyz="-0.010845 0 0.11" rpy="0 0 -0.10625" />
+    <parent link="Rocker_L" />
+    <child link="Support_L" />
+    <axis xyz="0.99436 0.10605 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+
+  <link name="RodEnd_L">
+    <inertial>
+      <origin xyz="0.178985278115135 0.0190858643515939 -0.0080000001021989" rpy="0 0 0" />
+      <mass value="0.247501924201797" />
+      <inertia ixx="2.91050694305294E-05" ixy="-3.20579628181268E-05" ixz="1.4235391761117E-17" iyy="0.000326322896307199" iyz="1.48942449289739E-18" izz="0.000338300233875836" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/RodEnd_L.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/RodEnd_L.STL" /> 
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Joint_26" type="revolute">
+    <origin xyz="0.011665 -0.10938 0.008" rpy="0 0 0" />
+    <parent link="Support_L" />
+    <child link="RodEnd_L" />
+    <axis xyz="0 0 -1" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+
+  <link name="Servo_FL">
+    <inertial>
+      <origin xyz="-0.0557302059209704 0.0797613892941084 -0.109890068455304" rpy="0 0 0" />
+      <mass value="1.13448077750773" />
+      <inertia ixx="0.00347287005599623" ixy="-3.80214194994196E-05" ixz="-2.47679271475803E-05" iyy="0.00225589091578232" iyz="0.000174402092069528" izz="0.00220617462721394" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Servo_FL.STL" /> 
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Servo_FL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Joint_7" type="revolute">
+    <origin xyz="-0.046345 0.22091 -0.19231" rpy="-2.5624E-05 0 0.054272" />
+    <parent link="Rocker_L" />
+    <child link="Servo_FL" />
+    <axis xyz="0 0 1" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+
+  <link name="Wheel_FL">
+    <inertial>
+      <origin xyz="-0.0139735730134634 -0.00149064855046954 -5.26057800590007E-05" rpy="0 0 0" />
+      <mass value="0.860787064271295" />
+      <inertia ixx="0.00301031809005981" ixy="0.000115650533645952" ixz="4.59412194285161E-09" iyy="0.0019382543236092" iyz="8.47129346744498E-10" izz="0.00192608593021535" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Wheel_FL.STL" /> 
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Wheel_FL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Joint_8" type="revolute">
+    <origin xyz="-0.058303 0.08817 -0.12035" rpy="2.5517E-05 0 -0.16052" />
+    <parent link="Servo_FL" />
+    <child link="Wheel_FL" />
+    <axis xyz="0.99436 0.10605 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+
+  <link name="Bogie_L">
+    <inertial>
+      <origin xyz="0.0231368486696247 0.0145398061265448 -0.138314223001441" rpy="0 0 0" />
+      <mass value="2.4904146006575" />
+      <inertia ixx="0.00677995439614447" ixy="-2.10437487725163E-05" ixz="4.72597942468661E-05" iyy="0.0044283319138036" iyz="0.000137206248561081" izz="0.00447211770524448" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Bogie_L.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Bogie_L.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Joint_9" type="revolute">
+    <origin xyz="-0.077845 -0.15 -0.15" rpy="0 0 3.1416" />
+    <parent link="Rocker_L" />
+    <child link="Bogie_L" />
+    <axis xyz="-1 0 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+
+  <link name="Wheel_ML">
+    <inertial>
+      <origin xyz="-0.0139735730134825 -0.00149064855029794 -5.26057791247481E-05" rpy="0 0 0" />
+      <mass value="0.860787064271292" />
+      <inertia ixx="0.00301031809005981" ixy="0.000115650533645947" ixz="4.59412194159009E-09" iyy="0.0019382543236092" iyz="8.47129345290873E-10" izz="0.00192608593021535" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Wheel_ML.STL" /> 
+      </geometry>
+      <material name="">
+        <color rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Wheel_ML.STL" /> 
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Joint_10" type="revolute">
+    <origin xyz="0.0315 -0.14999 -0.15696" rpy="0 0 3.0353" />
+    <parent link="Bogie_L" />
+    <child link="Wheel_ML" />
+    <axis xyz="0.99436 0.10605 0" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+
+  <link name="Servo_BL">
+    <inertial>
+      <origin xyz="0.0608820957888571 0.0759022928662983 -0.109889889061491" rpy="0 0 0" />
+      <mass value="1.13448388931373" />
+      <inertia ixx="0.00347255472489971" ixy="-4.26040240515874E-05" ixz="3.62409624962684E-05" iyy="0.00225617993456282" iyz="0.000172380917810409" izz="0.00220617833951696" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Servo_BL.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Servo_BL.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Joint_12" type="revolute">
+    <origin xyz="-0.0315 0.070919 -0.042294" rpy="8.6265E-05 0 0.0119" />
+    <parent link="Bogie_L" />
+    <child link="Servo_BL" />
+    <axis xyz="0 -8.6265E-05 -1" />
+    <limit lower="0" upper="0" effort="0" velocity="0" />
+  </joint>
+
+  <link name="Wheel_BL">
+    <inertial>
+      <origin xyz="-0.0139735730134813 -0.00149064855030634 -5.26057786460754E-05" rpy="0 0 0" />
+      <mass value="0.860787064271295" />
+      <inertia ixx="0.00301031809005982" ixy="0.000115650533645952" ixz="4.59412193890066E-09" iyy="0.0019382543236092" iyz="8.47129347687611E-10" izz="0.00192608593021536" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Wheel_BL.STL" /> 
+      </geometry>
+      <material name="">
+        <color rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://benrover_assembly/meshes/Wheel_BL.STL" /> 
+      </geometry>
+    </collision>
+  </link>
+  <joint 
+    name="Joint_14"
+    type="fixed">
+    <origin
+      xyz="0.064006 0.084122 -0.12035"
+      rpy="8.5785E-05 0 3.0234" />
+    <parent
+      link="Servo_BL" />
+    <child
+      link="Wheel_BL" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Rocker_R">
+    <inertial>
+      <origin
+        xyz="0.0959917384068205 -0.0017912812144567 -0.273128675941651"
+        rpy="0 0 0" />
+      <mass
+        value="4.05512982615868" />
+      <inertia
+        ixx="0.0107384464541923"
+        ixy="-2.12859908779221E-06"
+        ixz="8.94294873325857E-05"
+        iyy="0.00703471757206817"
+        iyz="0.000147149472123623"
+        izz="0.00701139991057524" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Rocker_R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Rocker_R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_15"
+    type="revolute">
+    <origin
+      xyz="0.16694 -0.0024936 0.13069"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Rocker_R" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Servo_FR">
+    <inertial>
+      <origin
+        xyz="0.0582615224726586 0.0781282305140224 -0.109883270387408"
+        rpy="0 0 0" />
+      <mass
+        value="1.12504228159341" />
+      <inertia
+        ixx="0.00342719687552513"
+        ixy="9.74830925734921E-06"
+        ixz="2.29803016637483E-05"
+        iyy="0.00222612666509855"
+        iyz="0.000151901170906317"
+        izz="0.00217687557784079" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Servo_FR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Servo_FR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_18"
+    type="revolute">
+    <origin
+      xyz="0.046345 0.22092 -0.19229"
+      rpy="2.5653E-05 0 -0.026904" />
+    <parent
+      link="Rocker_R" />
+    <child
+      link="Servo_FR" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Wheel_FR">
+    <inertial>
+      <origin
+        xyz="0.0139730616783983 0.00149544207497365 -5.23516811694047E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.860786970953607" />
+      <inertia
+        ixx="0.00301031800920376"
+        ixy="0.000115650801504755"
+        ixz="-2.99637165841063E-09"
+        iyy="0.00193825583304392"
+        iyz="-1.58902386867285E-08"
+        izz="0.00192608448554685" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Wheel_FR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Wheel_FR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_19"
+    type="revolute">
+    <origin
+      xyz="0.060694 0.086537 -0.12035"
+      rpy="-2.5517E-05 0 -0.079344" />
+    <parent
+      link="Servo_FR" />
+    <child
+      link="Wheel_FR" />
+    <axis
+      xyz="-0.99436 -0.10605 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Bogie_R">
+    <inertial>
+      <origin
+        xyz="0.0235443710503372 -0.0146407350091245 -0.138215584042858"
+        rpy="0 0 0" />
+      <mass
+        value="2.46794531572652" />
+      <inertia
+        ixx="0.00671850467311786"
+        ixy="1.79352044917545E-05"
+        ixz="4.02288018835865E-05"
+        iyy="0.00438399651787297"
+        iyz="-0.00011441901254996"
+        izz="0.00442670238398224" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Bogie_R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Bogie_R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_20"
+    type="revolute">
+    <origin
+      xyz="0.077845 -0.15 -0.15"
+      rpy="0 0 0" />
+    <parent
+      link="Rocker_R" />
+    <child
+      link="Bogie_R" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Wheel_MR">
+    <inertial>
+      <origin
+        xyz="0.0139735731153412 0.0014906475953536 -5.26057860057438E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.860787064272944" />
+      <inertia
+        ixx="0.00301031809007767"
+        ixy="0.00011565053356412"
+        ixz="-4.59444151575659E-09"
+        iyy="0.00193825432357897"
+        iyz="-8.44123506436471E-10"
+        izz="0.00192608593022808" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Wheel_MR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Wheel_MR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_21"
+    type="revolute">
+    <origin
+      xyz="0.0315 0.15 -0.15694"
+      rpy="0 0 -0.10625" />
+    <parent
+      link="Bogie_R" />
+    <child
+      link="Wheel_MR" />
+    <axis
+      xyz="-0.99436 -0.10605 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Servo_BR">
+    <inertial>
+      <origin
+        xyz="-0.0636400421629145 0.0739197088703415 -0.109891525565"
+        rpy="0 0 0" />
+      <mass
+        value="1.12333946146007" />
+      <inertia
+        ixx="0.00341579778698415"
+        ixy="7.48827293906615E-05"
+        ixz="-3.52421408529428E-05"
+        iyy="0.00222599245553781"
+        iyz="0.000146849153720477"
+        izz="0.00217179232798496" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Servo_BR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Servo_BR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_22"
+    type="prismatic">
+    <origin
+      xyz="-0.0315 -0.070914 -0.042301"
+      rpy="-1.3235E-05 0 3.0995" />
+    <parent
+      link="Bogie_R" />
+    <child
+      link="Servo_BR" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Wheel_BR">
+    <inertial>
+      <origin
+        xyz="0.0139684119321734 0.00153904042729774 1.90526739020647E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.860786971033292" />
+      <inertia
+        ixx="0.00301031877712066"
+        ixy="0.000115639613227576"
+        ixz="-4.24270461904845E-09"
+        iyy="0.00193839813328366"
+        iyz="5.52075575290387E-08"
+        izz="0.00192594141740836" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Wheel_BR.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Wheel_BR.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_23"
+    type="revolute">
+    <origin
+      xyz="-0.066522 0.082201 -0.12043"
+      rpy="-1.3172E-05 0 3.0775" />
+    <parent
+      link="Servo_BR" />
+    <child
+      link="Wheel_BR" />
+    <axis
+      xyz="-0.99436 -0.10605 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Support_R">
+    <inertial>
+      <origin
+        xyz="-0.00606558433148162 0.0571741253508057 -1.48921430742632E-11"
+        rpy="0 0 0" />
+      <mass
+        value="0.0134356440443592" />
+      <inertia
+        ixx="2.69181467377963E-06"
+        ixy="2.27679189496626E-07"
+        ixz="2.83992863876953E-13"
+        iyy="5.87603964505148E-07"
+        iyz="2.42524205678186E-14"
+        izz="2.89402207404694E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Support_R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/Support_R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_24"
+    type="revolute">
+    <origin
+      xyz="0.010845 0 0.11"
+      rpy="0 0 3.0353" />
+    <parent
+      link="Rocker_R" />
+    <child
+      link="Support_R" />
+    <axis
+      xyz="0.99436 0.10605 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RodEnd_R">
+    <inertial>
+      <origin
+        xyz="-0.178985278115083 -0.0190858643521005 -0.00800000010219898"
+        rpy="0 0 0" />
+      <mass
+        value="0.247501924201797" />
+      <inertia
+        ixx="2.910506943071E-05"
+        ixy="-3.20579628189643E-05"
+        ixz="1.42523939303111E-17"
+        iyy="0.000326322896307019"
+        iyz="1.49372998878641E-18"
+        izz="0.000338300233875836" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/RodEnd_R.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://benrover_assembly/meshes/RodEnd_R.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_25"
+    type="revolute">
+    <origin
+      xyz="-0.011665 0.10938 0.008"
+      rpy="0 0 3.1416" />
+    <parent
+      link="Support_R" />
+    <child
+      link="RodEnd_R" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

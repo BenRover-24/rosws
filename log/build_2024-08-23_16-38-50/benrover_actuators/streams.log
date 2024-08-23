@@ -1,0 +1,16 @@
+[1.786s] Invoking command in '/home/elfriedkinzoun/rosws/src/benrover_actuator': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_actuators/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_actuators build --build-base /home/elfriedkinzoun/rosws/build/benrover_actuators/build install --record /home/elfriedkinzoun/rosws/build/benrover_actuators/install.log --single-version-externally-managed install_data
+[2.453s] running egg_info
+[2.456s] writing ../../build/benrover_actuators/benrover_actuators.egg-info/PKG-INFO
+[2.458s] writing dependency_links to ../../build/benrover_actuators/benrover_actuators.egg-info/dependency_links.txt
+[2.460s] writing entry points to ../../build/benrover_actuators/benrover_actuators.egg-info/entry_points.txt
+[2.461s] writing requirements to ../../build/benrover_actuators/benrover_actuators.egg-info/requires.txt
+[2.463s] writing top-level names to ../../build/benrover_actuators/benrover_actuators.egg-info/top_level.txt
+[2.470s] reading manifest file '../../build/benrover_actuators/benrover_actuators.egg-info/SOURCES.txt'
+[2.472s] writing manifest file '../../build/benrover_actuators/benrover_actuators.egg-info/SOURCES.txt'
+[2.473s] running build
+[2.473s] running build_py
+[2.475s] running install
+[2.475s] running install_lib
+[2.476s] running install_data
+[2.476s] error: can't copy 'resource/benrover_actuators': doesn't exist or not a regular file
+[2.525s] Invoked command in '/home/elfriedkinzoun/rosws/src/benrover_actuator' returned '1': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_actuators/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuators/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_actuators build --build-base /home/elfriedkinzoun/rosws/build/benrover_actuators/build install --record /home/elfriedkinzoun/rosws/build/benrover_actuators/install.log --single-version-externally-managed install_data

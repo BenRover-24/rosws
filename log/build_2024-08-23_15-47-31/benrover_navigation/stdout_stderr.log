@@ -1,0 +1,25 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.4.0-ubuntu3-zorin1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+running egg_info
+creating benrover_navigation.egg-info
+writing benrover_navigation.egg-info/PKG-INFO
+writing dependency_links to benrover_navigation.egg-info/dependency_links.txt
+writing entry points to benrover_navigation.egg-info/entry_points.txt
+writing requirements to benrover_navigation.egg-info/requires.txt
+writing top-level names to benrover_navigation.egg-info/top_level.txt
+writing manifest file 'benrover_navigation.egg-info/SOURCES.txt'
+reading manifest file 'benrover_navigation.egg-info/SOURCES.txt'
+writing manifest file 'benrover_navigation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages/benrover-navigation.egg-link (link to .)
+
+Installed /home/elfriedkinzoun/rosws/build/benrover_navigation
+running symlink_data
+creating /home/elfriedkinzoun/rosws/install/benrover_navigation/share/ament_index
+creating /home/elfriedkinzoun/rosws/install/benrover_navigation/share/ament_index/resource_index
+creating /home/elfriedkinzoun/rosws/install/benrover_navigation/share/ament_index/resource_index/packages
+symbolically linking /home/elfriedkinzoun/rosws/build/benrover_navigation/resource/benrover_navigation -> /home/elfriedkinzoun/rosws/install/benrover_navigation/share/ament_index/resource_index/packages
+symbolically linking /home/elfriedkinzoun/rosws/build/benrover_navigation/package.xml -> /home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation

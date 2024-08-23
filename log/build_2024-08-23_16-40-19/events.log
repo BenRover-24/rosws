@@ -1,0 +1,6 @@
+[0.000000] (-) TimerEvent: {}
+[0.000546] (-) JobUnselected: {'identifier': 'benrover_actuators'}
+[0.000639] (-) JobUnselected: {'identifier': 'benrover_assembly'}
+[0.000695] (-) JobUnselected: {'identifier': 'benrover_navigation'}
+[0.000825] (-) JobUnselected: {'identifier': 'benrover_sensors'}
+[0.001101] (-) EventReactorShutdown: {}
