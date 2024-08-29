@@ -18,7 +18,7 @@ def generate_launch_description():
     launchDescription.add_action(
        Node(
             package='benrover_navigation',
-            executable='navigation',
+            executable='navigation_node',
             name='benrover_navigation',
             output='screen',
             emulate_tty=True,

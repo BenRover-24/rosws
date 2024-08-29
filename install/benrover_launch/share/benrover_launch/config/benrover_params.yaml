@@ -1,8 +1,8 @@
 benrover_navigation:
   ros__parameters:
     rover_dimensions:
-      d1: 0.177  # [m]
-      d2: 0.310  # [m]
-      d3: 0.274  # [m]
-      d4: 0.253  # [m]
-      wheel_radius: 0.075  # [m], needs to be a float
+      d1: 0.177
+      d2: 0.310
+      d3: 0.274
+      d4: 0.253
+      wheel_radius: 0.075

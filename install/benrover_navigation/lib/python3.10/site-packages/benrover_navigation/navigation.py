@@ -62,7 +62,6 @@ class RoverNavigation(Node):
                     
      def command_callback(self, twist_msg):
         if twist_msg.angular.y and not twist_msg.linear.x:
-            # command corners to point to center
             corner_cmd_msg, drive_cmd_msg = self.calculate_rotate_in_place_cmd(twist_msg)
         
         else:
@@ -70,16 +69,14 @@ class RoverNavigation(Node):
             self.get_logger().debug("desired turning radius: " + "{}".format(desired_turning_radius), throttle_duration_sec=1)
             corner_cmd_msg = self.calculate_corner_positions(desired_turning_radius)
 
-            # if we're turning, calculate the max velocity the middle of the rover can go
             max_vel = abs(desired_turning_radius) / (abs(desired_turning_radius) + self.d1) * self.max_vel
-            if math.isnan(max_vel):  # turning radius infinite, going straight
+            if math.isnan(max_vel):
                 max_vel = self.max_vel
             velocity = min(max_vel, twist_msg.linear.x)
             self.get_logger().debug("velocity drive cmd: {} m/s".format(velocity), throttle_duration_sec=1)
 
             drive_cmd_msg = self.calculate_drive_velocities(velocity, desired_turning_radius)
 
-        # if self.corner_cmd_threshold(corner_cmd_msg):
         self.get_logger().debug("drive cmd:\n{}".format(drive_cmd_msg), throttle_duration_sec=1)
         self.get_logger().debug("corner cmd:\n{}".format(corner_cmd_msg), throttle_duration_sec=1)
 
@@ -89,18 +86,7 @@ class RoverNavigation(Node):
 
 
      def twist_to_turning_radius(self, twist, clip=True):
-        """
-        Convert a commanded twist into an actual turning radius
 
-        ackermann steering: if l is distance travelled, rho the turning radius, and theta the heading of the middle of the robot,
-        then: dl = rho * dtheta. With dt -> 0, dl/dt = rho * dtheta/dt
-        dl/dt = twist.linear.x, dtheta/dt = twist.angular.z
-
-        :param twist: geometry_msgs/Twist. Only linear.x and angular.z are used
-        :param clip: whether the values should be clipped from min_radius to max_radius
-        :param intuitive_mode: whether the turning radius should be mathematically correct (see cmd_cb()) or intuitive
-        :return: physical turning radius in meter, clipped to the rover's limits
-        """
         try:
             if twist.linear.x < 0:
                 radius = twist.linear.x / -twist.angular.z
@@ -109,7 +95,6 @@ class RoverNavigation(Node):
         except ZeroDivisionError:
                 return float("Inf")
 
-        # clip values so they lie in (-max_radius, -min_radius) or (min_radius, max_radius)
         if not clip:
             return radius
         if radius == 0:

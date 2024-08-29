@@ -1,3 +1,3 @@
 [console_scripts]
-navigation = benrover_navigation.navigation:main
+navigation_node = benrover_navigation.navigation:main
 

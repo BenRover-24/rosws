@@ -23,10 +23,8 @@ class RoverNavigation(Node):
           self.declare_parameters(
             namespace='',
             parameters=[
-                ('rover_dimensions.d1', Parameter.Type.DOUBLE),
-                ('rover_dimensions.d2', Parameter.Type.DOUBLE),
-                ('rover_dimensions.d3', Parameter.Type.DOUBLE),
-                ('rover_dimensions.d4', Parameter.Type.DOUBLE),
+                ('rover_dimensions.l', Parameter.Type.DOUBLE),
+                ('rover_dimensions.w', Parameter.Type.DOUBLE),
                 ('rover_dimensions.wheel_radius', Parameter.Type.DOUBLE)
                 ##('drive_no_load_rpm', Parameter.Type.DOUBLE)
             ]
@@ -35,15 +33,8 @@ class RoverNavigation(Node):
           self.min_radius = 0.45  # [m]
           self.max_radius = 6.4  # [m]
 
-          ##self.d1 = 0.177
-          ##self.d2 = 0.310
-          ##self.d3 = 0.234
-          ##self.d4 = 0.355
-          ##self.wheel_radius = 0.4
-          self.d1 = self.get_parameter('rover_dimensions.d1').get_parameter_value().double_value
-          self.d2 = self.get_parameter('rover_dimensions.d2').get_parameter_value().double_value
-          self.d3 = self.get_parameter('rover_dimensions.d3').get_parameter_value().double_value
-          self.d4 = self.get_parameter('rover_dimensions.d4').get_parameter_value().double_value
+          self.d1 = self.get_parameter('rover_dimensions.l').get_parameter_value().double_value
+          self.d2 = self.get_parameter('rover_dimensions.w').get_parameter_value().double_value
 
           self.wheel_radius = self.get_parameter(
             "rover_dimensions.wheel_radius").get_parameter_value().double_value  # [m]
