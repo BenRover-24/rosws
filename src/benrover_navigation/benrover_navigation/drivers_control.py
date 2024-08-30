@@ -17,12 +17,13 @@ from benrover_interfaces.msg import ManageCorner
 from sensor_msgs.msg import JointState
 
 
-class ServoControl(Node):
+class DriverControl(Node):
      def __init__(self):
           super().__init__('servos_control') 
-          corner_motors = ['right_front', 'right_back', 'left_front', 'left_back'] 
+          driver_motors = ['right_front', 'right_back', 'right_middle', 'left_middle', 
+                           'left_front', 'left_back'] 
           self.log = self.get_logger()
-          self.log.info('Initialized Rover Servo controller Node.')
+          self.log.info('Initialized Rover Driver Motor controller Node.')
 
           self.create_publisher(JointState, "corner_state", 1)
           self.subscription = self.create_subscription(
@@ -32,9 +33,11 @@ class ServoControl(Node):
             10)
           self.serial_port = serial.Serial('/dev/ttyACM0', 9600, timeout=1)
         
-     def cmd_corner_cb(self, cmd):
-        self.get_logger().info(f'Received servos control commands.')
-        angle = msg.data
+     def cmd_driver_cb(self, cmd):
+        self.get_logger().info(f'Received driver control commands.')
+        ##angle = msg.data
+        rows, cols = (4, 4)
+        arr = [[0]*cols]*rows
         angles = []
 
 
@@ -51,7 +54,7 @@ class ServoControl(Node):
             angle = max(min(angle, self.servo_actuation_range), 0)
             # send to motor
             ##self.kit.servo[ind].angle = angle
-        self.get_logger().info(f'Sent corner command to Arduino for movement')
+        self.get_logger().info(f'Sent driver command to Arduino for movement')
         self.serial_port.write(f'{angles}\n'.encode('utf-8'))
 
 
@@ -60,10 +63,10 @@ class ServoControl(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    servosController = ServoControl()
+    driverController = DriverControl()
 
-    rclpy.spin(servosController)
-    servosController.destroy_node()
+    rclpy.spin(driverController)
+    driverController.destroy_node()
     rclpy.shutdown()
 
 if __name__ == '__name__':
