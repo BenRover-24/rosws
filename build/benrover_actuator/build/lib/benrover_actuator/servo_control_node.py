@@ -1,40 +1,44 @@
 import rclpy
 from rclpy.node import Node
-import smbus
-from test.msg import ServoCmd 
+from std_msgs.msg import Int16MultiArray 
+import serial
 
 class ServoControlNode(Node):
-
     def __init__(self):
         super().__init__('servo_control_node')
-        self.declare_parameter('servo_channel', 0)  # Canal du servo sur le PCA9685
-        self.declare_parameter('i2c_address', 0x40)  # Adresse I2C du PCA9685
 
-        self.servo_channel = self.get_parameter('servo_channel').value
-        self.i2c_address = self.get_parameter('i2c_address').value
-        self.i2c_bus = smbus.SMBus(1)  # Bus I2C 1 sur RPi
+        # Configuration de la liaison série
+        self.declare_parameter('serial_port', '/dev/ttyACM0')  # Paramètre pour le port série
+        self.declare_parameter('serial_baudrate', 115200) # Paramètre pour le baudrate
 
+        self.serial_port = self.get_parameter('serial_port').value
+        self.serial_baudrate = self.get_parameter('serial_baudrate').value
+        self.serial = serial.Serial(self.serial_port, self.serial_baudrate)
+
+        # Abonnement à un topic pour recevoir les commandes 
         self.subscription = self.create_subscription(
-            ServoCmd,
-            'servo_cmd',  # Topic pour recevoir les commandes
+            Int16MultiArray,
+            '/servo_commands',  
             self.servo_cmd_callback,
             10
         )
+        self.get_logger().info("Noeud servo_control_node démarré, en attente de commandes sur /servo_commands")
 
     def servo_cmd_callback(self, msg):
-        angle = msg.angle
-        # Conversion de l'angle en valeur pour le PCA9685 (à adapter)
-        pulse = self.angle_to_pulse(angle)
+        angles = msg.data  
 
+        # Vérifier que le message contient 8 angles
+        if len(angles) != 8:  
+            self.get_logger().error("Message incorrect : 8 angles de servo attendus.")
+            return
+
+        #  Envoyer les angles à l'Arduino via la liaison série (format CSV)
+        command = "S," + ",".join(str(angle) for angle in angles) + "\n" 
         try:
-            self.i2c_bus.write_byte_data(self.i2c_address, self.servo_channel, pulse) 
-            self.get_logger().info(f"Angle envoyé au servo: {angle} (pulse: {pulse})")
-        except IOError as e:
-            self.get_logger().error(f"Erreur I2C: {e}")
-
-    def angle_to_pulse(self, angle):
-        # Conversion d'angle à pulse (à calibrer)
-        return int(angle / 180 * (4096 - 1))  # Exemple pour servo 0-180 degrés
+            self.serial.write(command.encode())
+            self.get_logger().info(f"Angles des servos envoyés : {command.rstrip()}")  
+        except serial.SerialException as e:
+            self.get_logger().error(f"Erreur de communication série : {e}")
 
 def main(args=None):
     rclpy.init(args=args)

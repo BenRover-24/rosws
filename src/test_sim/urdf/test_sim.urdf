@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<robot name="test_sim">
+  <link name="world"/>
+
+  <link name="base_link">
+    <inertial>
+      <mass value="1.0"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0" iyy="0.01" iyz="0.0" izz="0.01"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.4 0.2 0.1"/>  
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/> 
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.4 0.2 0.1"/>  
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="fixed_joint" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+  </joint> 
+
+  <link name="left_wheel">
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.03"/> 
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.05" length="0.03"/> 
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="left_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="left_wheel"/>
+    <axis xyz="0 1 0"/>  
+    <origin xyz="0.1 0.1 0.05"/>
+  </joint>
+
+  <link name="right_wheel">
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.03"/> 
+      </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.05" length="0.03"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="right_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="right_wheel"/>
+    <axis xyz="0 1 0"/>
+    <origin xyz="0.1 -0.1 0.05"/>
+  </joint>
+
+  <gazebo reference="left_wheel">
+    <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+      <ros>
+        <namespace>/benrover</namespace> 
+        <remapping>cmd_vel:=cmd_vel</remapping>
+        <remapping>odom:=odom</remapping> 
+      </ros>
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_separation>0.2</wheel_separation>  
+      <wheel_diameter>0.1</wheel_diameter> 
+    </plugin>
+  </gazebo>
+
+</robot>

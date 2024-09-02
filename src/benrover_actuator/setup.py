@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'my_node = benrover_actuator.actuator_node:main',
-            'servo_control_node = benrover_actuator.servo_control_node:main' 
+            'servo_control_node = benrover_actuator.servo_control_node:main'  
         ],
     },
 )

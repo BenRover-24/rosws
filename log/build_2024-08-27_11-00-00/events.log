@@ -1,0 +1,393 @@
+[0.000000] (-) TimerEvent: {}
+[0.000684] (benrover_actuator) JobQueued: {'identifier': 'benrover_actuator', 'dependencies': OrderedDict()}
+[0.000852] (benrover_assembly) JobQueued: {'identifier': 'benrover_assembly', 'dependencies': OrderedDict()}
+[0.000942] (benrover_navigation) JobQueued: {'identifier': 'benrover_navigation', 'dependencies': OrderedDict()}
+[0.001010] (benrover_sensors) JobQueued: {'identifier': 'benrover_sensors', 'dependencies': OrderedDict()}
+[0.001112] (test_sim) JobQueued: {'identifier': 'test_sim', 'dependencies': OrderedDict()}
+[0.001173] (benrover_actuator) JobStarted: {'identifier': 'benrover_actuator'}
+[0.010613] (benrover_assembly) JobStarted: {'identifier': 'benrover_assembly'}
+[0.017161] (benrover_navigation) JobStarted: {'identifier': 'benrover_navigation'}
+[0.023640] (benrover_sensors) JobStarted: {'identifier': 'benrover_sensors'}
+[0.099822] (-) TimerEvent: {}
+[0.201680] (-) TimerEvent: {}
+[0.302367] (-) TimerEvent: {}
+[0.406441] (-) TimerEvent: {}
+[0.509260] (-) TimerEvent: {}
+[0.612567] (-) TimerEvent: {}
+[0.713954] (-) TimerEvent: {}
+[0.814289] (-) TimerEvent: {}
+[0.914749] (-) TimerEvent: {}
+[1.016617] (-) TimerEvent: {}
+[1.118890] (-) TimerEvent: {}
+[1.219722] (-) TimerEvent: {}
+[1.320799] (-) TimerEvent: {}
+[1.421421] (-) TimerEvent: {}
+[1.522741] (-) TimerEvent: {}
+[1.626707] (-) TimerEvent: {}
+[1.727162] (-) TimerEvent: {}
+[1.827765] (-) TimerEvent: {}
+[1.928446] (-) TimerEvent: {}
+[2.029279] (-) TimerEvent: {}
+[2.130174] (-) TimerEvent: {}
+[2.231170] (-) TimerEvent: {}
+[2.331826] (-) TimerEvent: {}
+[2.432418] (-) TimerEvent: {}
+[2.533161] (-) TimerEvent: {}
+[2.634192] (-) TimerEvent: {}
+[2.740109] (-) TimerEvent: {}
+[2.840690] (-) TimerEvent: {}
+[2.942208] (-) TimerEvent: {}
+[3.043696] (-) TimerEvent: {}
+[3.144434] (-) TimerEvent: {}
+[3.245594] (-) TimerEvent: {}
+[3.347202] (-) TimerEvent: {}
+[3.449451] (-) TimerEvent: {}
+[3.550656] (-) TimerEvent: {}
+[3.654162] (-) TimerEvent: {}
+[3.754566] (-) TimerEvent: {}
+[3.855162] (-) TimerEvent: {}
+[3.893968] (benrover_navigation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/elfriedkinzoun/rosws/build/benrover_navigation/build', '--no-deps', 'symlink_data'], 'cwd': '/home/elfriedkinzoun/rosws/build/benrover_navigation', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'elfriedkinzoun', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/elfriedkinzoun', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/elfriedkinzoun/rosws', 'DESKTOP_SESSION': 'zorin', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'zorin', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1440', 'MAVEN_HOME': '/usr/local/apache-maven-3.9.7', 'SYSTEMD_EXEC_PID': '1734', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '17158', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'elfriedkinzoun', 'JOURNAL_STREAM': '8:31086', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'elfriedkinzoun', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/elfriedkinzoun/anaconda3/bin:/home/elfriedkinzoun/anaconda3/condabin:/home/elfriedkinzoun/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/elfriedkinzoun-HP-ENVY-15-Notebook-PC:@/tmp/.ICE-unix/1530,unix/elfriedkinzoun-HP-ENVY-15-Notebook-PC:/tmp/.ICE-unix/1530', 'INVOCATION_ID': '9a8f2a45134f477daedde13b94370c31', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'zorin:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'zorin', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.6R45S2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/elfriedkinzoun/anaconda3/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/elfriedkinzoun/anaconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:99a95476-3d30-440c-a11a-475a9d4a00c0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'zorin', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/elfriedkinzoun/rosws/build/benrover_navigation', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-zorin:/etc/xdg', 'CONDA_EXE': '/home/elfriedkinzoun/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/zorin:/home/elfriedkinzoun/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'M2_HOME': '/usr/local/apache-maven-3.9.7', 'PYTHONPATH': '/home/elfriedkinzoun/rosws/build/benrover_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/elfriedkinzoun/anaconda3', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': ':/opt/ros/humble/share'}, 'shell': False}
+[3.953061] (benrover_sensors) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/elfriedkinzoun/rosws/build/benrover_sensors/build', '--no-deps', 'symlink_data'], 'cwd': '/home/elfriedkinzoun/rosws/build/benrover_sensors', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'elfriedkinzoun', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/elfriedkinzoun', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/elfriedkinzoun/rosws', 'DESKTOP_SESSION': 'zorin', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'zorin', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1440', 'MAVEN_HOME': '/usr/local/apache-maven-3.9.7', 'SYSTEMD_EXEC_PID': '1734', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '17158', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'elfriedkinzoun', 'JOURNAL_STREAM': '8:31086', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'elfriedkinzoun', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/elfriedkinzoun/anaconda3/bin:/home/elfriedkinzoun/anaconda3/condabin:/home/elfriedkinzoun/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/elfriedkinzoun-HP-ENVY-15-Notebook-PC:@/tmp/.ICE-unix/1530,unix/elfriedkinzoun-HP-ENVY-15-Notebook-PC:/tmp/.ICE-unix/1530', 'INVOCATION_ID': '9a8f2a45134f477daedde13b94370c31', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'zorin:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'zorin', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.6R45S2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/elfriedkinzoun/anaconda3/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/elfriedkinzoun/anaconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:99a95476-3d30-440c-a11a-475a9d4a00c0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'zorin', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/elfriedkinzoun/rosws/build/benrover_sensors', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-zorin:/etc/xdg', 'CONDA_EXE': '/home/elfriedkinzoun/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/zorin:/home/elfriedkinzoun/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'M2_HOME': '/usr/local/apache-maven-3.9.7', 'PYTHONPATH': '/home/elfriedkinzoun/rosws/build/benrover_sensors/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_sensors/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/elfriedkinzoun/anaconda3', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': ':/opt/ros/humble/share'}, 'shell': False}
+[3.962150] (-) TimerEvent: {}
+[4.062895] (-) TimerEvent: {}
+[4.071091] (benrover_assembly) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/elfriedkinzoun/rosws/build/benrover_assembly/build', '--no-deps', 'symlink_data'], 'cwd': '/home/elfriedkinzoun/rosws/build/benrover_assembly', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'elfriedkinzoun', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/elfriedkinzoun', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/elfriedkinzoun/rosws', 'DESKTOP_SESSION': 'zorin', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'zorin', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1440', 'MAVEN_HOME': '/usr/local/apache-maven-3.9.7', 'SYSTEMD_EXEC_PID': '1734', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '17158', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'elfriedkinzoun', 'JOURNAL_STREAM': '8:31086', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'elfriedkinzoun', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/elfriedkinzoun/anaconda3/bin:/home/elfriedkinzoun/anaconda3/condabin:/home/elfriedkinzoun/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/elfriedkinzoun-HP-ENVY-15-Notebook-PC:@/tmp/.ICE-unix/1530,unix/elfriedkinzoun-HP-ENVY-15-Notebook-PC:/tmp/.ICE-unix/1530', 'INVOCATION_ID': '9a8f2a45134f477daedde13b94370c31', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'zorin:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'zorin', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.6R45S2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/elfriedkinzoun/anaconda3/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/elfriedkinzoun/anaconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:99a95476-3d30-440c-a11a-475a9d4a00c0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'zorin', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/elfriedkinzoun/rosws/build/benrover_assembly', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-zorin:/etc/xdg', 'CONDA_EXE': '/home/elfriedkinzoun/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/zorin:/home/elfriedkinzoun/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'M2_HOME': '/usr/local/apache-maven-3.9.7', 'PYTHONPATH': '/home/elfriedkinzoun/rosws/build/benrover_assembly/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/elfriedkinzoun/anaconda3', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': ':/opt/ros/humble/share'}, 'shell': False}
+[4.152427] (benrover_actuator) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/elfriedkinzoun/rosws/build/benrover_actuator/build', '--no-deps', 'symlink_data'], 'cwd': '/home/elfriedkinzoun/rosws/build/benrover_actuator', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'elfriedkinzoun', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/elfriedkinzoun', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/elfriedkinzoun/rosws', 'DESKTOP_SESSION': 'zorin', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'zorin', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1440', 'MAVEN_HOME': '/usr/local/apache-maven-3.9.7', 'SYSTEMD_EXEC_PID': '1734', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '17158', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'elfriedkinzoun', 'JOURNAL_STREAM': '8:31086', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'elfriedkinzoun', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/elfriedkinzoun/anaconda3/bin:/home/elfriedkinzoun/anaconda3/condabin:/home/elfriedkinzoun/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/elfriedkinzoun-HP-ENVY-15-Notebook-PC:@/tmp/.ICE-unix/1530,unix/elfriedkinzoun-HP-ENVY-15-Notebook-PC:/tmp/.ICE-unix/1530', 'INVOCATION_ID': '9a8f2a45134f477daedde13b94370c31', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'zorin:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'zorin', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.6R45S2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/elfriedkinzoun/anaconda3/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'CONDA_PYTHON_EXE': '/home/elfriedkinzoun/anaconda3/bin/python', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:99a95476-3d30-440c-a11a-475a9d4a00c0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'zorin', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/elfriedkinzoun/rosws/build/benrover_actuator', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-zorin:/etc/xdg', 'CONDA_EXE': '/home/elfriedkinzoun/anaconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/zorin:/home/elfriedkinzoun/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'M2_HOME': '/usr/local/apache-maven-3.9.7', 'PYTHONPATH': '/home/elfriedkinzoun/rosws/build/benrover_actuator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'CONDA_PREFIX': '/home/elfriedkinzoun/anaconda3', 'GSETTINGS_SCHEMA_DIR_CONDA_BACKUP': '', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': ':/opt/ros/humble/share'}, 'shell': False}
+[4.162999] (-) TimerEvent: {}
+[4.263373] (-) TimerEvent: {}
+[4.363754] (-) TimerEvent: {}
+[4.464128] (-) TimerEvent: {}
+[4.565104] (-) TimerEvent: {}
+[4.657354] (benrover_navigation) StdoutLine: {'line': b'running develop\n'}
+[4.665215] (-) TimerEvent: {}
+[4.672580] (benrover_navigation) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[4.672859] (benrover_navigation) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.765320] (-) TimerEvent: {}
+[4.769382] (benrover_sensors) StdoutLine: {'line': b'running develop\n'}
+[4.780478] (benrover_sensors) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[4.780814] (benrover_sensors) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.865433] (-) TimerEvent: {}
+[4.891396] (benrover_assembly) StdoutLine: {'line': b'running develop\n'}
+[4.896187] (benrover_assembly) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[4.896532] (benrover_assembly) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.935062] (benrover_navigation) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.4.0-ubuntu3-zorin1 is an invalid version and will not be supported in a future release\n'}
+[4.941951] (benrover_navigation) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.953541] (benrover_actuator) StdoutLine: {'line': b'running develop\n'}
+[4.954235] (benrover_actuator) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[4.954445] (benrover_actuator) StderrLine: {'line': b'  warnings.warn(\n'}
+[4.965536] (-) TimerEvent: {}
+[5.008951] (benrover_sensors) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.4.0-ubuntu3-zorin1 is an invalid version and will not be supported in a future release\n'}
+[5.009886] (benrover_sensors) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.065661] (-) TimerEvent: {}
+[5.069950] (benrover_assembly) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.4.0-ubuntu3-zorin1 is an invalid version and will not be supported in a future release\n'}
+[5.070304] (benrover_assembly) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.133478] (benrover_actuator) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.4.0-ubuntu3-zorin1 is an invalid version and will not be supported in a future release\n'}
+[5.133742] (benrover_actuator) StderrLine: {'line': b'  warnings.warn(\n'}
+[5.165774] (-) TimerEvent: {}
+[5.251565] (benrover_navigation) StdoutLine: {'line': b'running egg_info\n'}
+[5.251952] (benrover_navigation) StdoutLine: {'line': b'creating benrover_navigation.egg-info\n'}
+[5.252903] (benrover_navigation) StdoutLine: {'line': b'writing benrover_navigation.egg-info/PKG-INFO\n'}
+[5.254396] (benrover_navigation) StdoutLine: {'line': b'writing dependency_links to benrover_navigation.egg-info/dependency_links.txt\n'}
+[5.255263] (benrover_navigation) StdoutLine: {'line': b'writing entry points to benrover_navigation.egg-info/entry_points.txt\n'}
+[5.256077] (benrover_navigation) StdoutLine: {'line': b'writing requirements to benrover_navigation.egg-info/requires.txt\n'}
+[5.256807] (benrover_navigation) StdoutLine: {'line': b'writing top-level names to benrover_navigation.egg-info/top_level.txt\n'}
+[5.257888] (benrover_navigation) StdoutLine: {'line': b"writing manifest file 'benrover_navigation.egg-info/SOURCES.txt'\n"}
+[5.261536] (benrover_navigation) StdoutLine: {'line': b"reading manifest file 'benrover_navigation.egg-info/SOURCES.txt'\n"}
+[5.262862] (benrover_navigation) StdoutLine: {'line': b"writing manifest file 'benrover_navigation.egg-info/SOURCES.txt'\n"}
+[5.265850] (-) TimerEvent: {}
+[5.266145] (benrover_navigation) StdoutLine: {'line': b'running build_ext\n'}
+[5.266658] (benrover_navigation) StdoutLine: {'line': b'Creating /home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages/benrover-navigation.egg-link (link to .)\n'}
+[5.268267] (benrover_navigation) StdoutLine: {'line': b'\n'}
+[5.268524] (benrover_navigation) StdoutLine: {'line': b'Installed /home/elfriedkinzoun/rosws/build/benrover_navigation\n'}
+[5.268824] (benrover_navigation) StdoutLine: {'line': b'running symlink_data\n'}
+[5.269022] (benrover_navigation) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_navigation/share/ament_index\n'}
+[5.269236] (benrover_navigation) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_navigation/share/ament_index/resource_index\n'}
+[5.269405] (benrover_navigation) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_navigation/share/ament_index/resource_index/packages\n'}
+[5.269593] (benrover_navigation) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_navigation/resource/benrover_navigation -> /home/elfriedkinzoun/rosws/install/benrover_navigation/share/ament_index/resource_index/packages\n'}
+[5.269778] (benrover_navigation) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_navigation/package.xml -> /home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation\n'}
+[5.318238] (benrover_sensors) StdoutLine: {'line': b'running egg_info\n'}
+[5.318588] (benrover_sensors) StdoutLine: {'line': b'creating benrover_sensors.egg-info\n'}
+[5.318848] (benrover_sensors) StdoutLine: {'line': b'writing benrover_sensors.egg-info/PKG-INFO\n'}
+[5.321606] (benrover_sensors) StdoutLine: {'line': b'writing dependency_links to benrover_sensors.egg-info/dependency_links.txt\n'}
+[5.321818] (benrover_sensors) StdoutLine: {'line': b'writing entry points to benrover_sensors.egg-info/entry_points.txt\n'}
+[5.322002] (benrover_sensors) StdoutLine: {'line': b'writing requirements to benrover_sensors.egg-info/requires.txt\n'}
+[5.322165] (benrover_sensors) StdoutLine: {'line': b'writing top-level names to benrover_sensors.egg-info/top_level.txt\n'}
+[5.322322] (benrover_sensors) StdoutLine: {'line': b"writing manifest file 'benrover_sensors.egg-info/SOURCES.txt'\n"}
+[5.323657] (benrover_sensors) StdoutLine: {'line': b"reading manifest file 'benrover_sensors.egg-info/SOURCES.txt'\n"}
+[5.324926] (benrover_sensors) StdoutLine: {'line': b"writing manifest file 'benrover_sensors.egg-info/SOURCES.txt'\n"}
+[5.337303] (benrover_sensors) StdoutLine: {'line': b'running build_ext\n'}
+[5.337800] (benrover_sensors) StdoutLine: {'line': b'Creating /home/elfriedkinzoun/rosws/install/benrover_sensors/lib/python3.10/site-packages/benrover-sensors.egg-link (link to .)\n'}
+[5.341318] (benrover_sensors) StdoutLine: {'line': b'\n'}
+[5.341852] (benrover_sensors) StdoutLine: {'line': b'Installed /home/elfriedkinzoun/rosws/build/benrover_sensors\n'}
+[5.342215] (benrover_sensors) StdoutLine: {'line': b'running symlink_data\n'}
+[5.342432] (benrover_sensors) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_sensors/share/ament_index\n'}
+[5.342627] (benrover_sensors) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_sensors/share/ament_index/resource_index\n'}
+[5.342818] (benrover_sensors) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_sensors/share/ament_index/resource_index/packages\n'}
+[5.343020] (benrover_sensors) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_sensors/resource/benrover_sensors -> /home/elfriedkinzoun/rosws/install/benrover_sensors/share/ament_index/resource_index/packages\n'}
+[5.343222] (benrover_sensors) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_sensors/package.xml -> /home/elfriedkinzoun/rosws/install/benrover_sensors/share/benrover_sensors\n'}
+[5.366010] (-) TimerEvent: {}
+[5.410051] (benrover_navigation) CommandEnded: {'returncode': 0}
+[5.456947] (benrover_actuator) StdoutLine: {'line': b'running egg_info\n'}
+[5.457260] (benrover_actuator) StdoutLine: {'line': b'creating benrover_actuator.egg-info\n'}
+[5.457688] (benrover_actuator) StdoutLine: {'line': b'writing benrover_actuator.egg-info/PKG-INFO\n'}
+[5.458689] (benrover_assembly) StdoutLine: {'line': b'running egg_info\n'}
+[5.458885] (benrover_assembly) StdoutLine: {'line': b'creating benrover_assembly.egg-info\n'}
+[5.459168] (benrover_assembly) StdoutLine: {'line': b'writing benrover_assembly.egg-info/PKG-INFO\n'}
+[5.459600] (benrover_assembly) StdoutLine: {'line': b'writing dependency_links to benrover_assembly.egg-info/dependency_links.txt\n'}
+[5.459865] (benrover_assembly) StdoutLine: {'line': b'writing entry points to benrover_assembly.egg-info/entry_points.txt\n'}
+[5.460217] (benrover_assembly) StdoutLine: {'line': b'writing requirements to benrover_assembly.egg-info/requires.txt\n'}
+[5.460378] (benrover_assembly) StdoutLine: {'line': b'writing top-level names to benrover_assembly.egg-info/top_level.txt\n'}
+[5.460592] (benrover_assembly) StdoutLine: {'line': b"writing manifest file 'benrover_assembly.egg-info/SOURCES.txt'\n"}
+[5.460971] (benrover_navigation) JobEnded: {'identifier': 'benrover_navigation', 'rc': 0}
+[5.462064] (benrover_actuator) StdoutLine: {'line': b'writing dependency_links to benrover_actuator.egg-info/dependency_links.txt\n'}
+[5.462825] (test_sim) JobStarted: {'identifier': 'test_sim'}
+[5.463603] (benrover_actuator) StdoutLine: {'line': b'writing entry points to benrover_actuator.egg-info/entry_points.txt\n'}
+[5.463845] (benrover_actuator) StdoutLine: {'line': b'writing requirements to benrover_actuator.egg-info/requires.txt\n'}
+[5.464076] (benrover_assembly) StdoutLine: {'line': b"reading manifest file 'benrover_assembly.egg-info/SOURCES.txt'\n"}
+[5.464319] (benrover_actuator) StdoutLine: {'line': b'writing top-level names to benrover_actuator.egg-info/top_level.txt\n'}
+[5.465438] (benrover_actuator) StdoutLine: {'line': b"writing manifest file 'benrover_actuator.egg-info/SOURCES.txt'\n"}
+[5.465698] (benrover_assembly) StdoutLine: {'line': b"writing manifest file 'benrover_assembly.egg-info/SOURCES.txt'\n"}
+[5.466271] (-) TimerEvent: {}
+[5.469919] (benrover_actuator) StdoutLine: {'line': b"reading manifest file 'benrover_actuator.egg-info/SOURCES.txt'\n"}
+[5.471137] (benrover_actuator) StdoutLine: {'line': b"writing manifest file 'benrover_actuator.egg-info/SOURCES.txt'\n"}
+[5.481272] (benrover_sensors) CommandEnded: {'returncode': 0}
+[5.490137] (benrover_assembly) StdoutLine: {'line': b'running build_ext\n'}
+[5.491839] (benrover_assembly) StdoutLine: {'line': b'Creating /home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages/benrover-assembly.egg-link (link to .)\n'}
+[5.495645] (benrover_assembly) StdoutLine: {'line': b'\n'}
+[5.496059] (benrover_assembly) StdoutLine: {'line': b'Installed /home/elfriedkinzoun/rosws/build/benrover_assembly\n'}
+[5.496229] (benrover_assembly) StdoutLine: {'line': b'running symlink_data\n'}
+[5.497481] (benrover_assembly) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_assembly/share/ament_index\n'}
+[5.497651] (benrover_assembly) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_assembly/share/ament_index/resource_index\n'}
+[5.497843] (benrover_assembly) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_assembly/share/ament_index/resource_index/packages\n'}
+[5.498227] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/resource/benrover_assembly -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/ament_index/resource_index/packages\n'}
+[5.498394] (benrover_actuator) StdoutLine: {'line': b'running build_ext\n'}
+[5.498631] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/package.xml -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly\n'}
+[5.498796] (benrover_assembly) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/launch\n'}
+[5.498953] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/launch/launch_simulation.py -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/launch\n'}
+[5.499111] (benrover_assembly) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/urdf\n'}
+[5.499267] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/urdf/benrover_assembly.urdf -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/urdf\n'}
+[5.499424] (benrover_assembly) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.499604] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Support_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.499762] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Rod_Mid.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.499919] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Rocker_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.500074] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Servo_BL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.500767] (benrover_actuator) StdoutLine: {'line': b'Creating /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover-actuator.egg-link (link to .)\n'}
+[5.500932] (benrover_actuator) StdoutLine: {'line': b'Installing my_node script to /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/${PROJECT_NAME}\n'}
+[5.501073] (benrover_actuator) StdoutLine: {'line': b'Installing servo_control_node script to /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/${PROJECT_NAME}\n'}
+[5.501361] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/RodEnd_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.501717] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Wheel_MR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.503934] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Servo_FL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.504150] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Bogie_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.504291] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Wheel_FL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.504437] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Wheel_BR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.504565] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Wheel_FR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.504685] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/RodEnd_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.504818] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/base_link.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.504949] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Wheel_ML.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.505075] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Stepper_Link.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.505228] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Servo_FR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.505378] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Wheel_BL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.505528] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Servo_BR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.505671] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Bogie_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.506255] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Cam_servo_link.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.506595] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Support_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.511499] (benrover_assembly) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Rocker_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes\n'}
+[5.512260] (benrover_actuator) StdoutLine: {'line': b'\n'}
+[5.512871] (benrover_actuator) StdoutLine: {'line': b'Installed /home/elfriedkinzoun/rosws/build/benrover_actuator\n'}
+[5.513444] (benrover_actuator) StdoutLine: {'line': b'running symlink_data\n'}
+[5.514045] (benrover_actuator) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_actuator/share/ament_index\n'}
+[5.514571] (benrover_actuator) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_actuator/share/ament_index/resource_index\n'}
+[5.515065] (benrover_actuator) StdoutLine: {'line': b'creating /home/elfriedkinzoun/rosws/install/benrover_actuator/share/ament_index/resource_index/packages\n'}
+[5.515458] (benrover_actuator) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_actuator/resource/benrover_actuator -> /home/elfriedkinzoun/rosws/install/benrover_actuator/share/ament_index/resource_index/packages\n'}
+[5.515704] (benrover_actuator) StdoutLine: {'line': b'symbolically linking /home/elfriedkinzoun/rosws/build/benrover_actuator/package.xml -> /home/elfriedkinzoun/rosws/install/benrover_actuator/share/benrover_actuator\n'}
+[5.524561] (benrover_sensors) JobEnded: {'identifier': 'benrover_sensors', 'rc': 0}
+[5.527515] (test_sim) JobProgress: {'identifier': 'test_sim', 'progress': 'cmake'}
+[5.528013] (test_sim) Command: {'cmd': ['/usr/bin/cmake', '/home/elfriedkinzoun/rosws/src/test_sim', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/elfriedkinzoun/rosws/install/test_sim'], 'cwd': '/home/elfriedkinzoun/rosws/build/test_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'elfriedkinzoun'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/elfriedkinzoun'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/elfriedkinzoun/rosws'), ('DESKTOP_SESSION', 'zorin'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'zorin'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1440'), ('MAVEN_HOME', '/usr/local/apache-maven-3.9.7'), ('SYSTEMD_EXEC_PID', '1734'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '17158'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'elfriedkinzoun'), ('JOURNAL_STREAM', '8:31086'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'elfriedkinzoun'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/elfriedkinzoun/anaconda3/bin:/home/elfriedkinzoun/anaconda3/condabin:/home/elfriedkinzoun/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/elfriedkinzoun-HP-ENVY-15-Notebook-PC:@/tmp/.ICE-unix/1530,unix/elfriedkinzoun-HP-ENVY-15-Notebook-PC:/tmp/.ICE-unix/1530'), ('INVOCATION_ID', '9a8f2a45134f477daedde13b94370c31'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'zorin:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'zorin'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6R45S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/elfriedkinzoun/anaconda3/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/elfriedkinzoun/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:99a95476-3d30-440c-a11a-475a9d4a00c0'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'zorin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/elfriedkinzoun/rosws/build/test_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-zorin:/etc/xdg'), ('CONDA_EXE', '/home/elfriedkinzoun/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/zorin:/home/elfriedkinzoun/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('M2_HOME', '/usr/local/apache-maven-3.9.7'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/elfriedkinzoun/anaconda3'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', ':/opt/ros/humble/share:/opt/ros/humble')]), 'shell': False}
+[5.566772] (-) TimerEvent: {}
+[5.645502] (benrover_assembly) CommandEnded: {'returncode': 0}
+[5.657161] (benrover_assembly) JobEnded: {'identifier': 'benrover_assembly', 'rc': 0}
+[5.658798] (benrover_actuator) CommandEnded: {'returncode': 0}
+[5.666795] (-) TimerEvent: {}
+[5.667585] (benrover_actuator) JobEnded: {'identifier': 'benrover_actuator', 'rc': 0}
+[5.757787] (test_sim) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[5.766900] (-) TimerEvent: {}
+[5.867216] (-) TimerEvent: {}
+[5.967623] (-) TimerEvent: {}
+[6.012631] (test_sim) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[6.024850] (test_sim) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.067772] (-) TimerEvent: {}
+[6.142207] (test_sim) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.158409] (test_sim) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.158811] (test_sim) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.159486] (test_sim) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.164956] (test_sim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.167878] (-) TimerEvent: {}
+[6.268346] (-) TimerEvent: {}
+[6.292326] (test_sim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.312648] (test_sim) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.313175] (test_sim) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.314598] (test_sim) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.320283] (test_sim) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[6.368501] (-) TimerEvent: {}
+[6.468997] (-) TimerEvent: {}
+[6.569393] (-) TimerEvent: {}
+[6.669835] (-) TimerEvent: {}
+[6.770320] (-) TimerEvent: {}
+[6.859655] (test_sim) StdoutLine: {'line': b'-- Found Python3: /home/elfriedkinzoun/anaconda3/bin/python3 (found version "3.11.7") found components: Interpreter \n'}
+[6.870434] (-) TimerEvent: {}
+[6.957519] (test_sim) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[6.970544] (-) TimerEvent: {}
+[7.034768] (test_sim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[7.039533] (test_sim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.048961] (test_sim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[7.063785] (test_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.070673] (-) TimerEvent: {}
+[7.083443] (test_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.142686] (test_sim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[7.145189] (test_sim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.170793] (-) TimerEvent: {}
+[7.271140] (-) TimerEvent: {}
+[7.277888] (test_sim) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[7.329163] (test_sim) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/share  \n'}
+[7.371276] (-) TimerEvent: {}
+[7.397079] (test_sim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.414898] (test_sim) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[7.471385] (-) TimerEvent: {}
+[7.566236] (test_sim) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[7.567059] (test_sim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[7.571497] (-) TimerEvent: {}
+[7.671917] (-) TimerEvent: {}
+[7.747540] (test_sim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[7.749503] (test_sim) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[7.772028] (-) TimerEvent: {}
+[7.828126] (test_sim) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[7.849572] (test_sim) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[7.851295] (test_sim) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[7.868230] (test_sim) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[7.872153] (-) TimerEvent: {}
+[7.972574] (-) TimerEvent: {}
+[8.043443] (test_sim) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[8.072703] (-) TimerEvent: {}
+[8.127311] (test_sim) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[8.159237] (test_sim) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[8.172823] (-) TimerEvent: {}
+[8.190754] (test_sim) StdoutLine: {'line': b'-- Found Boost: /home/elfriedkinzoun/anaconda3/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found suitable version "1.82.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[8.218945] (test_sim) StderrLine: {'line': b'\x1b[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):\n'}
+[8.219207] (test_sim) StderrLine: {'line': b"  Protobuf compiler version 3.20.3 doesn't match library version 3.12.4\n"}
+[8.219320] (test_sim) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[8.219415] (test_sim) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:203 (find_package)\n'}
+[8.219501] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)\n'}
+[8.219580] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)\n'}
+[8.219656] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[8.219731] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)\n'}
+[8.219804] (test_sim) StderrLine: {'line': b'  CMakeLists.txt:6 (find_package)\n'}
+[8.219877] (test_sim) StderrLine: {'line': b'\n'}
+[8.219950] (test_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[8.220504] (test_sim) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[8.230227] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[8.239253] (test_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[8.240917] (test_sim) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[8.241427] (test_sim) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[8.247844] (test_sim) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[8.263107] (test_sim) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[8.272954] (-) TimerEvent: {}
+[8.305723] (test_sim) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[8.322221] (test_sim) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[8.334201] (test_sim) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[8.341016] (test_sim) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[8.341266] (test_sim) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[8.346596] (test_sim) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[8.346787] (test_sim) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[8.352300] (test_sim) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[8.352541] (test_sim) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[8.360846] (test_sim) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[8.361837] (test_sim) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[8.373093] (-) TimerEvent: {}
+[8.377571] (test_sim) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[8.377920] (test_sim) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[8.389275] (test_sim) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[8.473211] (-) TimerEvent: {}
+[8.613290] (-) TimerEvent: {}
+[8.642647] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[8.651667] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[8.653042] (test_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[8.686085] (test_sim) StderrLine: {'line': b'\x1b[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):\n'}
+[8.686301] (test_sim) StderrLine: {'line': b"  Protobuf compiler version 3.20.3 doesn't match library version 3.12.4\n"}
+[8.686414] (test_sim) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[8.686507] (test_sim) StderrLine: {'line': b'  /usr/share/cmake/ignition-cmake2/cmake2/FindIgnProtobuf.cmake:34 (find_package)\n'}
+[8.686591] (test_sim) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/ignition-transport8/ignition-transport8-config.cmake:92 (find_package)\n'}
+[8.686671] (test_sim) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:235 (find_package)\n'}
+[8.686748] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)\n'}
+[8.686823] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)\n'}
+[8.686897] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[8.686969] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)\n'}
+[8.687041] (test_sim) StderrLine: {'line': b'  CMakeLists.txt:6 (find_package)\n'}
+[8.687112] (test_sim) StderrLine: {'line': b'\n'}
+[8.687183] (test_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[8.688405] (test_sim) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[8.703711] (test_sim) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[8.713410] (-) TimerEvent: {}
+[8.721837] (test_sim) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[8.776600] (test_sim) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[8.784315] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[8.785175] (test_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[8.813525] (-) TimerEvent: {}
+[8.818828] (test_sim) StderrLine: {'line': b'\x1b[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):\n'}
+[8.819060] (test_sim) StderrLine: {'line': b"  Protobuf compiler version 3.20.3 doesn't match library version 3.12.4\n"}
+[8.819186] (test_sim) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[8.819284] (test_sim) StderrLine: {'line': b'  /usr/share/cmake/ignition-cmake2/cmake2/FindIgnProtobuf.cmake:34 (find_package)\n'}
+[8.819369] (test_sim) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/ignition-msgs5/ignition-msgs5-config.cmake:92 (find_package)\n'}
+[8.819461] (test_sim) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/ignition-transport8/ignition-transport8-config.cmake:96 (find_package)\n'}
+[8.819536] (test_sim) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:235 (find_package)\n'}
+[8.819611] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)\n'}
+[8.819685] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)\n'}
+[8.819757] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[8.819830] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)\n'}
+[8.819901] (test_sim) StderrLine: {'line': b'  CMakeLists.txt:6 (find_package)\n'}
+[8.819972] (test_sim) StderrLine: {'line': b'\n'}
+[8.820042] (test_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[8.822733] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[8.831108] (test_sim) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[8.855609] (test_sim) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[8.899782] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[8.904840] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[8.905456] (test_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[8.905851] (test_sim) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[8.907354] (test_sim) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[8.909046] (test_sim) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[8.913627] (-) TimerEvent: {}
+[8.926991] (test_sim) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[8.927615] (test_sim) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[8.932997] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[8.933664] (test_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[8.934302] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[8.940633] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[8.942088] (test_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[9.013782] (-) TimerEvent: {}
+[9.056752] (test_sim) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[9.074723] (test_sim) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[9.090575] (test_sim) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[9.113854] (-) TimerEvent: {}
+[9.132221] (test_sim) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[9.140813] (test_sim) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[9.164407] (test_sim) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[9.204836] (test_sim) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[9.205481] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[9.206125] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[9.206709] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[9.212786] (test_sim) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[9.213286] (test_sim) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[9.213908] (-) TimerEvent: {}
+[9.229252] (test_sim) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[9.278117] (test_sim) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:77 (message):\n'}
+[9.278561] (test_sim) StderrLine: {'line': b"  ament_target_dependencies() the passed package name 'gazebo_msgs' was not\n"}
+[9.278771] (test_sim) StderrLine: {'line': b'  found before\n'}
+[9.278948] (test_sim) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[9.279095] (test_sim) StderrLine: {'line': b'  CMakeLists.txt:15 (ament_target_dependencies)\n'}
+[9.279230] (test_sim) StderrLine: {'line': b'\n'}
+[9.279366] (test_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[9.279494] (test_sim) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[9.279635] (test_sim) StdoutLine: {'line': b'See also "/home/elfriedkinzoun/rosws/build/test_sim/CMakeFiles/CMakeOutput.log".\n'}
+[9.294533] (test_sim) CommandEnded: {'returncode': 1}
+[9.314089] (-) TimerEvent: {}
+[9.315310] (test_sim) JobEnded: {'identifier': 'test_sim', 'rc': 1}
+[9.326286] (-) EventReactorShutdown: {}

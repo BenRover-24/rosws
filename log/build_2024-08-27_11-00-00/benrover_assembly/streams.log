@@ -1,0 +1,54 @@
+[4.061s] Invoking command in '/home/elfriedkinzoun/rosws/build/benrover_assembly': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_assembly/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/elfriedkinzoun/rosws/build/benrover_assembly/build --no-deps symlink_data
+[4.881s] running develop
+[4.886s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.886s]   warnings.warn(
+[5.059s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.4.0-ubuntu3-zorin1 is an invalid version and will not be supported in a future release
+[5.060s]   warnings.warn(
+[5.448s] running egg_info
+[5.448s] creating benrover_assembly.egg-info
+[5.448s] writing benrover_assembly.egg-info/PKG-INFO
+[5.449s] writing dependency_links to benrover_assembly.egg-info/dependency_links.txt
+[5.449s] writing entry points to benrover_assembly.egg-info/entry_points.txt
+[5.450s] writing requirements to benrover_assembly.egg-info/requires.txt
+[5.450s] writing top-level names to benrover_assembly.egg-info/top_level.txt
+[5.450s] writing manifest file 'benrover_assembly.egg-info/SOURCES.txt'
+[5.453s] reading manifest file 'benrover_assembly.egg-info/SOURCES.txt'
+[5.455s] writing manifest file 'benrover_assembly.egg-info/SOURCES.txt'
+[5.480s] running build_ext
+[5.481s] Creating /home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages/benrover-assembly.egg-link (link to .)
+[5.485s] 
+[5.485s] Installed /home/elfriedkinzoun/rosws/build/benrover_assembly
+[5.487s] running symlink_data
+[5.487s] creating /home/elfriedkinzoun/rosws/install/benrover_assembly/share/ament_index
+[5.487s] creating /home/elfriedkinzoun/rosws/install/benrover_assembly/share/ament_index/resource_index
+[5.487s] creating /home/elfriedkinzoun/rosws/install/benrover_assembly/share/ament_index/resource_index/packages
+[5.488s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/resource/benrover_assembly -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/ament_index/resource_index/packages
+[5.488s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/package.xml -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly
+[5.488s] creating /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/launch
+[5.488s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/launch/launch_simulation.py -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/launch
+[5.488s] creating /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/urdf
+[5.489s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/urdf/benrover_assembly.urdf -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/urdf
+[5.489s] creating /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.489s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Support_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.489s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Rod_Mid.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.489s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Rocker_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.490s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Servo_BL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.491s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/RodEnd_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.493s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Wheel_MR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.493s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Servo_FL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.493s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Bogie_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.494s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Wheel_FL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.494s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Wheel_BR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.494s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Wheel_FR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.494s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/RodEnd_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.494s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/base_link.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.494s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Wheel_ML.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.494s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Stepper_Link.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.495s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Servo_FR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.495s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Wheel_BL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.495s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Servo_BR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.495s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Bogie_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.496s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Cam_servo_link.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.500s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Support_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.501s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_assembly/meshes/Rocker_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.635s] Invoked command in '/home/elfriedkinzoun/rosws/build/benrover_assembly' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_assembly/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/elfriedkinzoun/rosws/build/benrover_assembly/build --no-deps symlink_data

@@ -1,0 +1,107 @@
+[0.115s] Invoking command in '/home/elfriedkinzoun/rosws/build/test_sim': CMAKE_PREFIX_PATH=/home/elfriedkinzoun/rosws/install/benrover_sensors:/home/elfriedkinzoun/rosws/install/benrover_navigation:/home/elfriedkinzoun/rosws/install/benrover_assembly:/home/elfriedkinzoun/rosws/install/benrover_actuator:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/elfriedkinzoun/rosws/src/test_sim -DCMAKE_INSTALL_PREFIX=/home/elfriedkinzoun/rosws/install/test_sim
+[0.831s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[4.141s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[5.528s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.580s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.750s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.049s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.231s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.992s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[7.018s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.760s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.986s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[8.204s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[8.311s] [33mCMake Warning at /usr/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):
+[8.312s]   Protobuf compiler version 3.20.3 doesn't match library version 3.12.4
+[8.312s] Call Stack (most recent call first):
+[8.312s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:203 (find_package)
+[8.312s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[8.312s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[8.312s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[8.313s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[8.313s]   CMakeLists.txt:6 (find_package)
+[8.313s] 
+[8.313s] [0m
+[8.314s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[8.351s] -- Looking for ignition-math6 -- found version 6.15.1
+[8.445s] -- Searching for dependencies of ignition-math6
+[8.480s] -- Looking for OGRE...
+[8.589s] -- Found Ogre Ghadamon (1.9.0)
+[8.604s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[8.617s] -- Looking for OGRE_Paging...
+[8.618s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[8.618s] -- Looking for OGRE_Terrain...
+[8.618s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[8.618s] -- Looking for OGRE_Property...
+[8.618s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[8.619s] -- Looking for OGRE_RTShaderSystem...
+[8.619s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[8.619s] -- Looking for OGRE_Volume...
+[8.619s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[8.619s] -- Looking for OGRE_Overlay...
+[8.619s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[8.812s] -- Looking for ignition-math6 -- found version 6.15.1
+[8.844s] -- Looking for ignition-transport8 -- found version 8.2.1
+[8.845s] -- Searching for dependencies of ignition-transport8
+[8.879s] [33mCMake Warning at /usr/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):
+[8.880s]   Protobuf compiler version 3.20.3 doesn't match library version 3.12.4
+[8.880s] Call Stack (most recent call first):
+[8.880s]   /usr/share/cmake/ignition-cmake2/cmake2/FindIgnProtobuf.cmake:34 (find_package)
+[8.880s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-transport8/ignition-transport8-config.cmake:92 (find_package)
+[8.880s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:235 (find_package)
+[8.881s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[8.881s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[8.881s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[8.881s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[8.881s]   CMakeLists.txt:6 (find_package)
+[8.882s] 
+[8.882s] [0m
+[8.882s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[8.911s] -- Checking for module 'uuid'
+[8.927s] --   Found uuid, version 2.37.2
+[8.983s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[8.984s] -- Searching for dependencies of ignition-msgs5
+[9.008s] [33mCMake Warning at /usr/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):
+[9.008s]   Protobuf compiler version 3.20.3 doesn't match library version 3.12.4
+[9.008s] Call Stack (most recent call first):
+[9.008s]   /usr/share/cmake/ignition-cmake2/cmake2/FindIgnProtobuf.cmake:34 (find_package)
+[9.008s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-msgs5/ignition-msgs5-config.cmake:92 (find_package)
+[9.009s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-transport8/ignition-transport8-config.cmake:96 (find_package)
+[9.009s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:235 (find_package)
+[9.009s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[9.009s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[9.009s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[9.009s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[9.010s]   CMakeLists.txt:6 (find_package)
+[9.010s] 
+[9.010s] [0m
+[9.011s] -- Looking for ignition-math6 -- found version 6.15.1
+[9.018s] -- Checking for module 'tinyxml2'
+[9.053s] --   Found tinyxml2, version 9.0.0
+[9.112s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[9.133s] -- Looking for ignition-common3 -- found version 3.14.0
+[9.134s] -- Searching for dependencies of ignition-common3
+[9.141s] -- Looking for dlfcn.h - found
+[9.141s] -- Looking for libdl - found
+[9.169s] -- Searching for <ignition-common3> component [graphics]
+[9.180s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[9.182s] -- Searching for dependencies of ignition-common3-graphics
+[9.183s] -- Looking for ignition-math6 -- found version 6.15.1
+[9.201s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[9.201s] -- Searching for dependencies of ignition-fuel_tools4
+[9.289s] -- Checking for module 'jsoncpp'
+[9.305s] --   Found jsoncpp, version 1.9.5
+[9.354s] -- Checking for module 'libzip'
+[9.375s] --   Found libzip, version 1.7.3
+[9.420s] -- Looking for ignition-common3 -- found version 3.14.0
+[9.421s] -- Looking for ignition-math6 -- found version 6.15.1
+[9.422s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[9.434s] -- Gazebo version: 11.10
+[9.451s] -- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[9.616s] [31mCMake Error at CMakeLists.txt:23 (gazebo_ros_add_plugin_library):
+[9.617s]   Unknown CMake command "gazebo_ros_add_plugin_library".
+[9.617s] 
+[9.617s] [0m
+[9.617s] -- Configuring incomplete, errors occurred!
+[9.617s] See also "/home/elfriedkinzoun/rosws/build/test_sim/CMakeFiles/CMakeOutput.log".
+[9.663s] Invoked command in '/home/elfriedkinzoun/rosws/build/test_sim' returned '1': CMAKE_PREFIX_PATH=/home/elfriedkinzoun/rosws/install/benrover_sensors:/home/elfriedkinzoun/rosws/install/benrover_navigation:/home/elfriedkinzoun/rosws/install/benrover_assembly:/home/elfriedkinzoun/rosws/install/benrover_actuator:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/elfriedkinzoun/rosws/src/test_sim -DCMAKE_INSTALL_PREFIX=/home/elfriedkinzoun/rosws/install/test_sim

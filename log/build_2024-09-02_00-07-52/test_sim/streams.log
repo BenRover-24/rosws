@@ -1,0 +1,107 @@
+[0.106s] Invoking command in '/home/elfriedkinzoun/rosws/build/test_sim': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/elfriedkinzoun/rosws/src/test_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/elfriedkinzoun/rosws/install/test_sim
+[0.951s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.312s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.013s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.056s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.095s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.167s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.212s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.435s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.440s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.875s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.283s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[3.624s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[4.134s] [33mCMake Warning at /usr/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):
+[4.134s]   Protobuf compiler version 3.20.3 doesn't match library version 3.12.4
+[4.134s] Call Stack (most recent call first):
+[4.134s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:203 (find_package)
+[4.134s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[4.134s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[4.134s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[4.135s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[4.135s]   CMakeLists.txt:6 (find_package)
+[4.135s] 
+[4.135s] [0m
+[4.137s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[4.171s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.287s] -- Searching for dependencies of ignition-math6
+[4.321s] -- Looking for OGRE...
+[4.340s] -- Found Ogre Ghadamon (1.9.0)
+[4.358s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[4.371s] -- Looking for OGRE_Paging...
+[4.371s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[4.371s] -- Looking for OGRE_Terrain...
+[4.371s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[4.371s] -- Looking for OGRE_Property...
+[4.372s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[4.372s] -- Looking for OGRE_RTShaderSystem...
+[4.372s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[4.372s] -- Looking for OGRE_Volume...
+[4.372s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[4.372s] -- Looking for OGRE_Overlay...
+[4.372s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[4.569s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.598s] -- Looking for ignition-transport8 -- found version 8.2.1
+[4.598s] -- Searching for dependencies of ignition-transport8
+[4.631s] [33mCMake Warning at /usr/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):
+[4.631s]   Protobuf compiler version 3.20.3 doesn't match library version 3.12.4
+[4.632s] Call Stack (most recent call first):
+[4.632s]   /usr/share/cmake/ignition-cmake2/cmake2/FindIgnProtobuf.cmake:34 (find_package)
+[4.632s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-transport8/ignition-transport8-config.cmake:92 (find_package)
+[4.632s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:235 (find_package)
+[4.632s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[4.632s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[4.632s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[4.633s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[4.633s]   CMakeLists.txt:6 (find_package)
+[4.633s] 
+[4.633s] [0m
+[4.633s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[4.666s] -- Checking for module 'uuid'
+[4.724s] --   Found uuid, version 2.37.2
+[4.792s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[4.794s] -- Searching for dependencies of ignition-msgs5
+[4.818s] [33mCMake Warning at /usr/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):
+[4.818s]   Protobuf compiler version 3.20.3 doesn't match library version 3.12.4
+[4.818s] Call Stack (most recent call first):
+[4.818s]   /usr/share/cmake/ignition-cmake2/cmake2/FindIgnProtobuf.cmake:34 (find_package)
+[4.818s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-msgs5/ignition-msgs5-config.cmake:92 (find_package)
+[4.819s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-transport8/ignition-transport8-config.cmake:96 (find_package)
+[4.819s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:235 (find_package)
+[4.819s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[4.819s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[4.819s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[4.819s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[4.819s]   CMakeLists.txt:6 (find_package)
+[4.819s] 
+[4.819s] [0m
+[4.822s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.837s] -- Checking for module 'tinyxml2'
+[4.865s] --   Found tinyxml2, version 9.0.0
+[4.921s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[4.942s] -- Looking for ignition-common3 -- found version 3.14.0
+[4.943s] -- Searching for dependencies of ignition-common3
+[4.951s] -- Looking for dlfcn.h - found
+[4.951s] -- Looking for libdl - found
+[4.978s] -- Searching for <ignition-common3> component [graphics]
+[4.989s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[4.989s] -- Searching for dependencies of ignition-common3-graphics
+[4.990s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.000s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[5.001s] -- Searching for dependencies of ignition-fuel_tools4
+[5.095s] -- Checking for module 'jsoncpp'
+[5.112s] --   Found jsoncpp, version 1.9.5
+[5.161s] -- Checking for module 'libzip'
+[5.184s] --   Found libzip, version 1.7.3
+[5.227s] -- Looking for ignition-common3 -- found version 3.14.0
+[5.227s] -- Looking for ignition-math6 -- found version 6.15.1
+[5.228s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[5.255s] -- Gazebo version: 11.10
+[5.282s] -- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[5.417s] [31mCMake Error at CMakeLists.txt:23 (gazebo_ros_add_plugin_library):
+[5.417s]   Unknown CMake command "gazebo_ros_add_plugin_library".
+[5.417s] 
+[5.418s] [0m
+[5.418s] -- Configuring incomplete, errors occurred!
+[5.418s] See also "/home/elfriedkinzoun/rosws/build/test_sim/CMakeFiles/CMakeOutput.log".
+[5.470s] Invoked command in '/home/elfriedkinzoun/rosws/build/test_sim' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/elfriedkinzoun/rosws/src/test_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/elfriedkinzoun/rosws/install/test_sim

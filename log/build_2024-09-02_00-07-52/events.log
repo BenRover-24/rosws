@@ -1,0 +1,172 @@
+[0.000000] (-) TimerEvent: {}
+[0.000664] (-) JobUnselected: {'identifier': 'benrover_actuator'}
+[0.000900] (-) JobUnselected: {'identifier': 'benrover_assembly'}
+[0.001110] (-) JobUnselected: {'identifier': 'benrover_navigation'}
+[0.001300] (-) JobUnselected: {'identifier': 'benrover_sensors'}
+[0.001392] (test_sim) JobQueued: {'identifier': 'test_sim', 'dependencies': OrderedDict()}
+[0.001479] (test_sim) JobStarted: {'identifier': 'test_sim'}
+[0.077714] (test_sim) JobProgress: {'identifier': 'test_sim', 'progress': 'cmake'}
+[0.099608] (-) TimerEvent: {}
+[0.106486] (test_sim) Command: {'cmd': ['/usr/bin/cmake', '/home/elfriedkinzoun/rosws/src/test_sim', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/elfriedkinzoun/rosws/install/test_sim'], 'cwd': '/home/elfriedkinzoun/rosws/build/test_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'elfriedkinzoun'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/elfriedkinzoun'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/elfriedkinzoun/rosws/src/test_sim/urdf'), ('DESKTOP_SESSION', 'zorin'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'zorin'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1468'), ('MAVEN_HOME', '/usr/local/apache-maven-3.9.7'), ('SYSTEMD_EXEC_PID', '1761'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '39172'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'elfriedkinzoun'), ('JOURNAL_STREAM', '8:32774'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'elfriedkinzoun'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/elfriedkinzoun/anaconda3/bin:/home/elfriedkinzoun/anaconda3/condabin:/home/elfriedkinzoun/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/elfriedkinzoun-HP-ENVY-15-Notebook-PC:@/tmp/.ICE-unix/1558,unix/elfriedkinzoun-HP-ENVY-15-Notebook-PC:/tmp/.ICE-unix/1558'), ('INVOCATION_ID', 'c8f1c020262d402eab3942e05bf8acea'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'zorin:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'zorin'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GCC9S2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/elfriedkinzoun/anaconda3/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/elfriedkinzoun/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:d6104424-0477-4397-98b0-bbb55b2cb4c5'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'zorin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/elfriedkinzoun/rosws/build/test_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-zorin:/etc/xdg'), ('CONDA_EXE', '/home/elfriedkinzoun/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/zorin:/home/elfriedkinzoun/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('M2_HOME', '/usr/local/apache-maven-3.9.7'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CONDA_PREFIX', '/home/elfriedkinzoun/anaconda3'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.200093] (-) TimerEvent: {}
+[0.304553] (-) TimerEvent: {}
+[0.405445] (-) TimerEvent: {}
+[0.505772] (-) TimerEvent: {}
+[0.606130] (-) TimerEvent: {}
+[0.706465] (-) TimerEvent: {}
+[0.806787] (-) TimerEvent: {}
+[0.907125] (-) TimerEvent: {}
+[0.952718] (test_sim) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.007232] (-) TimerEvent: {}
+[1.107536] (-) TimerEvent: {}
+[1.207871] (-) TimerEvent: {}
+[1.308254] (-) TimerEvent: {}
+[1.313589] (test_sim) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.408358] (-) TimerEvent: {}
+[1.508684] (-) TimerEvent: {}
+[1.609032] (-) TimerEvent: {}
+[1.709366] (-) TimerEvent: {}
+[1.809705] (-) TimerEvent: {}
+[1.910087] (-) TimerEvent: {}
+[2.010427] (-) TimerEvent: {}
+[2.014329] (test_sim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.057217] (test_sim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.096435] (test_sim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.110512] (-) TimerEvent: {}
+[2.167981] (test_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.210635] (-) TimerEvent: {}
+[2.213185] (test_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.310769] (-) TimerEvent: {}
+[2.411136] (-) TimerEvent: {}
+[2.436026] (test_sim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.440844] (test_sim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.511242] (-) TimerEvent: {}
+[2.611678] (-) TimerEvent: {}
+[2.712056] (-) TimerEvent: {}
+[2.812470] (-) TimerEvent: {}
+[2.876355] (test_sim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.912580] (-) TimerEvent: {}
+[3.012993] (-) TimerEvent: {}
+[3.113394] (-) TimerEvent: {}
+[3.213780] (-) TimerEvent: {}
+[3.283977] (test_sim) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[3.313912] (-) TimerEvent: {}
+[3.414315] (-) TimerEvent: {}
+[3.514762] (-) TimerEvent: {}
+[3.615167] (-) TimerEvent: {}
+[3.625783] (test_sim) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[3.715293] (-) TimerEvent: {}
+[3.815709] (-) TimerEvent: {}
+[3.916109] (-) TimerEvent: {}
+[4.016459] (-) TimerEvent: {}
+[4.116774] (-) TimerEvent: {}
+[4.134916] (test_sim) StderrLine: {'line': b'\x1b[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):\n'}
+[4.135234] (test_sim) StderrLine: {'line': b"  Protobuf compiler version 3.20.3 doesn't match library version 3.12.4\n"}
+[4.135364] (test_sim) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.135497] (test_sim) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:203 (find_package)\n'}
+[4.135627] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)\n'}
+[4.135784] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)\n'}
+[4.135894] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[4.136001] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)\n'}
+[4.136107] (test_sim) StderrLine: {'line': b'  CMakeLists.txt:6 (find_package)\n'}
+[4.136242] (test_sim) StderrLine: {'line': b'\n'}
+[4.136334] (test_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[4.138224] (test_sim) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[4.172502] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.216878] (-) TimerEvent: {}
+[4.288738] (test_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[4.316979] (-) TimerEvent: {}
+[4.322141] (test_sim) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[4.341061] (test_sim) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[4.358810] (test_sim) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[4.372088] (test_sim) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[4.372361] (test_sim) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[4.372566] (test_sim) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[4.372670] (test_sim) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[4.372846] (test_sim) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[4.372976] (test_sim) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[4.373117] (test_sim) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[4.373260] (test_sim) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[4.373388] (test_sim) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[4.373549] (test_sim) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[4.373636] (test_sim) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[4.373752] (test_sim) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[4.417099] (-) TimerEvent: {}
+[4.517643] (-) TimerEvent: {}
+[4.570122] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.598820] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[4.599858] (test_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[4.617738] (-) TimerEvent: {}
+[4.632533] (test_sim) StderrLine: {'line': b'\x1b[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):\n'}
+[4.632833] (test_sim) StderrLine: {'line': b"  Protobuf compiler version 3.20.3 doesn't match library version 3.12.4\n"}
+[4.632983] (test_sim) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.633119] (test_sim) StderrLine: {'line': b'  /usr/share/cmake/ignition-cmake2/cmake2/FindIgnProtobuf.cmake:34 (find_package)\n'}
+[4.633273] (test_sim) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/ignition-transport8/ignition-transport8-config.cmake:92 (find_package)\n'}
+[4.633410] (test_sim) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:235 (find_package)\n'}
+[4.633544] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)\n'}
+[4.633676] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)\n'}
+[4.633809] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[4.634001] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)\n'}
+[4.634137] (test_sim) StderrLine: {'line': b'  CMakeLists.txt:6 (find_package)\n'}
+[4.634270] (test_sim) StderrLine: {'line': b'\n'}
+[4.634399] (test_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[4.634530] (test_sim) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[4.667306] (test_sim) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[4.717845] (-) TimerEvent: {}
+[4.725816] (test_sim) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[4.793671] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[4.795000] (test_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[4.817957] (-) TimerEvent: {}
+[4.819394] (test_sim) StderrLine: {'line': b'\x1b[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindProtobuf.cmake:524 (message):\n'}
+[4.819591] (test_sim) StderrLine: {'line': b"  Protobuf compiler version 3.20.3 doesn't match library version 3.12.4\n"}
+[4.819697] (test_sim) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.819785] (test_sim) StderrLine: {'line': b'  /usr/share/cmake/ignition-cmake2/cmake2/FindIgnProtobuf.cmake:34 (find_package)\n'}
+[4.819869] (test_sim) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/ignition-msgs5/ignition-msgs5-config.cmake:92 (find_package)\n'}
+[4.819979] (test_sim) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/ignition-transport8/ignition-transport8-config.cmake:96 (find_package)\n'}
+[4.820088] (test_sim) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:235 (find_package)\n'}
+[4.820176] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)\n'}
+[4.820272] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)\n'}
+[4.820352] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[4.820432] (test_sim) StderrLine: {'line': b'  /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)\n'}
+[4.820511] (test_sim) StderrLine: {'line': b'  CMakeLists.txt:6 (find_package)\n'}
+[4.820591] (test_sim) StderrLine: {'line': b'\n'}
+[4.820670] (test_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[4.823316] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.838130] (test_sim) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[4.866475] (test_sim) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[4.918066] (-) TimerEvent: {}
+[4.922402] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[4.943468] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[4.944514] (test_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[4.951865] (test_sim) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[4.952147] (test_sim) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[4.978887] (test_sim) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[4.989914] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[4.990790] (test_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[4.991353] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.001753] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[5.002627] (test_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[5.018172] (-) TimerEvent: {}
+[5.096721] (test_sim) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[5.112972] (test_sim) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[5.118253] (-) TimerEvent: {}
+[5.161742] (test_sim) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[5.185345] (test_sim) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[5.218385] (-) TimerEvent: {}
+[5.228055] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[5.228742] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[5.229932] (test_sim) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[5.255915] (test_sim) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[5.283608] (test_sim) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[5.318470] (-) TimerEvent: {}
+[5.418382] (test_sim) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:23 (gazebo_ros_add_plugin_library):\n'}
+[5.418617] (-) TimerEvent: {}
+[5.418769] (test_sim) StderrLine: {'line': b'  Unknown CMake command "gazebo_ros_add_plugin_library".\n'}
+[5.418888] (test_sim) StderrLine: {'line': b'\n'}
+[5.418978] (test_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[5.419061] (test_sim) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[5.419151] (test_sim) StdoutLine: {'line': b'See also "/home/elfriedkinzoun/rosws/build/test_sim/CMakeFiles/CMakeOutput.log".\n'}
+[5.470815] (test_sim) CommandEnded: {'returncode': 1}
+[5.518724] (-) TimerEvent: {}
+[5.597024] (test_sim) JobEnded: {'identifier': 'test_sim', 'rc': 1}
+[5.607715] (-) EventReactorShutdown: {}
