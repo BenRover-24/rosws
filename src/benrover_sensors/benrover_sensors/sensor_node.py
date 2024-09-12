@@ -2,58 +2,64 @@ from sys import argv
 import rclpy 
 from rclpy.node import Node
 from std_msgs.msg import Float32
-#import serial
+# import RPi.GPIO as GPIO
+import time
 
 
 
 class SensorNode(Node):
     def __init__(self):
         super().__init__('sensor_node')
-        self.publisher_lidar_data = self.create_publisher(Float32, 'sensor_data', 10)
+        # self.publisher_lidar_data = self.create_publisher(Float32, 'sensor_data', 10)
         self.publisher_temp_data = self.create_publisher(Float32, 'temperature_data', 10)
-        self.publisher_distance_data = self.create_publisher(Float32, 'distance_data', 10)
-        self.create_timer(1.0,self.send_data)
-        #self.serial_port = serial.Serial('/dev/ttyUSB0', 9600)
+        self.publisher_distance_data = self.create_publisher(Float32, 'sensor_data', 10)
+        self.publisher_battery_status_data = self.create_publisher(Float32, 'battery_status', 10)
+        self.create_timer(1.0,self.distance)
+        
+        self.Tr = 11
+        self.Ec = 8
 
-    # def get_data(self):
-    #     if self.serial_port.in_waiting > 0:
-    #         data = self.serial_port.readline().decode('utf-8').strip()
-    #         try:
-    #             # Séparer les données reçues en utilisant la virgule
-    #             values = data.split(',')
-    #             print('Les données ont bien été splittés')
-    #             # Convertir les valeurs en floats
-    #             float_values = [float(value) for value in values]
-    #             return float_values
-    #         except ValueError as e:
-    #             print('Erreur')
+    def setup(self, Tr, Ec):
+        # GPIO.setmode(GPIO.BCM)
+        # GPIO.setup(Tr, GPIO.OUT, initial=GPIO.LOW)
+        # GPIO.setup(Ec, GPIO.IN)
+        pass
+    
+    def distance(self):
+        #Simulation de la récupération de la valeur du capteur de distance 
+        
+        # self.setup(self.Tr, self.Ec)
+        samples = 5
+        distances = []
+        for _ in range(samples):
+            # GPIO.output(self.Tr, GPIO.LOW) 
+            # time.sleep(0.000002)
+            # GPIO.output(self.Tr, GPIO.HIGH)
+            # time.sleep(0.00001)
+            # GPIO.output(self.Tr, GPIO.LOW)
+            pulse_start = 5
+            pulse_end = 7
+            # while GPIO.input(self.Ec) == 0:
+            #     # pulse_start = time.time()
 
 
-    def send_data(self):
-        # if self.serial_port.in_waiting > 0:
-        #     data = self.serial_port.readline().decode('utf-8').strip()
-        #     try:
-        #         # Séparer les données reçues en utilisant la virgule
-        #         values = data.split(',')
-        #         # Convertir les valeurs en floats
-        #         float_values = [float(value) for value in values]
+            # while GPIO.input(self.Ec) == 1:
+            #     # pulse_end = time.time()
 
-        #         msg_temp = Float32()
-        #         msg_temp.data = self.get_data()[0]
-        #         self.publisher_lidar_data.publish(msg_temp)
-                
+            pulse_duration = pulse_end - pulse_start
+            distance = pulse_duration * 17150
+            distances.append(distance)
+
+        # Filtre simple : moyenne des distances
+        filtered_distance = sum(distances) / len(distances)
         msg_distance = Float32()
-        msg_distance.data = 5.0
-        self.publisher_lidar_data.publish(msg_distance)
-                
-                
-        #         # self.publisher_temp_data.publish(msg)
+        msg_distance.data = filtered_distance
+        self.publisher_distance_data.publish(msg_distance)
+        print(msg_distance.data)
 
-        #         # self.publisher_distance_data(msg)
-        #         # self.get_logger().info(f'Publishing: "{msg.data}"')
-        #     except ValueError as e:
-        #         self.get_logger().error(f'Error parsing data: {e}')
 
+
+   
     
 
 
