@@ -4,7 +4,7 @@ from kivy.uix.image import Image
 from kivy.clock import Clock
 import cv2
 from kivy.graphics.texture import Texture
-import firebase_admin 
+import firebase_admin
 from firebase_admin import db, credentials
 
 cred = credentials.Certificate("credentials.json")
@@ -65,7 +65,7 @@ Screen:
 
                     MDBoxLayout:
                         orientation: 'vertical'
-                        md_bg_color: 40/255, 32/255, 57/255, 1
+                        md_bg_color: 0.2, 0.2, 0.2, 1
                         radius: [20, 20, 20, 20]
 
                         MDLabel:
@@ -80,13 +80,11 @@ Screen:
                             id: battery_label
                             text: "Battery: "
                             halign: "center"
-                            theme_text_color: "Custom"
-                            text_color: 1, 1, 1, 1
                         
 
                     MDBoxLayout:
                         orientation: 'vertical'
-                        md_bg_color: 40/255, 32/255, 57/255, 1
+                        md_bg_color: 0.2, 0.2, 0.2, 1
                         radius: [20, 20, 20, 20]
 
                         MDLabel:
@@ -100,9 +98,7 @@ Screen:
                         MDLabel:
                             id: temp_label
                             text: "Temp: "
-                            halign: "center"                         
-                            theme_text_color: "Custom"
-                            text_color: 1, 1, 1, 1
+                            halign: "center"
                         
 '''
 
