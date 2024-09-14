@@ -293,7 +293,7 @@ class RoverDashboard(MDApp):
                 self.root.ids.accel_data.x_value = accel_x
                 self.root.ids.accel_data.y_value = accel_y
                 self.root.ids.accel_data.z_value = accel_z
-                self.accel_data.append(accel_x)  # Utiliser l'axe X pour le graphique
+                self.accel_data.append(accel_x)  # l'axe X pour le graphique
                 if len(self.accel_data) > 100:
                     self.accel_data.pop(0)
                 self.accel_plot.points = [(i, y) for i, y in enumerate(self.accel_data)]
@@ -306,7 +306,7 @@ class RoverDashboard(MDApp):
                 self.root.ids.gyro_data.x_value = gyro_x
                 self.root.ids.gyro_data.y_value = gyro_y
                 self.root.ids.gyro_data.z_value = gyro_z
-                self.gyro_data.append(gyro_x)  # Utiliser l'axe X pour le graphique
+                self.gyro_data.append(gyro_x)  # l'axe X pour le graphique
                 if len(self.gyro_data) > 100:
                     self.gyro_data.pop(0)
                 self.gyro_plot.points = [(i, y) for i, y in enumerate(self.gyro_data)]
