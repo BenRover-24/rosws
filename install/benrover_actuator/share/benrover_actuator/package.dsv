@@ -1,0 +1,6 @@
+source;share/benrover_actuator/hook/pythonpath.ps1
+source;share/benrover_actuator/hook/pythonpath.dsv
+source;share/benrover_actuator/hook/pythonpath.sh
+source;share/benrover_actuator/hook/ament_prefix_path.ps1
+source;share/benrover_actuator/hook/ament_prefix_path.dsv
+source;share/benrover_actuator/hook/ament_prefix_path.sh

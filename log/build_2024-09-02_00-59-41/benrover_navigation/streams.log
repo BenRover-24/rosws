@@ -1,0 +1,36 @@
+[2.877s] Invoking command in '/home/elfriedkinzoun/rosws/build/benrover_navigation': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/elfriedkinzoun/rosws/build/benrover_navigation/build
+[3.780s] running develop
+[3.781s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.782s]   warnings.warn(
+[3.980s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.4.0-ubuntu3-zorin1 is an invalid version and will not be supported in a future release
+[3.980s]   warnings.warn(
+[4.315s] Removing /home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages/benrover-navigation.egg-link (link to .)
+[4.408s] Invoked command in '/home/elfriedkinzoun/rosws/build/benrover_navigation' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/elfriedkinzoun/rosws/build/benrover_navigation/build
+[4.410s] Invoking command in '/home/elfriedkinzoun/rosws/src/benrover_navigation': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_navigation build --build-base /home/elfriedkinzoun/rosws/build/benrover_navigation/build install --record /home/elfriedkinzoun/rosws/build/benrover_navigation/install.log --single-version-externally-managed install_data --force
+[5.147s] running egg_info
+[5.148s] writing ../../build/benrover_navigation/benrover_navigation.egg-info/PKG-INFO
+[5.148s] writing dependency_links to ../../build/benrover_navigation/benrover_navigation.egg-info/dependency_links.txt
+[5.149s] writing entry points to ../../build/benrover_navigation/benrover_navigation.egg-info/entry_points.txt
+[5.149s] writing requirements to ../../build/benrover_navigation/benrover_navigation.egg-info/requires.txt
+[5.149s] writing top-level names to ../../build/benrover_navigation/benrover_navigation.egg-info/top_level.txt
+[5.155s] reading manifest file '../../build/benrover_navigation/benrover_navigation.egg-info/SOURCES.txt'
+[5.156s] writing manifest file '../../build/benrover_navigation/benrover_navigation.egg-info/SOURCES.txt'
+[5.157s] running build
+[5.157s] running build_py
+[5.158s] creating /home/elfriedkinzoun/rosws/build/benrover_navigation/build
+[5.158s] creating /home/elfriedkinzoun/rosws/build/benrover_navigation/build/lib
+[5.158s] creating /home/elfriedkinzoun/rosws/build/benrover_navigation/build/lib/benrover_navigation
+[5.158s] copying benrover_navigation/__init__.py -> /home/elfriedkinzoun/rosws/build/benrover_navigation/build/lib/benrover_navigation
+[5.159s] running install
+[5.159s] running install_lib
+[5.159s] creating /home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages/benrover_navigation
+[5.160s] copying /home/elfriedkinzoun/rosws/build/benrover_navigation/build/lib/benrover_navigation/__init__.py -> /home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages/benrover_navigation
+[5.161s] byte-compiling /home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages/benrover_navigation/__init__.py to __init__.cpython-310.pyc
+[5.161s] running install_data
+[5.162s] copying resource/benrover_navigation -> /home/elfriedkinzoun/rosws/install/benrover_navigation/share/ament_index/resource_index/packages
+[5.162s] copying package.xml -> /home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation
+[5.162s] running install_egg_info
+[5.166s] Copying ../../build/benrover_navigation/benrover_navigation.egg-info to /home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages/benrover_navigation-0.0.0-py3.10.egg-info
+[5.167s] running install_scripts
+[5.205s] writing list of installed files to '/home/elfriedkinzoun/rosws/build/benrover_navigation/install.log'
+[5.261s] Invoked command in '/home/elfriedkinzoun/rosws/src/benrover_navigation' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_navigation build --build-base /home/elfriedkinzoun/rosws/build/benrover_navigation/build install --record /home/elfriedkinzoun/rosws/build/benrover_navigation/install.log --single-version-externally-managed install_data --force

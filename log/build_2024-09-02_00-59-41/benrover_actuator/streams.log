@@ -1,0 +1,53 @@
+[2.661s] Invoking command in '/home/elfriedkinzoun/rosws/build/benrover_actuator': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_actuator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/elfriedkinzoun/rosws/build/benrover_actuator/build
+[3.344s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[3.344s]   warnings.warn(
+[3.423s] running develop
+[3.424s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.424s]   warnings.warn(
+[3.619s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.4.0-ubuntu3-zorin1 is an invalid version and will not be supported in a future release
+[3.620s]   warnings.warn(
+[3.921s] Removing /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover-actuator.egg-link (link to .)
+[4.008s] Invoked command in '/home/elfriedkinzoun/rosws/build/benrover_actuator' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_actuator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/elfriedkinzoun/rosws/build/benrover_actuator/build
+[4.009s] Invoking command in '/home/elfriedkinzoun/rosws/src/benrover_actuator': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_actuator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_actuator build --build-base /home/elfriedkinzoun/rosws/build/benrover_actuator/build install --record /home/elfriedkinzoun/rosws/build/benrover_actuator/install.log --install-scripts $base/lib/${PROJECT_NAME} --single-version-externally-managed install_data --force
+[4.638s] /usr/lib/python3/dist-packages/setuptools/dist.py:723: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[4.638s]   warnings.warn(
+[4.664s] running egg_info
+[4.668s] writing ../../build/benrover_actuator/benrover_actuator.egg-info/PKG-INFO
+[4.669s] writing dependency_links to ../../build/benrover_actuator/benrover_actuator.egg-info/dependency_links.txt
+[4.671s] writing entry points to ../../build/benrover_actuator/benrover_actuator.egg-info/entry_points.txt
+[4.673s] writing requirements to ../../build/benrover_actuator/benrover_actuator.egg-info/requires.txt
+[4.674s] writing top-level names to ../../build/benrover_actuator/benrover_actuator.egg-info/top_level.txt
+[4.682s] reading manifest file '../../build/benrover_actuator/benrover_actuator.egg-info/SOURCES.txt'
+[4.684s] writing manifest file '../../build/benrover_actuator/benrover_actuator.egg-info/SOURCES.txt'
+[4.685s] running build
+[4.686s] running build_py
+[4.687s] creating /home/elfriedkinzoun/rosws/build/benrover_actuator/build
+[4.688s] creating /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib
+[4.689s] creating /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib/benrover_actuator
+[4.691s] copying benrover_actuator/actuator_node.py -> /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib/benrover_actuator
+[4.693s] copying benrover_actuator/__init__.py -> /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib/benrover_actuator
+[4.694s] copying benrover_actuator/servo_control_node.py -> /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib/benrover_actuator
+[4.694s] creating /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib/benrover_actuator/msg
+[4.694s] copying benrover_actuator/msg/__init__.py -> /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib/benrover_actuator/msg
+[4.695s] running install
+[4.695s] running install_lib
+[4.697s] creating /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator
+[4.697s] copying /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib/benrover_actuator/actuator_node.py -> /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator
+[4.698s] creating /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator/msg
+[4.698s] copying /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib/benrover_actuator/msg/__init__.py -> /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator/msg
+[4.698s] copying /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib/benrover_actuator/__init__.py -> /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator
+[4.698s] copying /home/elfriedkinzoun/rosws/build/benrover_actuator/build/lib/benrover_actuator/servo_control_node.py -> /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator
+[4.699s] byte-compiling /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator/actuator_node.py to actuator_node.cpython-310.pyc
+[4.701s] byte-compiling /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator/msg/__init__.py to __init__.cpython-310.pyc
+[4.701s] byte-compiling /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator/__init__.py to __init__.cpython-310.pyc
+[4.701s] byte-compiling /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator/servo_control_node.py to servo_control_node.cpython-310.pyc
+[4.702s] running install_data
+[4.703s] copying resource/benrover_actuator -> /home/elfriedkinzoun/rosws/install/benrover_actuator/share/ament_index/resource_index/packages
+[4.710s] copying package.xml -> /home/elfriedkinzoun/rosws/install/benrover_actuator/share/benrover_actuator
+[4.710s] running install_egg_info
+[4.714s] Copying ../../build/benrover_actuator/benrover_actuator.egg-info to /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover_actuator-0.0.0-py3.10.egg-info
+[4.716s] running install_scripts
+[4.772s] Installing my_node script to /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/${PROJECT_NAME}
+[4.774s] Installing servo_control_node script to /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/${PROJECT_NAME}
+[4.775s] writing list of installed files to '/home/elfriedkinzoun/rosws/build/benrover_actuator/install.log'
+[4.839s] Invoked command in '/home/elfriedkinzoun/rosws/src/benrover_actuator' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_actuator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_actuator build --build-base /home/elfriedkinzoun/rosws/build/benrover_actuator/build install --record /home/elfriedkinzoun/rosws/build/benrover_actuator/install.log --install-scripts $base/lib/${PROJECT_NAME} --single-version-externally-managed install_data --force

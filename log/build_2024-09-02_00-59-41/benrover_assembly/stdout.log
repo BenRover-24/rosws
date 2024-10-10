@@ -1,0 +1,52 @@
+running develop
+Removing /home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages/benrover-assembly.egg-link (link to .)
+running egg_info
+writing ../../build/benrover_assembly/benrover_assembly.egg-info/PKG-INFO
+writing dependency_links to ../../build/benrover_assembly/benrover_assembly.egg-info/dependency_links.txt
+writing entry points to ../../build/benrover_assembly/benrover_assembly.egg-info/entry_points.txt
+writing requirements to ../../build/benrover_assembly/benrover_assembly.egg-info/requires.txt
+writing top-level names to ../../build/benrover_assembly/benrover_assembly.egg-info/top_level.txt
+reading manifest file '../../build/benrover_assembly/benrover_assembly.egg-info/SOURCES.txt'
+writing manifest file '../../build/benrover_assembly/benrover_assembly.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/elfriedkinzoun/rosws/build/benrover_assembly/build
+creating /home/elfriedkinzoun/rosws/build/benrover_assembly/build/lib
+creating /home/elfriedkinzoun/rosws/build/benrover_assembly/build/lib/benrover_assembly
+copying benrover_assembly/__init__.py -> /home/elfriedkinzoun/rosws/build/benrover_assembly/build/lib/benrover_assembly
+running install
+running install_lib
+creating /home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages/benrover_assembly
+copying /home/elfriedkinzoun/rosws/build/benrover_assembly/build/lib/benrover_assembly/__init__.py -> /home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages/benrover_assembly
+byte-compiling /home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages/benrover_assembly/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/benrover_assembly -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/ament_index/resource_index/packages
+copying package.xml -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly
+copying launch/launch_simulation.py -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/launch
+copying urdf/benrover_assembly.urdf -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/urdf
+copying meshes/Support_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Rod_Mid.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Rocker_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Servo_BL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/RodEnd_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Wheel_MR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Servo_FL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Bogie_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Wheel_FL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Wheel_BR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Wheel_FR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/RodEnd_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/base_link.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Wheel_ML.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Stepper_Link.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Servo_FR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Wheel_BL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Servo_BR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Bogie_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Cam_servo_link.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Support_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+copying meshes/Rocker_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+running install_egg_info
+Copying ../../build/benrover_assembly/benrover_assembly.egg-info to /home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages/benrover_assembly-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/elfriedkinzoun/rosws/build/benrover_assembly/install.log'

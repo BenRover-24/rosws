@@ -1,0 +1,60 @@
+[2.935s] Invoking command in '/home/elfriedkinzoun/rosws/build/benrover_assembly': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_assembly/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/elfriedkinzoun/rosws/build/benrover_assembly/build
+[3.711s] running develop
+[3.713s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.713s]   warnings.warn(
+[3.895s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.4.0-ubuntu3-zorin1 is an invalid version and will not be supported in a future release
+[3.895s]   warnings.warn(
+[4.306s] Removing /home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages/benrover-assembly.egg-link (link to .)
+[4.424s] Invoked command in '/home/elfriedkinzoun/rosws/build/benrover_assembly' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_assembly/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/elfriedkinzoun/rosws/build/benrover_assembly/build
+[4.425s] Invoking command in '/home/elfriedkinzoun/rosws/src/benrover_assembly': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_assembly/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_assembly build --build-base /home/elfriedkinzoun/rosws/build/benrover_assembly/build install --record /home/elfriedkinzoun/rosws/build/benrover_assembly/install.log --single-version-externally-managed install_data --force
+[5.151s] running egg_info
+[5.160s] writing ../../build/benrover_assembly/benrover_assembly.egg-info/PKG-INFO
+[5.161s] writing dependency_links to ../../build/benrover_assembly/benrover_assembly.egg-info/dependency_links.txt
+[5.161s] writing entry points to ../../build/benrover_assembly/benrover_assembly.egg-info/entry_points.txt
+[5.162s] writing requirements to ../../build/benrover_assembly/benrover_assembly.egg-info/requires.txt
+[5.162s] writing top-level names to ../../build/benrover_assembly/benrover_assembly.egg-info/top_level.txt
+[5.176s] reading manifest file '../../build/benrover_assembly/benrover_assembly.egg-info/SOURCES.txt'
+[5.179s] writing manifest file '../../build/benrover_assembly/benrover_assembly.egg-info/SOURCES.txt'
+[5.179s] running build
+[5.180s] running build_py
+[5.180s] creating /home/elfriedkinzoun/rosws/build/benrover_assembly/build
+[5.181s] creating /home/elfriedkinzoun/rosws/build/benrover_assembly/build/lib
+[5.181s] creating /home/elfriedkinzoun/rosws/build/benrover_assembly/build/lib/benrover_assembly
+[5.181s] copying benrover_assembly/__init__.py -> /home/elfriedkinzoun/rosws/build/benrover_assembly/build/lib/benrover_assembly
+[5.182s] running install
+[5.185s] running install_lib
+[5.186s] creating /home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages/benrover_assembly
+[5.187s] copying /home/elfriedkinzoun/rosws/build/benrover_assembly/build/lib/benrover_assembly/__init__.py -> /home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages/benrover_assembly
+[5.189s] byte-compiling /home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages/benrover_assembly/__init__.py to __init__.cpython-310.pyc
+[5.189s] running install_data
+[5.190s] copying resource/benrover_assembly -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/ament_index/resource_index/packages
+[5.190s] copying package.xml -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly
+[5.191s] copying launch/launch_simulation.py -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/launch
+[5.191s] copying urdf/benrover_assembly.urdf -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/urdf
+[5.207s] copying meshes/Support_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.637s] copying meshes/Rod_Mid.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[5.686s] copying meshes/Rocker_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[6.053s] copying meshes/Servo_BL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[6.130s] copying meshes/RodEnd_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[6.398s] copying meshes/Wheel_MR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[6.533s] copying meshes/Servo_FL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[6.743s] copying meshes/Bogie_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[7.034s] copying meshes/Wheel_FL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[7.174s] copying meshes/Wheel_BR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[7.350s] copying meshes/Wheel_FR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[7.478s] copying meshes/RodEnd_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[7.496s] copying meshes/base_link.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[7.694s] copying meshes/Wheel_ML.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[7.777s] copying meshes/Stepper_Link.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[7.959s] copying meshes/Servo_FR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[8.108s] copying meshes/Wheel_BL.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[8.269s] copying meshes/Servo_BR.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[8.555s] copying meshes/Bogie_L.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[8.862s] copying meshes/Cam_servo_link.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[9.054s] copying meshes/Support_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[9.127s] copying meshes/Rocker_R.STL -> /home/elfriedkinzoun/rosws/install/benrover_assembly/share/benrover_assembly/meshes
+[9.523s] running install_egg_info
+[9.526s] Copying ../../build/benrover_assembly/benrover_assembly.egg-info to /home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages/benrover_assembly-0.0.0-py3.10.egg-info
+[9.539s] running install_scripts
+[9.734s] writing list of installed files to '/home/elfriedkinzoun/rosws/build/benrover_assembly/install.log'
+[10.154s] Invoked command in '/home/elfriedkinzoun/rosws/src/benrover_assembly' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_assembly/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/benrover_assembly build --build-base /home/elfriedkinzoun/rosws/build/benrover_assembly/build install --record /home/elfriedkinzoun/rosws/build/benrover_assembly/install.log --single-version-externally-managed install_data --force

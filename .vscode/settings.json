@@ -1,0 +1,26 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/elfriedkinzoun/rosws/build/benrover_sensors",
+        "/home/elfriedkinzoun/rosws/install/benrover_sensors/lib/python3.10/site-packages",
+        "/home/elfriedkinzoun/rosws/build/benrover_navigation",
+        "/home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages",
+        "/home/elfriedkinzoun/rosws/build/benrover_assembly",
+        "/home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages",
+        "/home/elfriedkinzoun/rosws/build/benrover_actuator",
+        "/home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/elfriedkinzoun/rosws/build/benrover_sensors",
+        "/home/elfriedkinzoun/rosws/install/benrover_sensors/lib/python3.10/site-packages",
+        "/home/elfriedkinzoun/rosws/build/benrover_navigation",
+        "/home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages",
+        "/home/elfriedkinzoun/rosws/build/benrover_assembly",
+        "/home/elfriedkinzoun/rosws/install/benrover_assembly/lib/python3.10/site-packages",
+        "/home/elfriedkinzoun/rosws/build/benrover_actuator",
+        "/home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

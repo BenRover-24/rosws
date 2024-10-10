@@ -1,0 +1,27 @@
+[3.882s] Invoking command in '/home/elfriedkinzoun/rosws/build/benrover_navigation': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/elfriedkinzoun/rosws/build/benrover_navigation/build --no-deps symlink_data
+[4.640s] running develop
+[4.655s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[4.656s]   warnings.warn(
+[4.918s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 2.4.0-ubuntu3-zorin1 is an invalid version and will not be supported in a future release
+[4.925s]   warnings.warn(
+[5.234s] running egg_info
+[5.235s] creating benrover_navigation.egg-info
+[5.236s] writing benrover_navigation.egg-info/PKG-INFO
+[5.237s] writing dependency_links to benrover_navigation.egg-info/dependency_links.txt
+[5.238s] writing entry points to benrover_navigation.egg-info/entry_points.txt
+[5.239s] writing requirements to benrover_navigation.egg-info/requires.txt
+[5.240s] writing top-level names to benrover_navigation.egg-info/top_level.txt
+[5.241s] writing manifest file 'benrover_navigation.egg-info/SOURCES.txt'
+[5.244s] reading manifest file 'benrover_navigation.egg-info/SOURCES.txt'
+[5.246s] writing manifest file 'benrover_navigation.egg-info/SOURCES.txt'
+[5.249s] running build_ext
+[5.249s] Creating /home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages/benrover-navigation.egg-link (link to .)
+[5.251s] 
+[5.251s] Installed /home/elfriedkinzoun/rosws/build/benrover_navigation
+[5.252s] running symlink_data
+[5.252s] creating /home/elfriedkinzoun/rosws/install/benrover_navigation/share/ament_index
+[5.252s] creating /home/elfriedkinzoun/rosws/install/benrover_navigation/share/ament_index/resource_index
+[5.252s] creating /home/elfriedkinzoun/rosws/install/benrover_navigation/share/ament_index/resource_index/packages
+[5.252s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_navigation/resource/benrover_navigation -> /home/elfriedkinzoun/rosws/install/benrover_navigation/share/ament_index/resource_index/packages
+[5.253s] symbolically linking /home/elfriedkinzoun/rosws/build/benrover_navigation/package.xml -> /home/elfriedkinzoun/rosws/install/benrover_navigation/share/benrover_navigation
+[5.393s] Invoked command in '/home/elfriedkinzoun/rosws/build/benrover_navigation' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/elfriedkinzoun/rosws/build/benrover_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/elfriedkinzoun/rosws/install/benrover_navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/elfriedkinzoun/rosws/build/benrover_navigation/build --no-deps symlink_data

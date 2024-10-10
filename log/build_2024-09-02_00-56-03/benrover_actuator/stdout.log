@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing benrover_actuator.egg-info/PKG-INFO
+writing dependency_links to benrover_actuator.egg-info/dependency_links.txt
+writing entry points to benrover_actuator.egg-info/entry_points.txt
+writing requirements to benrover_actuator.egg-info/requires.txt
+writing top-level names to benrover_actuator.egg-info/top_level.txt
+reading manifest file 'benrover_actuator.egg-info/SOURCES.txt'
+writing manifest file 'benrover_actuator.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/python3.10/site-packages/benrover-actuator.egg-link (link to .)
+Installing my_node script to /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/${PROJECT_NAME}
+Installing servo_control_node script to /home/elfriedkinzoun/rosws/install/benrover_actuator/lib/${PROJECT_NAME}
+
+Installed /home/elfriedkinzoun/rosws/build/benrover_actuator
+running symlink_data

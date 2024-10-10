@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>benrover_assembly</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="ekfriedkinzoun@gmail.com">elfriedkinzoun</maintainer>
+  <license>TODO: License declaration</license>
+
+  <!-- Dépendances nécessaires pour la compilation -->
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_msgs</depend>
+  <depend>sensor_msgs</depend>
+
+  <!-- Dépendances nécessaires pour l'exécution -->
+  <exec_depend>ament_cmake</exec_depend>
+  <exec_depend>gazebo_ros_pkgs</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
