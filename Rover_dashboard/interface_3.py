@@ -8,7 +8,7 @@ import firebase_admin
 from firebase_admin import db, credentials
 
 cred = credentials.Certificate("credentials.json")
-firebase_admin.initialize_app(cred, {"databaseURL":"https://benrover-8ebf6-default-rtdb.firebaseio.com/"})
+firebase_admin.initialize_app(cred, {"databaseURL":"https://fir-e3207-default-rtdb.firebaseio.com/"})
 root = db.reference("/")
 
 KV = '''

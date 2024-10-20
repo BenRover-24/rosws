@@ -1,8 +1,13 @@
+import os
+
+os.environ["KIVY_NO_ARGS"]="1"
+import sys
+import argparse
 from kivymd.app import MDApp
 from kivy.lang import Builder
 from kivy.clock import Clock
 from kivy.properties import StringProperty, NumericProperty, ObjectProperty
-from kivy.garden.graph import Graph, MeshLinePlot
+from kivy_garden.graph import Graph, MeshLinePlot
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.image import Image
 from kivy.core.image import Image as CoreImage
@@ -16,7 +21,7 @@ from firebase_admin import db, credentials
 # Initialisation de Firebase
 cred = credentials.Certificate("credentials.json")
 firebase_admin.initialize_app(cred, {
-    "databaseURL": "https://benrover-8ebf6-default-rtdb.firebaseio.com/"
+    "databaseURL": "https://fir-e3207-default-rtdb.firebaseio.com/"
 })
 root = db.reference("/")
 
@@ -81,7 +86,7 @@ MDScreen:
                     radius: [15, 15, 15, 15]
                     Image:
                         id: video_feed
-                        source: "img/pp.png"  # Votre image de remplacement
+                        source: "img/placeholder.jpeg"  # Votre image de remplacement
                 
                 MDGridLayout:
                     cols: 2
@@ -209,7 +214,12 @@ class RoverDashboard(MDApp):
     system_name = StringProperty("Raspberry Pi")
     system_status = StringProperty("Connected")
     
+    def __init__(self, camera_ip, **kwargs):
+        super().__init__(**kwargs)
+        self.camera_ip = camera_ip
+
     def build(self):
+        self.icon = 'img/favicon.png'
         self.theme_cls.theme_style = "Dark"
         self.theme_cls.primary_palette = "Teal"
         self.video_capture = None
@@ -226,8 +236,8 @@ class RoverDashboard(MDApp):
         Clock.schedule_interval(self.update_data, 1)
         Clock.schedule_interval(self.update_video, 1/30)  # 30 FPS
         
-        # Charger l'image de remplacement
-        placeholder_image = cv2.imread('img\placeholder.jpeg')
+        # Load placeholder image
+        placeholder_image = cv2.imread('img/placeholder.jpeg')
         if placeholder_image is not None:
             placeholder_image = cv2.cvtColor(placeholder_image, cv2.COLOR_BGR2RGB)
             self.placeholder_texture = Texture.create(size=(placeholder_image.shape[1], placeholder_image.shape[0]), colorfmt='rgb')
@@ -242,7 +252,8 @@ class RoverDashboard(MDApp):
     def update_video(self, dt):
         if not self.video_capture:
             try:
-                self.video_capture = cv2.VideoCapture('http://votre_adresse_ip:port/video_feed')
+                print("Camera IP is", self.camera_ip)
+                self.video_capture = cv2.VideoCapture(self.camera_ip)
             except Exception as e:
                 print(f"Failed to connect to video stream: {e}")
                 self.use_placeholder()
@@ -250,12 +261,12 @@ class RoverDashboard(MDApp):
         
         ret, frame = self.video_capture.read()
         if ret:
-            # Convertir en texture
+            # Convert to texture
             buf1 = cv2.flip(frame, 0)
             buf = buf1.tobytes()
             image_texture = Texture.create(size=(frame.shape[1], frame.shape[0]), colorfmt='bgr')
             image_texture.blit_buffer(buf, colorfmt='bgr', bufferfmt='ubyte')
-            # Afficher l'image à partir de la texture
+            # Display image from texture
             self.root.ids.video_feed.texture = image_texture
         else:
             print("Failed to get frame, using placeholder")
@@ -269,23 +280,23 @@ class RoverDashboard(MDApp):
     
     def update_data(self, *args):
         try:
-            # Récupérer les données de Firebase
+            # Retrieve data from Firebase
             data = root.get()
             if data:
-                # Mettre à jour les informations du système
+                # Update system information
                 self.system_name = data.get('name', 'Raspberry Pi')
                 self.system_status = data.get('status', 'Connected')
 
-                # Mettre à jour les informations de la batterie
+                # Update battery information
                 battery_data = data.get('data', {}).get('battery', {})
                 self.battery_level = battery_data.get('level', 0)
                 self.battery_temp = battery_data.get('temperature', 0)
 
-                # Mettre à jour la température ambiante
+                # Update ambient temperature
                 sensor_data = data.get('data', {}).get('sensors', {})
                 self.temperature = sensor_data.get('temperature', 0)
 
-                # Mettre à jour les données de l'accéléromètre
+                # Update accelerometer data
                 accel_data = sensor_data.get('accelerometer', {})
                 accel_x = accel_data.get('x', 0)
                 accel_y = accel_data.get('y', 0)
@@ -293,12 +304,12 @@ class RoverDashboard(MDApp):
                 self.root.ids.accel_data.x_value = accel_x
                 self.root.ids.accel_data.y_value = accel_y
                 self.root.ids.accel_data.z_value = accel_z
-                self.accel_data.append(accel_x)  # Utiliser l'axe X pour le graphique
+                self.accel_data.append(accel_x)  # Use X-axis for the graph
                 if len(self.accel_data) > 100:
                     self.accel_data.pop(0)
                 self.accel_plot.points = [(i, y) for i, y in enumerate(self.accel_data)]
 
-                # Mettre à jour les données du gyroscope
+                # Update gyroscope data
                 gyro_data = sensor_data.get('gyroscope', {})
                 gyro_x = gyro_data.get('x', 0)
                 gyro_y = gyro_data.get('y', 0)
@@ -306,12 +317,16 @@ class RoverDashboard(MDApp):
                 self.root.ids.gyro_data.x_value = gyro_x
                 self.root.ids.gyro_data.y_value = gyro_y
                 self.root.ids.gyro_data.z_value = gyro_z
-                self.gyro_data.append(gyro_x)  # Utiliser l'axe X pour le graphique
+                self.gyro_data.append(gyro_x)  # Use X-axis for the graph
                 if len(self.gyro_data) > 100:
                     self.gyro_data.pop(0)
                 self.gyro_plot.points = [(i, y) for i, y in enumerate(self.gyro_data)]
         except Exception as e:
-            print(f"Erreur lors de la mise à jour des données: {e}")
+            print(f"Error updating data: {e}")
 
 if __name__ == '__main__':
-    RoverDashboard().run()
+    parser = argparse.ArgumentParser(description="BenRover Dashboard")
+    parser.add_argument("--camera-ip", type=str, default="0", help="IP address of the camera (use '0' for local webcam)")
+    args = parser.parse_args()
+
+    RoverDashboard(camera_ip=args.camera_ip).run()
