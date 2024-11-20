@@ -17,6 +17,18 @@ import numpy as np
 from kivy.graphics.texture import Texture
 import firebase_admin
 from firebase_admin import db, credentials
+import pafy
+
+from ultralytics import YOLO, SAM
+import supervision as sv
+from ultralytics.utils.plotting import Annotator, colors
+
+#sam_model = SAM('sam2.1_b.pt')
+yolo_model = YOLO('yolo11m-seg.pt')
+
+names = yolo_model.model.names
+
+
 
 # Initialisation de Firebase
 cred = credentials.Certificate("credentials.json")
@@ -24,6 +36,21 @@ firebase_admin.initialize_app(cred, {
     "databaseURL": "https://fir-e3207-default-rtdb.firebaseio.com/"
 })
 root = db.reference("/")
+
+class StatusIndicator(BoxLayout):
+    status = StringProperty("Disconnected")
+    
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        Clock.schedule_interval(self.update_animation, 1)
+        self.alpha = 1
+        
+    def update_animation(self, dt):
+        if self.status == "Connected":
+            self.alpha = 1 if self.alpha == 0.3 else 0.3
+            print("system connected")
+        else:
+            self.alpha = 0.7
 
 KV = '''
 #:import get_color_from_hex kivy.utils.get_color_from_hex
@@ -67,136 +94,155 @@ MDScreen:
         orientation: "vertical"
         md_bg_color: get_color_from_hex("#0A192F")
         
-        MDTopAppBar:
-            title: "BenRover Dashboard"
-            right_action_items: [["refresh", lambda x: app.update_data()]]
-            md_bg_color: get_color_from_hex("#172A45")
-        
-        MDBoxLayout:
-            padding: "16dp"
-            spacing: "16dp"
+        #MDTopAppBar:
+          #  title: "BenRover Dashboard"
+            #right_action_items: [["refresh", lambda x: app.update_data()]]
+            #md_bg_color: get_color_from_hex("#172A45")
+
+        # Top Section    
+        BoxLayout:
+            size_hint_y: 0.07
+            padding: "10dp"
+            spacing: "3dp"
             
             MDBoxLayout:
-                orientation: "vertical"
-                size_hint_x: 0.7
-                spacing: "16dp"
-                
-                MDCard:
-                    md_bg_color: get_color_from_hex("#172A45")
-                    radius: [15, 15, 15, 15]
-                    Image:
-                        id: video_feed
-                        source: "img/placeholder.jpeg"  # Votre image de remplacement
-                
-                MDGridLayout:
-                    cols: 2
-                    spacing: "16dp"
-                    
-                    MDCard:
-                        orientation: "vertical"
-                        padding: "8dp"
-                        md_bg_color: get_color_from_hex("#172A45")
-                        radius: [15, 15, 15, 15]
-                        
-                        MDLabel:
-                            text: "Accelerometer"
-                            font_style: "H6"
-                            halign: "center"
-                            theme_text_color: "Custom"
-                            text_color: get_color_from_hex("#64FFDA")
-                        
-                        SensorGraph:
-                            id: accel_graph
-                        
-                        SensorData:
-                            id: accel_data
-                    
-                    MDCard:
-                        orientation: "vertical"
-                        padding: "8dp"
-                        md_bg_color: get_color_from_hex("#172A45")
-                        radius: [15, 15, 15, 15]
-                        
-                        MDLabel:
-                            text: "Gyroscope"
-                            font_style: "H6"
-                            halign: "center"
-                            theme_text_color: "Custom"
-                            text_color: get_color_from_hex("#64FFDA")
-                        
-                        SensorGraph:
-                            id: gyro_graph
-                        
-                        SensorData:
-                            id: gyro_data
-            
-            MDBoxLayout:
-                orientation: "vertical"
                 size_hint_x: 0.3
-                spacing: "16dp"
+                # md_bg_color: 1, 0, 0, 1  # Example color (Red)
+                # orientation: "vertical"
+                # padding: "16dp"
+                # md_bg_color: get_color_from_hex("#172A45")
+                #radius: [15, 15, 15, 15]
                 
-                MDCard:
-                    orientation: "vertical"
-                    padding: "16dp"
-                    md_bg_color: get_color_from_hex("#172A45")
-                    radius: [15, 15, 15, 15]
-                    
-                    Image:
-                        source: "img/logo.png"  # Votre logo
-                        size_hint_y: 0.3
+                Image:
+                    source: "img/BENROVER_MARRON_LONG.png"  # Votre logo
+                    size_hint_y: 0.7
+                    #size: 100, 100
+            
+            MDBoxLayout:
+                size_hint_x: 0.7
+                spacing: "8dp"
+                # md_bg_color: 0, 1, 0, 1  # Example color (Green)
                 
-                MDCard:
-                    orientation: "vertical"
-                    padding: "16dp"
-                    md_bg_color: get_color_from_hex("#172A45")
-                    radius: [15, 15, 15, 15]
+                # IMPLEMENT THE BLINKING STATUS HERE
+                MDBoxLayout:
+                    size_hint_x: 0.3
+                    #spacing: "10dp"
                     
                     MDLabel:
-                        text: "System Status"
-                        font_style: "H6"
-                        halign: "center"
-                        theme_text_color: "Custom"
-                        text_color: get_color_from_hex("#64FFDA")
-                    
-                    MDLabel:
-                        text: f"Name: {app.system_name}"
-                        theme_text_color: "Secondary"
-                    
-                    MDLabel:
-                        text: f"Status: {app.system_status}"
-                        theme_text_color: "Secondary"
-                    
-                    MDLabel:
-                        text: "Battery Status"
-                        font_style: "H6"
-                        halign: "center"
-                        theme_text_color: "Custom"
-                        text_color: get_color_from_hex("#64FFDA")
-                    
-                    MDProgressBar:
-                        id: battery_bar
-                        value: app.battery_level
-                        color: get_color_from_hex("#64FFDA")
-                    
-                    MDLabel:
-                        text: f"Level: {app.battery_level:.1f}%"
-                        halign: "center"
-                    
-                    MDLabel:
-                        text: f"Temperature: {app.battery_temp:.1f}°C"
-                        halign: "center"
-                    
-                    MDLabel:
-                        text: "Ambient Temperature"
-                        font_style: "H6"
-                        halign: "center"
-                        theme_text_color: "Custom"
-                        text_color: get_color_from_hex("#64FFDA")
-                    
-                    MDLabel:
-                        text: f"{app.temperature:.1f}°C"
+                        size_hint_x: 0.2
+                        text: "System"
                         font_style: "H4"
+                        halign: "left"
+                        theme_text_color: "Custom"
+                        text_color: get_color_from_hex("#64FFDA")
+                        
+                    StatusIndicator:
+                        id: status_indicator
+                        size_hint_x: 0.1
+                        #width: "10dp"
+                        
+                        canvas:
+                            Color:
+                                rgba: (0, 1, 0, self.alpha) if self.status == "Connected" else (0.7, 0.7, 0.7, self.alpha)
+                            Ellipse:
+                                size: self.height * 0.5, self.height * 0.5
+                                pos: self.x + (self.width - self.height * 0.5) / 2, self.y + (self.height - self.height * 0.5) / 2
+                    
+                    
+                        
+                    
+                        
+                MDBoxLayout:
+                    size_hint_x: 0.3
+                    MDLabel:
+                        text: "Controller"
+                        font_style: "H4"
+                        halign: "left"
+                        theme_text_color: "Custom"
+                        text_color: get_color_from_hex("#64FFDA")
+                
+                MDBoxLayout:
+                    size_hint_x: 0.3
+                    MDLabel:
+                        text: "Battery"
+                        font_style: "H4"
+                        halign: "left"
+                        theme_text_color: "Custom"
+                        text_color: get_color_from_hex("#64FFDA")
+
+        # Middle section (60% height)
+        MDBoxLayout:
+            size_hint_y: 0.6
+            padding: "10dp"
+            spacing: "8dp"
+
+            MDBoxLayout:
+                size_hint_x: 0.5
+                # md_bg_color: 0, 0, 1, 1  # Example color (Blue)
+                # md_bg_color: get_color_from_hex("#172A45")
+                radius: [15, 15, 15, 15]
+                Image:
+                    id: video_feed
+                    source: "img/placeholder.jpeg"  # Votre image de remplacement
+            
+            MDBoxLayout:
+                size_hint_x: 0.5
+                # md_bg_color: 1, 1, 0, 1  # Example color (Yellow)
+                #md_bg_color: get_color_from_hex("#172A45")
+                radius: [15, 15, 15, 15]
+                Image:
+                    id: video_feed_2
+                    source: "img/placeholder.jpeg"  # Votre image de remplacement
+
+        # Bottom section (30% height)
+        MDBoxLayout:
+            size_hint_y: 0.33
+            padding: "10dp"
+            spacing: "8dp"
+            
+            MDBoxLayout:
+                size_hint_x: 0.5
+                #md_bg_color: 1, 0, 1, 1  # Example color (Magenta)
+                MDCard:
+                    orientation: "vertical"
+                    padding: "8dp"
+                    md_bg_color: get_color_from_hex("#172A45")
+                    radius: [15, 15, 15, 15]
+                    
+                    MDLabel:
+                        text: "Accelerometer"
+                        font_style: "H3"
                         halign: "center"
+                        theme_text_color: "Custom"
+                        text_color: get_color_from_hex("#64FFDA")
+                    
+                    SensorGraph:
+                        id: accel_graph
+                    
+                    SensorData:
+                        id: accel_data
+            
+            MDBoxLayout:
+                size_hint_x: 0.5
+                #md_bg_color: 0, 1, 1, 1  # Example color (Cyan)
+                MDCard:
+                    orientation: "vertical"
+                    padding: "8dp"
+                    md_bg_color: get_color_from_hex("#172A45")
+                    radius: [15, 15, 15, 15]
+                    
+                    MDLabel:
+                        text: "Gyroscope"
+                        font_style: "H3"
+                        halign: "center"
+                        theme_text_color: "Custom"
+                        text_color: get_color_from_hex("#64FFDA")
+                    
+                    SensorGraph:
+                        id: gyro_graph
+                    
+                    SensorData:
+                        id: gyro_data
 '''
 
 class SensorData(BoxLayout):
@@ -261,21 +307,53 @@ class RoverDashboard(MDApp):
         
         ret, frame = self.video_capture.read()
         if ret:
-            # Convert to texture
+            # Convert original frame to texture
             buf1 = cv2.flip(frame, 0)
             buf = buf1.tobytes()
             image_texture = Texture.create(size=(frame.shape[1], frame.shape[0]), colorfmt='bgr')
             image_texture.blit_buffer(buf, colorfmt='bgr', bufferfmt='ubyte')
-            # Display image from texture
+            
+            # Create annotated frame
+            frame2 = frame.copy()
+            results = yolo_model.predict(frame2)
+            mask_annotator = sv.MaskAnnotator()
+
+            annotated_image = frame2.copy()
+            detections = sv.Detections.from_ultralytics(results[0])
+
+            annotated_image = mask_annotator.annotate(annotated_image, detections=detections)
+
+            annotator = Annotator(annotated_image, line_width=1)
+
+            if results[0].masks is not None:
+                clss = results[0].boxes.cls.cpu().tolist()
+                masks = results[0].masks.xy
+                for mask, cls in zip(masks, clss):
+                    color = colors(int(cls), True)
+                    txt_color = annotator.get_txt_color(color)
+                    annotator.seg_bbox(mask=mask, mask_color=color, label=names[int(cls)], txt_color=txt_color)
+            
+            # Convert annotated frame to texture
+            annotated_frame = annotator.result()  # Get the annotated frame
+            buf2 = cv2.flip(annotated_frame, 0)  # Flip for Kivy
+            buf2_bytes = buf2.tobytes()
+            annotated_texture = Texture.create(size=(annotated_frame.shape[1], annotated_frame.shape[0]), colorfmt='bgr')
+            annotated_texture.blit_buffer(buf2_bytes, colorfmt='bgr', bufferfmt='ubyte')
+                    
+            # Display images from textures
             self.root.ids.video_feed.texture = image_texture
+            self.root.ids.video_feed_2.texture = annotated_texture
         else:
             print("Failed to get frame, using placeholder")
-            self.use_placeholder()
+            self.use_placeholder(1)
+            self.use_placeholder(2)
 
-    def use_placeholder(self):
+    def use_placeholder(self, feed_id=2):
         if self.placeholder_texture:
-            self.root.ids.video_feed.texture = self.placeholder_texture
-        else:
+            if feed_id == 1:
+                self.root.ids.video_feed.texture = self.placeholder_texture
+            elif feed_id == 2:
+                self.root.ids.video_feed_2.texture = self.placeholder_texture
             print("Placeholder texture not available")
     
     def update_data(self, *args):
@@ -295,6 +373,9 @@ class RoverDashboard(MDApp):
                 # Update ambient temperature
                 sensor_data = data.get('data', {}).get('sensors', {})
                 self.temperature = sensor_data.get('temperature', 0)
+                
+                status = data.get('status', 'Disconnected')
+                self.root.ids.status_indicator.status = status
 
                 # Update accelerometer data
                 accel_data = sensor_data.get('accelerometer', {})
