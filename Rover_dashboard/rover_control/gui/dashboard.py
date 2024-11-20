@@ -190,10 +190,6 @@ MDScreen:
                         theme_text_color: "Secondary"
 
                     MDLabel:
-                        text: f"WiFi Network: {app.wifi_name}"
-                        theme_text_color: "Secondary"
-
-                    MDLabel:
                         text: "Connection Quality"
                         halign: "center"
                         theme_text_color: "Secondary"
@@ -281,6 +277,7 @@ class RoverDashboard(MDApp):
     def __init__(self, camera_ip, ngrok_url, **kwargs):
         super().__init__(**kwargs)
         self.camera_ip = camera_ip
+        self.ngrok_url = ngrok_url
         
         # Initialize controller and network modules
         self.controller = PS5Controller(self.on_controller_state_change)
@@ -326,7 +323,7 @@ class RoverDashboard(MDApp):
         self.rover_client.start()
         
         # Démarrage de la transmission du flux vidéo via ngrok
-        Clock.schedule_interval(self.transmit_video, 1/30)  # 30 FPS
+        #Clock.schedule_interval(self.transmit_video, 1/30)  # 30 FPS
         
     
     def transmit_video(self, dt):
@@ -360,13 +357,14 @@ class RoverDashboard(MDApp):
         self.controller_status = "Connected" if state.connected else "Disconnected"
         self.controller_name = state.controller_name or "No Controller"
         if state.connected:
+            print(self.controller_status)
             self.rover_client.send_command(state)
             
     def on_network_state_change(self, state):
         self.rover_status = "Connected" if state.connected else "Disconnected"
-        self.wifi_name = state.wifi_name or "Not Connected"
+        #self.wifi_name = state.wifi_name or "Not Connected"
         self.download_speed = state.download_speed
-        self.upload_speed = state.upload_speed
+        #self.upload_speed = state.upload_speed
         self.ping = state.ping
         
         # Calcul de la qualité de connexion (0-100)
@@ -386,7 +384,7 @@ class RoverDashboard(MDApp):
     def update_video(self, dt):
         if not self.video_capture:
             try:
-                self.video_capture = cv2.VideoCapture(self.camera_ip)
+                self.video_capture = cv2.VideoCapture(f"{self.ngrok_url}video_feed")
             except Exception as e:
                 print(f"Failed to connect to video stream: {e}")
                 self.use_placeholder()
@@ -401,6 +399,28 @@ class RoverDashboard(MDApp):
             self.root.ids.video_feed.texture = image_texture
         else:
             self.use_placeholder()
+    
+    '''
+    def update_video(self, dt):
+        if not self.video_capture:
+            try:
+                self.video_capture = cv2.VideoCapture(f"{self.ngrok_url}")
+            except Exception as e:
+                print(f"Failed to connect to video stream: {e}")
+                self.use_placeholder()
+                return
+
+        ret, frame = self.video_capture.read()
+        if ret:
+            buf1 = cv2.flip(frame, 0)
+            buf = buf1.tobytes()
+            image_texture = Texture.create(size=(frame.shape[1], frame.shape[0]), colorfmt='bgr')
+            image_texture.blit_buffer(buf, colorfmt='bgr', bufferfmt='ubyte')
+            self.root.ids.video_feed.texture = image_texture
+        else:
+            self.use_placeholder()
+            
+    ''' 
 
     def use_placeholder(self):
         if self.placeholder_texture:
@@ -450,7 +470,7 @@ class RoverDashboard(MDApp):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="BenRover Dashboard")
-    parser.add_argument("--camera-url", type=str, required=False, help="https://url-ngrok.com/video")
+    parser.add_argument("--camera-url", type=str, required=False, help="https://url-ngrok.com/video_feed")
     parser.add_argument("--ngrok-url", type=str, required=True, help="URL of the ngrok tunnel")
     args = parser.parse_args()
 

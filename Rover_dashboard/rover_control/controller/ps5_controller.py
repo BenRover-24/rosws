@@ -50,14 +50,14 @@ class PS5Controller:
                     self.state.axes = {
                         'left_x': int((self.controller.get_axis(0))*100),
                         'left_y': int((self.controller.get_axis(1))*100),
-                        'right_x': int((self.controller.get_axis(2))*100),
-                        'right_y': int((self.controller.get_axis(3))*100)
+                        'right_x': int((self.controller.get_axis(3))*100),
+                        'right_y': int((self.controller.get_axis(4))*100)
                     }
                     self.state.buttons = {
                         'cross': self.controller.get_button(0),
                         'circle': self.controller.get_button(1),
-                        'triangle': self.controller.get_button(2),
-                        'square': self.controller.get_button(3)
+                        'triangle': self.controller.get_button(3),
+                        'square': self.controller.get_button(2)
                     }
                     if self.on_state_change:
                         self.on_state_change(self.state)
